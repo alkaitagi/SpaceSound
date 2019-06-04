@@ -21,34 +21,90 @@
 
 ## Internship plan
 
-### Week 1, 3 June - 7 June
+### Week 1, 3 June - 7 June, gameplay systems
 
-- [x] *Monday*.First meeting, planning, concept discussion.
-- [ ] *Tuesday*.
-- [ ] *Wednesday*. First meeting, planning, concept discussion.
-- [ ] *Thursday*.
-- [ ] *Friday*.
+- [x] **Monday**
+  
+  The first meeting, planning, concept discussion.
 
-### Week 2, 10 June - 14 June
+- [ ] **Tuesday**
 
-- [ ] *Monday*.
-- [ ] *Tuesday*.
-- [ ] *Wednesday*.
-- [ ] *Thursday*.
-- [ ] *Friday*.
+  Set up GitHub repo, Unity project. Initial prototype with the visuals and player movement.
 
-### Week 3, 17 June - 21 June
+- [ ] **Wednesday**
+  
+  Gameplay design description. Winning condition. Ship modules (weapon, engine, light). Gameplay space constraints.
 
-- [ ] *Monday*.
-- [ ] *Tuesday*.
-- [ ] *Wednesday*.
-- [ ] *Thursday*.
-- [ ] *Friday*.
+- [ ] **Thursday**
+  
+  Implement environmental obstacles. Build 3 level zones.
 
-### Week 4, 24 June - 28 June
+- [ ] **Friday**.
+  
+  Implement simple enemies. Direct the final battle with two endings. General polishing.
 
-- [ ] *Monday*.
-- [ ] *Tuesday*.
-- [ ] *Wednesday*.
-- [ ] *Thursday*.
-- [ ] *Friday*.
+### Week 2, 10 June - 14 June, music systems
+
+- [x] **Monday**
+  
+  |
+
+- [ ] **Tuesday**
+
+  |
+
+- [ ] **Wednesday**
+  
+  |
+
+- [ ] **Thursday**
+  
+  |
+
+- [ ] **Friday**.
+  
+  |
+
+### Week 3, 17 June - 21 June, analytic systems
+
+- [x] **Monday**
+  
+  |
+
+- [ ] **Tuesday**
+
+  |
+
+- [ ] **Wednesday**
+  
+  |
+
+- [ ] **Thursday**
+  
+  |
+
+- [ ] **Friday**.
+  
+  |
+
+### Week 4, 24 June - 28 June, testing
+
+- [x] **Monday**
+  
+  |
+
+- [ ] **Tuesday**
+
+  |
+
+- [ ] **Wednesday**
+  
+  |
+
+- [ ] **Thursday**
+  
+  |
+
+- [ ] **Friday**.
+  
+  |
