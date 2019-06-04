@@ -27,7 +27,7 @@
   
   The first meeting, planning, concept discussion.
 
-- [ ] **Tuesday**
+- [x] **Tuesday**
 
   Set up GitHub repo, Unity project. Initial prototype with the visuals and player movement.
 
