@@ -23,32 +23,32 @@
 
 ### Week 1, 3 June - 7 June
 
-- [x] *Monday*. First meeting, planning, concept discussion.
-- *Tuesday*. 
-- *Wednesday*. First meeting, planning, concept discussion.
-- *Thursday*. 
-- *Friday*.
+- [x] *Monday*.First meeting, planning, concept discussion.
+- [ ] *Tuesday*.
+- [ ] *Wednesday*. First meeting, planning, concept discussion.
+- [ ] *Thursday*.
+- [ ] *Friday*.
 
-### Week 4, 10 June - 14 June
+### Week 2, 10 June - 14 June
 
-- *Monday*. First meeting, planning, concept discussion.
-- *Tuesday*. 
-- *Wednesday*. First meeting, planning, concept discussion.
-- *Thursday*. 
-- *Friday*.
+- [ ] *Monday*.
+- [ ] *Tuesday*.
+- [ ] *Wednesday*.
+- [ ] *Thursday*.
+- [ ] *Friday*.
 
-### Week 1, 3 June - 7 June
+### Week 3, 17 June - 21 June
 
-- *Monday*. First meeting, planning, concept discussion.
-- *Tuesday*. 
-- *Wednesday*. First meeting, planning, concept discussion.
-- *Thursday*. 
-- *Friday*.
+- [ ] *Monday*.
+- [ ] *Tuesday*.
+- [ ] *Wednesday*.
+- [ ] *Thursday*.
+- [ ] *Friday*.
 
-### Week 1, 3 June - 7 June
+### Week 4, 24 June - 28 June
 
-- *Monday*. First meeting, planning, concept discussion.
-- *Tuesday*. 
-- *Wednesday*. First meeting, planning, concept discussion.
-- *Thursday*. 
-- *Friday*.
+- [ ] *Monday*.
+- [ ] *Tuesday*.
+- [ ] *Wednesday*.
+- [ ] *Thursday*.
+- [ ] *Friday*.
