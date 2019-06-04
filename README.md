@@ -10,6 +10,7 @@
 ### Compiles and runs on WebGL using WASM
 
 - Compile once, run everywhere.
+- WASM is new faster, smaller and more memory-efficient web runtime.
 - People are more likely to play when they do not have to download anything on their machines.
 - Ease of distribution through simple link share.
 
