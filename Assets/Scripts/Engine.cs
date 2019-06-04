@@ -32,11 +32,11 @@ public class Engine : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
-    private Rigidbody2D rigidbody;
+    private new Rigidbody2D rigidbody;
     [SerializeField]
     private ParticleSystem effect;
     [SerializeField]
-    private Light2D light;
+    private new Light2D light;
 
     private void Awake() => IsOn = IsOn;
 
