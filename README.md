@@ -18,3 +18,37 @@
 
 - Due to our time constraints, it is better to focus on making a short but memorable experience rather than long and somewhat monotonous.
 - As most of the testers are not expected to be hardcore players, they might not have enough stamina to play for a longer amount of times. Around 15-20 minutes should work.
+
+## Internship plan
+
+### Week 1, 3 June - 7 June
+
+- [x] *Monday*. First meeting, planning, concept discussion.
+- *Tuesday*. 
+- *Wednesday*. First meeting, planning, concept discussion.
+- *Thursday*. 
+- *Friday*.
+
+### Week 4, 10 June - 14 June
+
+- *Monday*. First meeting, planning, concept discussion.
+- *Tuesday*. 
+- *Wednesday*. First meeting, planning, concept discussion.
+- *Thursday*. 
+- *Friday*.
+
+### Week 1, 3 June - 7 June
+
+- *Monday*. First meeting, planning, concept discussion.
+- *Tuesday*. 
+- *Wednesday*. First meeting, planning, concept discussion.
+- *Thursday*. 
+- *Friday*.
+
+### Week 1, 3 June - 7 June
+
+- *Monday*. First meeting, planning, concept discussion.
+- *Tuesday*. 
+- *Wednesday*. First meeting, planning, concept discussion.
+- *Thursday*. 
+- *Friday*.
