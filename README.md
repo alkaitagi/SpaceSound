@@ -45,7 +45,7 @@
 
 ### Week 2, 10 June - 14 June, music systems
 
-- [x] **Monday**
+- [ ] **Monday**
   
   |
 
@@ -67,7 +67,7 @@
 
 ### Week 3, 17 June - 21 June, analytic systems
 
-- [x] **Monday**
+- [ ] **Monday**
   
   |
 
@@ -89,7 +89,7 @@
 
 ### Week 4, 24 June - 28 June, testing
 
-- [x] **Monday**
+- [ ] **Monday**
   
   |
 
