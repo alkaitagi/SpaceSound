@@ -18,10 +18,7 @@ public class Engine : MonoBehaviour
             isOn = value;
 
             if (effect)
-            {
-                var emission = effect.emission;
-                emission.enabled = IsOn;
-            }
+                effect.Toggle(IsOn);
             if (light)
                 light.enabled = IsOn;
         }
