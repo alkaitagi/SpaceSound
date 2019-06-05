@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEditor;
 
 [System.Serializable]
 public struct Range
@@ -8,24 +7,6 @@ public struct Range
     public float max;
 
     public float Random() => UnityEngine.Random.Range(min, max);
-}
-
-[CanEditMultipleObjects]
-[CustomEditor(typeof(Asteroid))]
-public class AsteroidEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
-
-        if (GUILayout.Button("Generate"))
-            foreach (var target in targets)
-                ((Asteroid)target).Generate();
-
-        if (GUILayout.Button("Clear"))
-            foreach (var target in targets)
-                ((Asteroid)target).transform.Clear(true);
-    }
 }
 
 public class Asteroid : MonoBehaviour
