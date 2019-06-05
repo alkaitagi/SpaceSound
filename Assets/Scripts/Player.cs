@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Thruster thruster;
     [SerializeField]
-    private GameObject cannon;
+    private Cannon cannon;
 
     private new Camera camera;
 
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
                     -Vector2.SignedAngle
                     (
                         GetMousePosition() - turret.position,
-                        turret.parent.up
+                        turret.parent ? turret.parent.up : Vector3.up
                     ),
                     -angleRange,
                     angleRange
@@ -61,6 +61,9 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown("space") && thruster.gameObject.activeSelf)
             thruster.Burst();
+
+        if (Input.GetMouseButton(0) && cannon.gameObject.activeSelf)
+            cannon.Shoot();
     }
 
     private Vector3 GetMousePosition()

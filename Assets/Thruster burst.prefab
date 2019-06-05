@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3431855023176020113}
   - component: {fileID: 7288726716673983559}
   - component: {fileID: 8134589406344000514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thruster burst
   m_TagString: Untagged
   m_Icon: {fileID: 0}

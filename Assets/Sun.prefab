@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6793481214394425451}
   - component: {fileID: 6036157811567018398}
   - component: {fileID: 1323146187467927530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Nebula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4753,7 +4753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3923854929472055593}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Connections
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4784,7 +4784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3920278398947149270}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4819,7 +4819,7 @@ GameObject:
   - component: {fileID: 6096889439914867231}
   - component: {fileID: 6096889439914867217}
   - component: {fileID: 6096889439914867216}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9554,7 +9554,7 @@ GameObject:
   - component: {fileID: 6096889439929091175}
   - component: {fileID: 6096889439929091161}
   - component: {fileID: 6096889439929091160}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14316,7 +14316,7 @@ GameObject:
   - component: {fileID: 6096889440152947255}
   - component: {fileID: 6096889440152947241}
   - component: {fileID: 6096889440152947240}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Splash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19069,7 +19069,7 @@ GameObject:
   - component: {fileID: 6096889440256889404}
   - component: {fileID: 6096889440256889406}
   - component: {fileID: 6096889440256889405}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23831,7 +23831,7 @@ GameObject:
   - component: {fileID: 6096889441195030914}
   - component: {fileID: 6096889441195030916}
   - component: {fileID: 6096889441195030915}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28597,7 +28597,7 @@ GameObject:
   - component: {fileID: 6096889441265978219}
   - component: {fileID: 6096889441265978217}
   - component: {fileID: 7025021639806944319}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

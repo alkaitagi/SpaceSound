@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5159823068462354294}
   - component: {fileID: 5159823068462354293}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5159823068543297012}
   - component: {fileID: 5159823068543297013}
   - component: {fileID: 5159823068543297019}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4947,7 +4947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5159823068731079169}
   - component: {fileID: 5159823068731079168}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wing (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5027,7 +5027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5159823069539178909}
   - component: {fileID: 5159823069539178908}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wing (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5107,7 +5107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5159823069556277984}
   - component: {fileID: 5159823069556277991}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wing (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

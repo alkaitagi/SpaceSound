@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3117047632655519039}
   - component: {fileID: 1507439597332967482}
   - component: {fileID: 8548954893425429531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gate burst
   m_TagString: Untagged
   m_Icon: {fileID: 0}

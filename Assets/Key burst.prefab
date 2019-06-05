@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4777860993976667087}
   - component: {fileID: 9071416642321823434}
   - component: {fileID: 2282296016356952811}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Key burst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
