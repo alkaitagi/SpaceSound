@@ -19,5 +19,6 @@ public class Gate : MonoBehaviour
     public void Open()
     {
         GetComponent<Animator>().SetTrigger("Open");
+        Camera.main.GetComponent<Animator>().SetTrigger("Warp");
     }
 }
