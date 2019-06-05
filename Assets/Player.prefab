@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166322096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0.15, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 806566934}
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   distance: 20
-  speed: 5
-  cooldown: 0.1
+  speed: 40
+  cooldown: 0.5
   projectile: {fileID: -2948092865557318665, guid: 44a2607b8aba9ec4eb69d85c6eb1deac,
     type: 3}
 --- !u!1 &533003440
@@ -439,7 +439,7 @@ MonoBehaviour:
   mainEngine: {fileID: 8281234666849099839}
   leftTorque: {fileID: 8281234666851662113}
   rightTorque: {fileID: 8281234667547501003}
-  angleRange: 50
+  angleRange: 90
   rotationSpeed: 20
   turret: {fileID: 806566934}
   thruster: {fileID: 1050075464}

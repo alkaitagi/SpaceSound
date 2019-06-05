@@ -42,7 +42,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944880093788172833}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 1505447683572805985, guid: f5a269ca60dc60544a3f30db420275e2,
     type: 3}
-  trailEffect: {fileID: 8173033019369625996}
+  trailEffect: {fileID: 5001131110359786851}
 --- !u!1 &5001131110359786851
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ ParticleSystem:
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
-  useRigidbodyForVelocity: 1
+  useRigidbodyForVelocity: 0
   startDelay:
     serializedVersion: 2
     minMaxState: 0
