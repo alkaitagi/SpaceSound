@@ -10,8 +10,6 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Engine rightTorque;
 
-    [Header("Modules")]
-    [SerializeField]
     private Burst burst;
 
     private void Update()
@@ -20,7 +18,9 @@ public class Player : MonoBehaviour
         leftTorque.IsOn = Input.GetKey("a");
         rightTorque.IsOn = Input.GetKey("d");
 
-        if (Input.GetKeyDown("space"))
+        if (burst && Input.GetKeyDown("space"))
             burst.Apply();
     }
+
+    public void UnlockBurst() => burst = GetComponentInChildren<Burst>();
 }

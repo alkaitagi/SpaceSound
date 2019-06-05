@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class Door : MonoBehaviour
+[RequireComponent(typeof(Animator))]
+public class Gate : MonoBehaviour
 {
     private int keys;
     public int Keys
@@ -14,8 +15,9 @@ public class Door : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private ParticleSystem effect;
 
-    public void Open() => effect.Play(true);
+    public void Open()
+    {
+        GetComponent<Animator>().SetTrigger("Open");
+    }
 }

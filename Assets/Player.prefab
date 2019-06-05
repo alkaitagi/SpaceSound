@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 8281234666657878075}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,6 @@ MonoBehaviour:
   mainThrust: {fileID: 8281234666849099839}
   leftTorque: {fileID: 8281234666851662113}
   rightTorque: {fileID: 8281234667547501003}
-  burst: {fileID: 360737050}
 --- !u!1 &8281234666669713800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5232,7 +5231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15d7b0bfec39ae48af1a97a5a06f514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
+  force: 10
   effect: {fileID: 3086897555237410226, guid: 1a64a32643f975049a7583ae1e4061da, type: 3}
 --- !u!1 &8281234666851662301
 GameObject:

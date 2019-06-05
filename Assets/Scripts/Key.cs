@@ -3,7 +3,7 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     [SerializeField]
-    private Door door;
+    private Gate gate;
     [SerializeField]
     private VoidEvent onActivate;
 
@@ -15,14 +15,14 @@ public class Key : MonoBehaviour
 
     private void Awake()
     {
-        if (door)
-            door.Keys++;
+        if (gate)
+            gate.Keys++;
     }
 
     public void Activate()
     {
-        if (door)
-            door.Keys--;
+        if (gate)
+            gate.Keys--;
         onActivate.Invoke();
         //Destroy(gameObject);
     }
