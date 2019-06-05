@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey("r"))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         mainThrust.IsOn = Input.GetKey("w");
         leftTorque.IsOn = Input.GetKey("a");
         rightTorque.IsOn = Input.GetKey("d");

@@ -30,5 +30,6 @@ public class Key : MonoBehaviour
         GetComponent<ParticleSystem>().Toggle(false);
 
         Instantiate(effect, transform.position, transform.rotation);
+        Destroy(gameObject, 1);
     }
 }

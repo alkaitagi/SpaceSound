@@ -89,11 +89,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5159823068543297015}
+  - component: {fileID: 3652902965886648081}
   - component: {fileID: 5159823068543297008}
+  - component: {fileID: 532535827}
   - component: {fileID: 5159823068543297012}
   - component: {fileID: 5159823068543297013}
   - component: {fileID: 5159823068543297019}
-  - component: {fileID: 532535827}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -119,6 +120,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &3652902965886648081
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159823068543297009}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6
 --- !u!114 &5159823068543297008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,8 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FalloffIntensity: 0.8
+  m_Color: {r: 0, g: 0.90588236, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0.2
   m_ApplyToSortingLayers: 00000000
@@ -145,7 +162,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2
+  m_PointLightOuterRadius: 5
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -158,6 +175,25 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!95 &532535827
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159823068543297009}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23ae0754fa78c9d42bbf60e5d4311af8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!199 &5159823068543297012
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4873,25 +4909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c42d9eb176607343a908f98da3a89fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &532535827
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5159823068543297009}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 23ae0754fa78c9d42bbf60e5d4311af8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  destination: {fileID: 0}
+  effect: {fileID: 1146247774167346290, guid: 9772dddefccbd5b4aa77bb5095ff138c, type: 3}
 --- !u!1 &5159823068731079170
 GameObject:
   m_ObjectHideFlags: 0
