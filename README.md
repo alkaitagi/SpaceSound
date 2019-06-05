@@ -23,23 +23,35 @@
 
 ### Plot
 
-Player has to go trough 3 areas. Each of those areas provides player ship with a new module, and provides obstacles that need to be bypassed using the module. On each of the areas there are 3 keys that need to be collected by player in order to open a gate towards the next area. After collecting those 3 areas and getting full ship functionality player will be teleproted to the last area. In the last area he will fight a small battle agains simple enemies. Two endings are possible: either player defeats all the enemies and open exit gate, or he is defetead by enemies. None of the endings is to be considered a lose, and we need to convey that feeling of accomplishment to player.
+Player has to go trough 3 regions. Each of those regions provides player ship with a new module, and provides obstacles that need to be bypassed using the module. On each of the regions there are several keys that need to be collected by player in order to open a gate towards the next area. After collecting those 3 areas and getting full ship functionality player will be teleproted to the last area. In the last area he will fight a small battle agains simple enemies. Two endings are possible: either player defeats all the enemies and open exit gate, or he is defetead by enemies. None of the endings is to be considered a lose, and we need to convey that feeling of accomplishment to player.
 
-### Area 1: Nebula
+### Region 0: Star
 
-Player obtains *light* module. In this area player has to naviagate trough some sort of maze convered by nebula. Nothing very challenging, just getting used to controls.
+This is where it starts and ends. Contains 3 gates connected to the 3 regions described below. After restoring the star by completing the regions, a small battle will be held.
 
-### Area 2: Wormhole
+### Region 1: Nebula
 
-Player obtains *burst* module. This module allows player to perform short distance jumps by applying impulse force. In this area player needs to collect keys while oribiting around wormhole ad resisting its gravitational forces.
+Ship module: light.
 
-### Area 3: Meteors
+Region bounds: asteroid belt.
 
-Player obstains *cannon* module. This is basic shooting. The area is being constaintly exposed to meteorite rain and player needs to destroy some of those meterites to get keys.
+In this area player has to naviagate trough some sort of maze convered by nebula. Nothing very challenging, just getting used to controls.
 
-### Area 4: Onslaught
+### Region 2: Wormhole
 
-In this area player defends sun from wave of space monsters.
+Ship module: thruster.
+
+Region bounds: gravity.
+
+The module allows player to perform short distance jumps by applying impulse force. In this area player needs to collect keys while oribiting around wormhole ad resisting its gravitational forces.
+
+### Region 3: Meteors
+
+Ship module: cannon.
+
+Region bounds: orbiting comets.
+
+This is basic shooting. The area is being constaintly exposed to meteorite rain and player needs to destroy some of those meterites to get keys.
 
 ## Internship plan
 
