@@ -1,11 +1,13 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(ParticleSystem))]
 public class Key : MonoBehaviour
 {
     [SerializeField]
     private Gate gate;
     [SerializeField]
-    private VoidEvent onActivate;
+    private GameObject effect;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,7 +25,10 @@ public class Key : MonoBehaviour
     {
         if (gate)
             gate.Keys--;
-        onActivate.Invoke();
-        //Destroy(gameObject);
+
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<ParticleSystem>().Toggle(false);
+
+        Instantiate(effect, transform.position, transform.rotation);
     }
 }

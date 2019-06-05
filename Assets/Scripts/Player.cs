@@ -12,6 +12,11 @@ public class Player : MonoBehaviour
 
     private Burst burst;
 
+    private void Start()
+    {
+        UnlockBurst();
+    }
+
     private void Update()
     {
         mainThrust.IsOn = Input.GetKey("w");

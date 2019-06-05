@@ -109,7 +109,7 @@ In this area player defends sun from wave of space monsters.
   
   |
 
-### Week 4, 24 June - 28 June, testing
+### Week 4, 24 June - 28 June, player
 
 - [ ] **Monday**
   
