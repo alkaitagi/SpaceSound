@@ -1,6 +1,24 @@
 using UnityEngine;
+using UnityEditor;
 
-[RequireComponent(typeof(SpriteRenderer))]
+[CanEditMultipleObjects]
+[CustomEditor(typeof(Asteroid))]
+public class AsteroidEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+        
+        if (GUILayout.Button("Randomize"))
+            foreach (var target in targets)
+                ((Asteroid)target).Randomize();
+
+        if (GUILayout.Button("Clear"))
+            foreach (var target in targets)
+                ((Asteroid)target).Clear();
+    }
+}
+
 public class Asteroid : MonoBehaviour
 {
     [System.Serializable]
@@ -13,27 +31,38 @@ public class Asteroid : MonoBehaviour
     }
 
     [SerializeField]
-    private Range scaleRange;
+    private Range asteroidScale;
     [SerializeField]
-    private Range rotationRange;
+    private Range dotCount;
     [SerializeField]
-    private Sprite[] sprites;
+    private Range dotScale;
 
-    private float rotation;
-
-    private void Start() => Randomize();
-
-    private void OnValidate() => Randomize();
+    [Space(10)]
+    [SerializeField]
+    private SpriteRenderer sourceDot;
 
     public void Randomize()
     {
-        GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
-        transform.localScale = scaleRange.Random() * Vector3.one;
-        rotation = rotationRange.Random();
+        Clear();
+        transform.localScale = asteroidScale.Random() * Vector3.one;
+
+        float dotCount = this.dotCount.Random();
+        for (int i = 0; i < dotCount; i++)
+        {
+            var dot = Instantiate(sourceDot, transform);
+            dot.transform.localPosition = Random.insideUnitCircle / 2.5f;
+            dot.transform.localScale *= dotScale.Random();
+        }
     }
 
-    private void Update()
+    public void Clear()
     {
-        transform.rotation *= Quaternion.Euler(0, 0, rotation);
+        var dotCount = transform.childCount;
+        for (int i = 0; i < dotCount; i++)
+        {
+            var dot = transform.GetChild(0);
+            dot.parent = null;
+            DestroyImmediate(dot.gameObject);
+        }
     }
 }
