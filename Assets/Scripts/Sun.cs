@@ -11,5 +11,7 @@ public class Sun : MonoBehaviour
     {
         effects[--score].Play();
         Destroy(area);
+
+        if (score <= 0) { }
     }
 }

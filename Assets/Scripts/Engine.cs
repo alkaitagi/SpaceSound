@@ -33,7 +33,7 @@ public class Engine : MonoBehaviour
 
     private void Awake() => IsOn = IsOn;
 
-    public void Update()
+    public void FixedUpdate()
     {
         if (IsOn)
             switch (type)

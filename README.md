@@ -31,7 +31,7 @@ This is where it starts and ends. Contains 3 gates connected to the 3 regions de
 
 ### Region 1: Nebula
 
-Ship module: light.
+Ship module: **Searchlight**.
 
 Region bounds: asteroid belt.
 
@@ -39,7 +39,7 @@ In this area player has to naviagate trough some sort of maze convered by nebula
 
 ### Region 2: Wormhole
 
-Ship module: thruster.
+Ship module: **Thruster**.
 
 Region bounds: gravity.
 
@@ -47,7 +47,7 @@ The module allows player to perform short distance jumps by applying impulse for
 
 ### Region 3: Meteors
 
-Ship module: cannon.
+Ship module: **Cannon**.
 
 Region bounds: orbiting comets.
 

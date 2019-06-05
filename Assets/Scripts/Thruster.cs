@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Burst : MonoBehaviour
+public class Thruster : MonoBehaviour
 {
     [SerializeField]
     private float force;
@@ -11,7 +11,7 @@ public class Burst : MonoBehaviour
 
     private void Awake() => rigidbody = GetComponentInParent<Rigidbody2D>();
 
-    public void Apply()
+    public void Burst()
     {
         rigidbody.AddForce(force * transform.up, ForceMode2D.Impulse);
         Instantiate(effect, transform.position, transform.rotation);
