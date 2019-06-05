@@ -3,18 +3,35 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     [SerializeField]
-    private float maxAngle;
+    private float range;
+    [SerializeField]
+    private float speed;
 
     private new Camera camera;
 
     private void Awake() => camera = Camera.main;
 
-    private void Update()
-    {
-        var mousePosition = GetMousePosition();
-        var angle = Vector2.SignedAngle(mousePosition - transform.position, transform.parent.up);
-        transform.localRotation = Quaternion.Euler(0, 0, Mathf.Clamp(-angle, -maxAngle, maxAngle));
-    }
+    private void Update() =>
+        transform.localRotation = Quaternion.Euler
+        (
+            0,
+            0,
+            Mathf.LerpAngle
+            (
+                transform.localEulerAngles.z,
+                Mathf.Clamp
+                (
+                    -Vector2.SignedAngle
+                    (
+                        GetMousePosition() - transform.position,
+                        transform.parent.up
+                    ),
+                    -range,
+                    range
+                ),
+                speed * Time.deltaTime
+            )
+        );
 
     private Vector3 GetMousePosition()
     {

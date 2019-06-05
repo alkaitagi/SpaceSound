@@ -27783,8 +27783,8 @@ ParticleSystem:
     speedModifier:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -37981,10 +37981,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.6
+  m_FalloffIntensity: 0.7
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_LightVolumeOpacity: 0.4
+  m_LightVolumeOpacity: 0.3
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
@@ -37993,7 +37993,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 10
+  m_PointLightOuterRadius: 20
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -38037,7 +38037,7 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: 100
+  m_ForceMagnitude: 200
   m_ForceVariation: 0
   m_DistanceScale: 1
   m_ForceSource: 0
@@ -38249,36 +38249,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281234667933716658, guid: e02470a205ae8234cacc74f4f9e57361,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281234667933716658, guid: e02470a205ae8234cacc74f4f9e57361,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7911868
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281234667933716658, guid: e02470a205ae8234cacc74f4f9e57361,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281234667933716658, guid: e02470a205ae8234cacc74f4f9e57361,
-        type: 3}
-      propertyPath: InitialModule.startColor.minColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281234667933716658, guid: e02470a205ae8234cacc74f4f9e57361,
-        type: 3}
-      propertyPath: InitialModule.startColor.minColor.g
-      value: 0.22107172
-      objectReference: {fileID: 0}
-    - target: {fileID: 8281234667933716658, guid: e02470a205ae8234cacc74f4f9e57361,
-        type: 3}
-      propertyPath: InitialModule.startColor.minColor.b
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e02470a205ae8234cacc74f4f9e57361, type: 3}
