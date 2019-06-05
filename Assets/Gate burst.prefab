@@ -79,16 +79,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2282296016356952811, guid: aca1f6c0f0beb884f96ea9dd71704bbc,
         type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2282296016356952811, guid: aca1f6c0f0beb884f96ea9dd71704bbc,
-        type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2282296016356952811, guid: aca1f6c0f0beb884f96ea9dd71704bbc,
-        type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
       value: 400
       objectReference: {fileID: 0}
