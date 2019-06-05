@@ -19,8 +19,6 @@ public class Engine : MonoBehaviour
 
             if (effect)
                 effect.Toggle(IsOn);
-            if (light)
-                light.enabled = IsOn;
         }
     }
     [SerializeField]
@@ -32,8 +30,6 @@ public class Engine : MonoBehaviour
     private new Rigidbody2D rigidbody;
     [SerializeField]
     private ParticleSystem effect;
-    [SerializeField]
-    private new Light2D light;
 
     private void Awake() => IsOn = IsOn;
 
