@@ -56,21 +56,23 @@ public class CanvasToggle : MonoBehaviour
         }
     }
 
+    private void OnValidate() =>
+        GetComponent<CanvasGroup>().alpha = IsVisible ? 1 : 0;
+
     private IEnumerator Animate()
     {
         var targetScale = IsVisible ? startScale : endScale;
         var targetPosition = IsVisible ? startPosition : endPosition;
         var targetAlpha = IsVisible ? 1 : 0;
 
-        while (true)
+        while (!Mathf.Approximately(canvasGroup.alpha, targetAlpha))
         {
             var delta = speed * Time.deltaTime;
+
             canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, targetAlpha, delta);
             transform.localScale = Vector2.MoveTowards(transform.localScale, targetScale, delta);
             rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, targetPosition, delta);
 
-            if (Mathf.Approximately(canvasGroup.alpha, targetAlpha))
-                break;
             yield return new WaitForEndOfFrame();
         }
     }
