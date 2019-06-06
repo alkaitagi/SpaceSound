@@ -65,7 +65,7 @@ public class CanvasToggle : MonoBehaviour
         var targetPosition = IsVisible ? startPosition : endPosition;
         var targetAlpha = IsVisible ? 1 : 0;
 
-        while (!Mathf.Approximately(canvasGroup.alpha, targetAlpha))
+        while (canvasGroup.alpha != targetAlpha)
         {
             var delta = speed * Time.deltaTime;
 

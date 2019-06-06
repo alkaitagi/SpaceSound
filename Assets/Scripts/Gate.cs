@@ -38,7 +38,9 @@ public class Gate : MonoBehaviour
     {
         if (destination && other.CompareTag("Player"))
         {
+            other.attachedRigidbody.velocity = Vector2.zero;
             WarpManager.Main.Warp(destination);
+
             animator.SetTrigger("Lock");
             onJump.Invoke();
         }

@@ -33,7 +33,6 @@ public class Sun : MonoBehaviour
         if (gates.Count > 0)
         {
             current = Random.Range(0, gates.Count);
-            print(current);
             gates[current].Keys = 0;
             return true;
         }
