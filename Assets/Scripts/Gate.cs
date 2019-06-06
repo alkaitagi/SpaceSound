@@ -17,10 +17,12 @@ public class Gate : MonoBehaviour
 
     [SerializeField]
     private Transform destination;
+    public Transform Destination => destination;
     [SerializeField]
     private GameObject effect;
     [SerializeField]
-    private VoidEvent onJump;
+    private VoidEvent onWarp;
+    public VoidEvent OnWarp => onWarp;
 
     private Animator animator;
 
@@ -39,10 +41,8 @@ public class Gate : MonoBehaviour
         if (destination && other.CompareTag("Player"))
         {
             other.attachedRigidbody.velocity = Vector2.zero;
-            WarpManager.Main.Warp(destination);
-
+            WarpManager.Main.Warp(this);
             animator.SetTrigger("Lock");
-            onJump.Invoke();
         }
     }
 }

@@ -23,13 +23,13 @@ public class WarpManager : MonoBehaviour
         effects.SetActive(false);
     }
 
-    public void Warp(Transform destination)
+    public void Warp(Gate gate)
     {
         StopAllCoroutines();
-        StartCoroutine(Transition(destination.position));
+        StartCoroutine(Transition(gate));
     }
 
-    private IEnumerator Transition(Vector2 destination)
+    private IEnumerator Transition(Gate gate)
     {
         effects.SetActive(true);
         var noise = CameraManager.VirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
@@ -39,6 +39,8 @@ public class WarpManager : MonoBehaviour
         canvasToggle.IsVisible = true;
         yield return new WaitForSeconds(1);
         canvasToggle.IsVisible = false;
+
+        gate.OnWarp.Invoke();
 
         noise.m_NoiseProfile = cameraNoise;
         player.transform.position = transform.position;
@@ -51,7 +53,7 @@ public class WarpManager : MonoBehaviour
         canvasToggle.IsVisible = false;
 
         player.enabled = true;
-        player.transform.position = destination;
+        player.transform.position = gate.Destination.position;
 
         noise.m_NoiseProfile = null;
         CameraManager.Main.transform.eulerAngles = Vector3.zero;
