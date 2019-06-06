@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -3638915416353919606
     second: Ship_2
+  - first:
+      213: 2227524988284003772
+    second: Ship_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -91,6 +94,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd11098f2e2a0754abd3e5a56bcb27ba
+      spriteID: 98e00a5df0af6c649930d021eab9269e
       internalID: -8820715720815460284
       vertices: []
       indices: 
@@ -130,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7717062665224f4c9a2bfff62c11ba2
+      spriteID: 4eb9278e2e939c04a96da092efb039ca
       internalID: -3876855153373189597
       vertices: []
       indices: 
@@ -138,6 +153,27 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: Ship_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8815804cb2d625c4e97f859453efd2ad
+      internalID: -3638915416353919606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ship_3
       rect:
         serializedVersion: 2
         x: 768
@@ -151,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a3b61fed0f815d48a07d48d7ee4b5d0
-      internalID: -3638915416353919606
+      spriteID: 33e38ce55fe8d4a428d3bc31c2395446
+      internalID: 2227524988284003772
       vertices: []
       indices: 
       edges: []

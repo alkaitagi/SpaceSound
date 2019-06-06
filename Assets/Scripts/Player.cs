@@ -11,15 +11,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Engine rightTorque;
 
-    [Header("Turret")]
+    [Header("Rotation")]
     [SerializeField]
     private float angleRange;
     [SerializeField]
     private float rotationSpeed;
 
     [Header("Modules")]
-    [SerializeField]
-    private Transform turret;
     [SerializeField]
     private Thruster thruster;
     [SerializeField]
@@ -38,22 +36,17 @@ public class Player : MonoBehaviour
         leftTorque.IsOn = Input.GetKey("a");
         rightTorque.IsOn = Input.GetKey("d");
 
-        turret.localRotation = Quaternion.Euler
+        transform.rotation = Quaternion.Euler
         (
             0,
             0,
             Mathf.LerpAngle
             (
-                turret.localEulerAngles.z,
-                Mathf.Clamp
+                transform.eulerAngles.z,
+                -Vector2.SignedAngle
                 (
-                    -Vector2.SignedAngle
-                    (
-                        GetMousePosition() - turret.position,
-                        turret.parent ? turret.parent.up : Vector3.up
-                    ),
-                    -angleRange,
-                    angleRange
+                    GetMousePosition() - transform.position,
+                    Vector3.up
                 ),
                 rotationSpeed * Time.deltaTime
             )

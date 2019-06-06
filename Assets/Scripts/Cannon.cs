@@ -10,6 +10,8 @@ public class Cannon : MonoBehaviour
     private float speed;
     [SerializeField]
     private float cooldown;
+
+    [Space(10)]
     [SerializeField]
     private Projectile projectile;
 
