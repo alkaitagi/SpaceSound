@@ -45,24 +45,24 @@ public class Player : MonoBehaviour
                 transform.eulerAngles.z,
                 -Vector2.SignedAngle
                 (
-                    GetMousePosition() - transform.position,
+                    CameraManager.MouseWorld() - transform.position,
                     Vector3.up
                 ),
                 rotationSpeed * Time.deltaTime
             )
         );
 
-        if (Input.GetKeyDown("space") && thruster.gameObject.activeSelf)
+        if (Input.GetKeyDown("space") && thruster.gameObject.activeInHierarchy)
             thruster.Burst();
 
-        if (Input.GetMouseButton(0) && cannon.gameObject.activeSelf)
+        if (Input.GetMouseButton(0) && cannon.gameObject.activeInHierarchy)
             cannon.Shoot();
     }
 
-    private Vector3 GetMousePosition()
+    private void OnDisable()
     {
-        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-        new Plane(Vector3.forward, Vector3.zero).Raycast(ray, out float distance);
-        return ray.GetPoint(distance);
+        mainEngine.IsOn = false;
+        leftTorque.IsOn = false;
+        rightTorque.IsOn = false;
     }
 }
