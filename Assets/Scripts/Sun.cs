@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sun : MonoBehaviour
 {
     [SerializeField]
-    private List<ParticleSystem> effects;
+    private List<GameObject> rewards;
     [SerializeField]
     private List<Gate> gates;
 
@@ -13,15 +13,19 @@ public class Sun : MonoBehaviour
 
     private void Awake()
     {
+        foreach (var reward in rewards)
+            reward.SetActive(false);
+
         foreach (var gate in gates)
             gate.Keys = 1;
+
         NextGate();
     }
 
     public void CountArea(GameObject area)
     {
-        effects[current].Play();
-        effects.RemoveAt(current);
+        rewards[current].SetActive(true);
+        rewards.RemoveAt(current);
         gates.RemoveAt(current);
 
         Destroy(area);

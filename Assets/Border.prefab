@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 447706980327145883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,37 +51,22 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 1
   m_Points:
-  - {x: 3, y: 0}
-  - {x: 2.934443, y: 0.6237351}
-  - {x: 2.7406363, y: 1.22021}
-  - {x: 2.427051, y: 1.7633557}
-  - {x: 2.0073917, y: 2.2294345}
-  - {x: 1.4999999, y: 2.5980763}
-  - {x: 0.92705095, y: 2.8531697}
-  - {x: 0.31358525, y: 2.9835658}
-  - {x: -0.31358552, y: 2.9835658}
-  - {x: -0.92705107, y: 2.8531694}
-  - {x: -1.5000002, y: 2.598076}
-  - {x: -2.007392, y: 2.2294345}
-  - {x: -2.427051, y: 1.7633555}
-  - {x: -2.7406363, y: 1.2202097}
-  - {x: -2.934443, y: 0.62373483}
-  - {x: -3, y: -0.00000026226832}
-  - {x: -2.9344428, y: -0.62373537}
-  - {x: -2.7406363, y: -1.2202102}
-  - {x: -2.4270508, y: -1.7633561}
-  - {x: -2.0073915, y: -2.2294345}
-  - {x: -1.4999998, y: -2.5980763}
-  - {x: -0.9270513, y: -2.8531694}
-  - {x: -0.313585, y: -2.9835658}
-  - {x: 0.3135865, y: -2.9835656}
-  - {x: 0.92705137, y: -2.8531694}
-  - {x: 1.4999998, y: -2.5980763}
-  - {x: 2.0073922, y: -2.2294343}
-  - {x: 2.4270518, y: -1.7633548}
-  - {x: 2.7406366, y: -1.2202095}
-  - {x: 2.9344428, y: -0.6237353}
-  - {x: 3, y: 0.00000052453663}
+  - {x: 1, y: 0}
+  - {x: 0.9135454, y: 0.40673664}
+  - {x: 0.66913056, y: 0.74314487}
+  - {x: 0.30901697, y: 0.95105654}
+  - {x: -0.10452851, y: 0.9945219}
+  - {x: -0.50000006, y: 0.8660254}
+  - {x: -0.80901706, y: 0.5877852}
+  - {x: -0.9781476, y: 0.20791161}
+  - {x: -0.97814757, y: -0.20791179}
+  - {x: -0.80901694, y: -0.58778536}
+  - {x: -0.4999999, y: -0.86602545}
+  - {x: -0.10452834, y: -0.9945219}
+  - {x: 0.30901712, y: -0.9510565}
+  - {x: 0.66913074, y: -0.74314475}
+  - {x: 0.91354555, y: -0.4067365}
+  - {x: 1, y: 0.00000017484555}
 --- !u!250 &3348244779134339494
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -879,7 +864,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 3
+      value: 1
       mode: 0
       spread: 0
       speed:
@@ -942,7 +927,7 @@ ParticleSystem:
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 2
+        scalar: 1.5
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -998,7 +983,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 60
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1626,7 +1611,7 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -4844,4 +4829,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ae075fa73c5d446bed391061f95a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 30
