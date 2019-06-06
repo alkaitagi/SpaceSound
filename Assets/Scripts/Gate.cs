@@ -38,7 +38,7 @@ public class Gate : MonoBehaviour
     {
         if (destination && other.CompareTag("Player"))
         {
-            //other.transform.position = destination.position;
+            WarpManager.Main.Warp(destination);
             animator.SetTrigger("Lock");
             onJump.Invoke();
         }

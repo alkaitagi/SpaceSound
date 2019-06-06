@@ -1,18 +1,27 @@
 using System.Collections;
 
 using UnityEngine;
-using UnityEngine.UI;
 
 using Cinemachine;
 
 public class WarpManager : MonoBehaviour
 {
+    public static WarpManager Main { get; private set; }
+
     [SerializeField]
     private float duration;
+    [SerializeField]
+    private GameObject effects;
     [SerializeField]
     private NoiseSettings cameraNoise;
     [SerializeField]
     private CanvasToggle canvasToggle;
+
+    private void Awake()
+    {
+        Main = this;
+        effects.SetActive(false);
+    }
 
     public void Warp(Transform destination)
     {
@@ -22,12 +31,13 @@ public class WarpManager : MonoBehaviour
 
     private IEnumerator Transition(Vector2 destination)
     {
+        effects.SetActive(true);
         var noise = CameraManager.VirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         var player = FindObjectOfType<Player>();
         player.enabled = false;
 
         canvasToggle.IsVisible = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
         canvasToggle.IsVisible = false;
 
         noise.m_NoiseProfile = cameraNoise;
@@ -37,7 +47,7 @@ public class WarpManager : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         canvasToggle.IsVisible = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
         canvasToggle.IsVisible = false;
 
         player.enabled = true;
@@ -45,6 +55,6 @@ public class WarpManager : MonoBehaviour
 
         noise.m_NoiseProfile = null;
         CameraManager.Main.transform.eulerAngles = Vector3.zero;
-        //CameraManager.VirtualCamera.transform.position = destination;
+        effects.SetActive(false);
     }
 }

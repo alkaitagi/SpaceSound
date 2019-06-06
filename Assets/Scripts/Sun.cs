@@ -1,20 +1,42 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Sun : MonoBehaviour
 {
     [SerializeField]
-    private int score;
+    private List<ParticleSystem> effects;
     [SerializeField]
-    private ParticleSystem[] effects;
-    [SerializeField]
-    private ParticleSystem[] connections;
+    private List<Gate> gates;
+
+    private int current;
+
+    private void Awake()
+    {
+        foreach (var gate in gates)
+            gate.Keys = 1;
+        NextGate();
+    }
 
     public void CountArea(GameObject area)
     {
-        effects[--score].Play();
-        connections[score].Stop();
-        Destroy(area);
+        effects[current].Play();
+        effects.RemoveAt(current);
+        gates.RemoveAt(current);
 
-        if (score <= 0) { }
+        Destroy(area);
+        if (!NextGate()) { }
+    }
+
+    private bool NextGate()
+    {
+        if (gates.Count > 0)
+        {
+            current = Random.Range(0, gates.Count);
+            print(current);
+            gates[current].Keys = 0;
+            return true;
+        }
+        return false;
     }
 }
