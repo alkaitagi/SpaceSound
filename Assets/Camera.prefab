@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 1346414107}
   - component: {fileID: 1346414109}
   - component: {fileID: 1346414108}
+  - component: {fileID: 1346414110}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -151,6 +152,22 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &1346414110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346414106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 0}
+  m_AmplitudeGain: 5
+  m_FrequencyGain: 0.1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &9218052421593894428
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +182,7 @@ GameObject:
   - component: {fileID: 1013029930}
   - component: {fileID: 1013029929}
   - component: {fileID: 9218052421593894429}
+  - component: {fileID: 1857622337}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -337,3 +355,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ac299d197362f419b3821226b2bf31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1857622337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218052421593894428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add033e21b44cd8409ee615c053592fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0.1
+  limit: 0.9
