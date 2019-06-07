@@ -33,25 +33,19 @@ This is where it starts and ends. Contains 3 gates connected to the 3 regions de
 
 Ship module: **Searchlight**.
 
-Region bounds: asteroid belt.
-
 In this area player has to naviagate trough some sort of maze convered by nebula. Nothing very challenging, just getting used to controls.
 
 ### Region 2: Wormhole
 
 Ship module: **Thruster**.
 
-Region bounds: gravity.
-
 The module allows player to perform short distance jumps by applying impulse force. In this area player needs to collect keys while oribiting around wormhole ad resisting its gravitational forces.
 
-### Region 3: Meteors
+### Region 3: Assault
 
 Ship module: **Cannon**.
 
-Region bounds: orbiting comets.
-
-This is basic shooting. The area is being constaintly exposed to meteorite rain and player needs to destroy some of those meterites to get keys.
+This is basic shooting. Player needs to breach enemy defences and pick up keys.
 
 ## Internship plan
 
@@ -67,78 +61,63 @@ This is basic shooting. The area is being constaintly exposed to meteorite rain 
 
 - [ ] **Wednesday**
   
-  Gameplay design description. Winning condition. Ship modules (weapon, engine, light). Gameplay space constraints.
+  Gameplay design description. Winning condition. Ship modules. Gameplay space constraints.
 
 - [ ] **Thursday**
   
-  Implement environmental obstacles. Build 3 level zones.
+  Implement level transitions, progression system, region spacial constraints.
 
 - [ ] **Friday**.
   
-  Implement simple enemies. Direct the final battle with two endings. General polishing.
+  Player respawn, interrupted transition (UI mock up), region time constraints.
 
 ### Week 2, 10 June - 14 June, music systems
 
 - [ ] **Monday**
-  
-  |
+  Nebula region description, assets.
 
 - [ ] **Tuesday**
-
-  |
+  Nebula region fill, preliminary playtesting.
 
 - [ ] **Wednesday**
-  
-  |
+  Wormhole region description, assets.
 
 - [ ] **Thursday**
-  
-  |
+  Wormhole region fill, preliminary playtesting.
 
 - [ ] **Friday**.
-  
-  |
+  Assault region description, assets.
 
 ### Week 3, 17 June - 21 June, analytic systems
 
 - [ ] **Monday**
-  
-  |
+  Assault region fill, preliminary playtesting.
 
 - [ ] **Tuesday**
-
-  |
+  Overall playtesting, polishing, gameplay bugfixes.
 
 - [ ] **Wednesday**
-  
-  |
+  Audio framework research.
 
 - [ ] **Thursday**
-  
-  |
+  Framework preliminary integration.
 
 - [ ] **Friday**.
-  
-  |
+  Nebula region sound integration, survey.
 
 ### Week 4, 24 June - 28 June, player
 
 - [ ] **Monday**
-  
-  |
+  Wormhole region sound integration, survey.
 
 - [ ] **Tuesday**
-
-  |
+  Assault region sound integration, survey.
 
 - [ ] **Wednesday**
-  
-  |
+  Bugfix, final survey
 
 - [ ] **Thursday**
-  
-  |
+  Playtesting.
 
 - [ ] **Friday**.
-  
-  |
+  Playtesting.
