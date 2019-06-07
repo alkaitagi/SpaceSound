@@ -1,5 +1,3 @@
-using System.Collections;
-
 using UnityEngine;
 
 [RequireComponent(typeof(CanvasGroup))]
@@ -15,8 +13,7 @@ public class CanvasToggle : MonoBehaviour
         {
             isVisible = value;
             canvasGroup.blocksRaycasts = IsVisible;
-            StopAllCoroutines();
-            StartCoroutine(Animate());
+            enabled = true;
         }
     }
 
@@ -24,8 +21,10 @@ public class CanvasToggle : MonoBehaviour
     private float scale = 1;
     [SerializeField]
     private Vector2 offset;
-    [SerializeField]
-    private float speed;
+
+    [SerializeField, Space(10)]
+    private float duration = .15f;
+    private float timer = 0;
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -50,31 +49,31 @@ public class CanvasToggle : MonoBehaviour
         if (!IsVisible)
         {
             canvasGroup.blocksRaycasts = false;
-            transform.localScale = endScale;
-            rectTransform.anchoredPosition = endPosition;
-            canvasGroup.alpha = 0;
+            timer = 1;
+            Assign();
         }
     }
 
     private void OnValidate() =>
         GetComponent<CanvasGroup>().alpha = IsVisible ? 1 : 0;
 
-    private IEnumerator Animate()
+    private void Update()
     {
-        var targetScale = IsVisible ? startScale : endScale;
-        var targetPosition = IsVisible ? startPosition : endPosition;
-        var targetAlpha = IsVisible ? 1 : 0;
-
-        while (canvasGroup.alpha != targetAlpha)
+        var timer = Mathf.Clamp01(this.timer + (IsVisible ? -1 : 1) * Time.unscaledDeltaTime / duration);
+        if (timer != this.timer)
         {
-            var delta = speed * Time.deltaTime;
-
-            canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, targetAlpha, delta);
-            transform.localScale = Vector2.MoveTowards(transform.localScale, targetScale, delta);
-            rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, targetPosition, delta);
-
-            yield return new WaitForEndOfFrame();
+            this.timer = timer;
+            Assign();
         }
+        else
+            enabled = false;
+    }
+
+    private void Assign()
+    {
+        canvasGroup.alpha = Mathf.Lerp(1, 0, timer);
+        transform.localScale = Vector2.Lerp(startScale, endScale, timer);
+        rectTransform.anchoredPosition = Vector2.Lerp(startPosition, endPosition, timer);
     }
 
     public void Toggle() => IsVisible = !IsVisible;
