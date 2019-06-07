@@ -20,20 +20,20 @@ public class CanvasToggle : MonoBehaviour
     [SerializeField, Space(10)]
     private float scale = 1;
     [SerializeField]
-    private Vector2 offset;
+    private Vector3 offset;
 
     [SerializeField, Space(10)]
-    private float duration = .15f;
+    private float duration = .1f;
     private float timer = 0;
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
-    private Vector2 startPosition;
-    private Vector2 endPosition;
+    private Vector3 startPosition;
+    private Vector3 endPosition;
 
-    private Vector2 startScale;
-    private Vector2 endScale;
+    private Vector3 startScale;
+    private Vector3 endScale;
 
     private void Awake()
     {
@@ -72,8 +72,8 @@ public class CanvasToggle : MonoBehaviour
     private void Assign()
     {
         canvasGroup.alpha = Mathf.Lerp(1, 0, timer);
-        transform.localScale = Vector2.Lerp(startScale, endScale, timer);
-        rectTransform.anchoredPosition = Vector2.Lerp(startPosition, endPosition, timer);
+        transform.localScale = Vector3.Lerp(startScale, endScale, timer);
+        rectTransform.anchoredPosition = Vector3.Lerp(startPosition, endPosition, timer);
     }
 
     public void Toggle() => IsVisible = !IsVisible;
