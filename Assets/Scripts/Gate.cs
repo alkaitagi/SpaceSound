@@ -16,6 +16,9 @@ public class Gate : MonoBehaviour
     }
 
     [SerializeField]
+    private bool isReversed;
+    public bool IsReversed => isReversed;
+    [SerializeField]
     private Transform destination;
     public Transform Destination => destination;
     [SerializeField]

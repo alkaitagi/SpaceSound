@@ -63768,8 +63768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVisible: 0
   scale: 1
-  offset: {x: 0, y: 0}
-  speed: 5
+  offset: {x: 0, y: 0, z: 0}
+  duration: 0.1
 --- !u!225 &1064209264
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -98257,7 +98257,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 1
+  moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
   randomSeed: 0
@@ -128739,6 +128739,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NebulaOut
       objectReference: {fileID: 0}
+    - target: {fileID: 798366849200616747, guid: e405c0716c682ad4ba549756953b8819,
+        type: 3}
+      propertyPath: isVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 578828349721270256, guid: e405c0716c682ad4ba549756953b8819,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -128847,11 +128852,6 @@ PrefabInstance:
     - target: {fileID: 798366849200616746, guid: e405c0716c682ad4ba549756953b8819,
         type: 3}
       propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 798366849200616747, guid: e405c0716c682ad4ba549756953b8819,
-        type: 3}
-      propertyPath: isVisible
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 201399533978529717, guid: e405c0716c682ad4ba549756953b8819,
@@ -153915,6 +153915,11 @@ PrefabInstance:
       propertyPath: onInterrupt.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
+        type: 3}
+      propertyPath: isReversed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297015, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -155361,6 +155366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NebulaIn
       objectReference: {fileID: 0}
+    - target: {fileID: 798366849200616747, guid: e405c0716c682ad4ba549756953b8819,
+        type: 3}
+      propertyPath: isVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 578828349721270256, guid: e405c0716c682ad4ba549756953b8819,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -155469,11 +155479,6 @@ PrefabInstance:
     - target: {fileID: 798366849200616746, guid: e405c0716c682ad4ba549756953b8819,
         type: 3}
       propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 798366849200616747, guid: e405c0716c682ad4ba549756953b8819,
-        type: 3}
-      propertyPath: isVisible
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 757648797513388847, guid: e405c0716c682ad4ba549756953b8819,
