@@ -8,6 +8,8 @@ public class WarpManager : MonoBehaviour
 {
     public static WarpManager Main { get; private set; }
 
+    public bool IsInterrupted { get; set; }
+
     [SerializeField]
     private float duration;
     [SerializeField]
@@ -23,6 +25,7 @@ public class WarpManager : MonoBehaviour
 
     public void Warp(Gate gate)
     {
+        IsInterrupted = gate.IsInterrupted;
         StopAllCoroutines();
         StartCoroutine(Transition(gate));
     }
@@ -32,16 +35,28 @@ public class WarpManager : MonoBehaviour
         effects.SetActive(true);
         var player = FindObjectOfType<Player>();
         player.enabled = false;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         yield return StartCoroutine(Fade());
+        gate.OnWarpIn.Invoke();
 
-        gate.OnWarp.Invoke();
+        gate.OnWarpIn.Invoke();
         player.transform.position = transform.position;
         player.transform.eulerAngles = new Vector3(0, 0, -45);
 
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(duration / 2);
+
+        if (IsInterrupted)
+        {
+            gate.OnInterrupt.Invoke();
+            while (IsInterrupted)
+                yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(duration / 2);
 
         yield return StartCoroutine(Fade());
+        gate.OnWarpOut.Invoke();
 
         player.enabled = true;
         player.transform.position = gate.Destination.position;

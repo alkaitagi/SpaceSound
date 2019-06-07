@@ -20,9 +20,20 @@ public class Gate : MonoBehaviour
     public Transform Destination => destination;
     [SerializeField]
     private GameObject effect;
+
+    [Header("Events")]
     [SerializeField]
-    private VoidEvent onWarp;
-    public VoidEvent OnWarp => onWarp;
+    private VoidEvent onWarpIn;
+    public VoidEvent OnWarpIn => onWarpIn;
+    [SerializeField]
+    private bool isInterrupted;
+    public bool IsInterrupted => isInterrupted;
+    [SerializeField]
+    private VoidEvent onInterrupt;
+    public VoidEvent OnInterrupt => onInterrupt;
+    [SerializeField]
+    private VoidEvent onWarpOut;
+    public VoidEvent OnWarpOut => onWarpOut;
 
     private Animator animator;
 
@@ -36,13 +47,15 @@ public class Gate : MonoBehaviour
         Instantiate(effect, transform.position, transform.rotation);
     }
 
+    public void Warp()
+    {
+        WarpManager.Main.Warp(this);
+        animator.SetTrigger("Lock");
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (destination && other.CompareTag("Player"))
-        {
-            other.attachedRigidbody.velocity = Vector2.zero;
-            WarpManager.Main.Warp(this);
-            animator.SetTrigger("Lock");
-        }
+            Warp();
     }
 }

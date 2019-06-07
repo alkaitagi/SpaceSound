@@ -8,27 +8,33 @@ public class Sun : MonoBehaviour
     private List<GameObject> rewards;
     [SerializeField]
     private List<Gate> gates;
+    [SerializeField]
+    private List<GameObject> regions;
 
     private int current;
 
     private void Awake()
     {
-        foreach (var reward in rewards)
-            reward.SetActive(false);
-
-        foreach (var gate in gates)
-            gate.Keys = 1;
-
+        for (int i = 0; i < gates.Count; i++)
+        {
+            rewards[i].SetActive(false);
+            regions[i].SetActive(false);
+            gates[i].Keys = 1;
+        }
         NextGate();
     }
 
-    public void CountArea(GameObject area)
+    public void OpenRegion() => regions[current].SetActive(true);
+
+    public void LockRegion()
     {
         rewards[current].SetActive(true);
+        regions[current].SetActive(false);
+        
         rewards.RemoveAt(current);
         gates.RemoveAt(current);
+        regions.RemoveAt(current);
 
-        Destroy(area);
         if (!NextGate()) { }
     }
 
