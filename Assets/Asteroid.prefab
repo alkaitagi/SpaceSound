@@ -119,5 +119,8 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}

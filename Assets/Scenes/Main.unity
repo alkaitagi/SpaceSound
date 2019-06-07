@@ -756,6 +756,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &21050617
@@ -1206,6 +1209,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &28314301
@@ -1495,6 +1501,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &34249315
@@ -2421,6 +2430,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &53971962
@@ -3593,6 +3605,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &81623391
@@ -5163,6 +5178,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &115854638
@@ -5848,6 +5866,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &131105685
@@ -11134,6 +11155,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &147040130
@@ -12542,6 +12566,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &172359845
@@ -13068,6 +13095,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &176953482
@@ -13681,6 +13711,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &192117574
@@ -13811,6 +13844,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &193888055
@@ -14582,6 +14618,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &215373431
@@ -15197,6 +15236,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &226511771
@@ -15324,6 +15366,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &229741026
@@ -15610,6 +15655,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &233258101
@@ -16539,6 +16587,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &265995439
@@ -17803,6 +17854,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &290200229
@@ -18172,6 +18226,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &297888425
@@ -19661,6 +19718,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &329192816
@@ -19791,6 +19851,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &331073730
@@ -28600,6 +28663,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &435351555
@@ -28730,6 +28796,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &435963820
@@ -29500,6 +29569,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &460614530
@@ -30031,6 +30103,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &466158917
@@ -30639,6 +30714,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &487109617
@@ -31569,6 +31647,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &504663694
@@ -31856,6 +31937,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &509581500
@@ -32061,6 +32145,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &514020533
@@ -32591,6 +32678,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &521317563
@@ -33298,6 +33388,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &536915111
@@ -33903,6 +33996,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &551864783
@@ -34591,6 +34687,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &580402008
@@ -35116,6 +35215,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &592672578
@@ -35402,6 +35504,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &595261917
@@ -37618,6 +37723,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &642049555
@@ -37745,6 +37853,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &642203743
@@ -37956,6 +38067,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &649387147
@@ -38725,6 +38839,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &661961923
@@ -39255,6 +39372,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &668629675
@@ -40273,6 +40393,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &689094702
@@ -40484,6 +40607,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &690750426
@@ -40849,6 +40975,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &697635700
@@ -40974,6 +41103,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &699368677
@@ -42143,6 +42275,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &719310214
@@ -44226,6 +44361,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &759415456
@@ -44355,6 +44493,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &761292526
@@ -44725,6 +44866,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &766216160
@@ -45740,6 +45884,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &789071715
@@ -47718,6 +47865,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &816358313
@@ -49689,6 +49839,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &859037181
@@ -50534,6 +50687,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &874346618
@@ -50825,6 +50981,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &879122229
@@ -51754,6 +51913,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &894072136
@@ -52042,6 +52204,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &901145351
@@ -52975,6 +53140,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &926347934
@@ -53185,6 +53353,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &929813581
@@ -54435,6 +54606,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &962136106
@@ -55202,6 +55376,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &982057733
@@ -55650,6 +55827,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1003163888
@@ -56745,6 +56925,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1022400244
@@ -57450,6 +57633,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1033376842
@@ -58058,6 +58244,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1044484570
@@ -58967,6 +59156,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1067364063
@@ -59734,6 +59926,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1087889265
@@ -60020,6 +60215,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1092119464
@@ -60546,6 +60744,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1097902113
@@ -61553,6 +61754,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1113430401
@@ -62363,6 +62567,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1136136477
@@ -63454,6 +63661,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1153394491
@@ -64061,6 +64271,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1162208808
@@ -64827,6 +65040,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1178045245
@@ -64958,6 +65174,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1179496132
@@ -65328,6 +65547,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1187616368
@@ -66248,6 +66470,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1216010060
@@ -66774,6 +66999,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1225436306
@@ -66899,6 +67127,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1232237348
@@ -67269,6 +67500,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1236681005
@@ -67765,6 +67999,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1246015714
@@ -68291,6 +68528,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1253348154
@@ -68981,6 +69221,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1270589090
@@ -69346,6 +69589,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1276401836
@@ -70114,6 +70360,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1288411009
@@ -72162,6 +72411,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1338981264
@@ -72699,6 +72951,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1347878975
@@ -72910,6 +73165,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1349940177
@@ -73600,6 +73858,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1366103761
@@ -73886,6 +74147,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1367272050
@@ -74499,6 +74763,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1372703828
@@ -74630,6 +74897,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1373186403
@@ -75400,6 +75670,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1382131532
@@ -75984,6 +76257,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1391243805
@@ -76193,6 +76469,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1393289121
@@ -76324,6 +76603,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1393444700
@@ -76531,6 +76813,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1398942369
@@ -77547,6 +77832,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1418103010
@@ -77998,6 +78286,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1426814896
@@ -79253,6 +79544,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1438783430
@@ -79783,6 +80077,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1447077499
@@ -80309,6 +80606,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1453958746
@@ -80594,6 +80894,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1456966834
@@ -81119,6 +81422,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1469819383
@@ -82135,6 +82441,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1481661262
@@ -82340,6 +82649,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1482474955
@@ -83429,6 +83741,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1505222549
@@ -83959,6 +84274,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1518758633
@@ -84168,6 +84486,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1519376616
@@ -89881,6 +90202,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1537462747
@@ -90407,6 +90731,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1547997087
@@ -92212,6 +92539,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1575859845
@@ -92341,6 +92671,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1576613443
@@ -98328,6 +98661,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1606158902
@@ -98892,6 +99228,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1611922732
@@ -99897,6 +100236,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1635252034
@@ -100505,6 +100847,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1648308212
@@ -106192,6 +106537,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1668726871
@@ -106478,6 +106826,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1673799357
@@ -107009,6 +107360,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1684042154
@@ -107134,6 +107488,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1685056263
@@ -112560,6 +112917,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1700900467
@@ -113168,6 +113528,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1717598999
@@ -119249,6 +119612,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1737708366
@@ -119939,6 +120305,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1753034123
@@ -120309,6 +120678,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1761370765
@@ -120438,6 +120810,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1768130785
@@ -120883,6 +121258,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1774461597
@@ -121813,6 +122191,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1800211721
@@ -122018,6 +122399,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1802172062
@@ -123668,6 +124052,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1831405458
@@ -124599,6 +124986,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1843486953
@@ -125049,6 +125439,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1848610771
@@ -125895,6 +126288,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1864502272
@@ -126673,6 +127069,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1879799472
@@ -129841,6 +130240,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1936531558
@@ -130287,6 +130689,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1949875334
@@ -130608,6 +131013,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1959265470
@@ -130813,6 +131221,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1964085833
@@ -136180,6 +136591,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1984101062
@@ -141629,6 +142043,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1992574587
@@ -141756,6 +142173,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &1995541202
@@ -142524,6 +142944,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2006159509
@@ -143129,6 +143552,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2014905087
@@ -144170,6 +144596,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2038373060
@@ -144892,6 +145321,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2053589029
@@ -145774,6 +146206,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2069651507
@@ -146540,6 +146975,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2085548549
@@ -147470,6 +147908,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2111528862
@@ -148045,6 +148486,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2121032221
@@ -148254,6 +148698,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2128633070
@@ -148465,6 +148912,9 @@ MonoBehaviour:
   dotScale:
     min: 0.05
     max: 0.2
+  spinRange:
+    min: -0.5
+    max: 0.5
   sourceDot: {fileID: 8393688178303485739, guid: 350b542032e922d4eb5d1bf20dd07df6,
     type: 3}
 --- !u!212 &2131369079

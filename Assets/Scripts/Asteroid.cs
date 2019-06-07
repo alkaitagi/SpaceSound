@@ -17,10 +17,18 @@ public class Asteroid : MonoBehaviour
     private Range dotCount;
     [SerializeField]
     private Range dotScale;
+    [SerializeField]
+    private Range spinRange;
 
     [Space(10)]
     [SerializeField]
     private SpriteRenderer sourceDot;
+
+    private float spin;
+
+    private void Awake() => spin = spinRange.Random();
+
+    private void Update() => transform.eulerAngles += spin * Vector3.forward;
 
     public void Generate()
     {
