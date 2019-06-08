@@ -40,7 +40,6 @@ public class WarpManager : MonoBehaviour
         yield return StartCoroutine(Fade());
         gate.OnWarpIn.Invoke();
 
-        gate.OnWarpIn.Invoke();
         player.transform.position = transform.position;
         player.transform.eulerAngles = new Vector3(0, 0, gate.IsReversed ? -225 : -45);
         effects.transform.eulerAngles = new Vector3(0, 0, gate.IsReversed ? 180 : 0);
