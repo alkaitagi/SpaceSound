@@ -5,8 +5,10 @@ public struct Range
 {
     public float min;
     public float max;
+    public float value;
 
     public float Random() => UnityEngine.Random.Range(min, max);
+    public void Evaluate() => value = Random();
 }
 
 public class Asteroid : MonoBehaviour
@@ -24,15 +26,13 @@ public class Asteroid : MonoBehaviour
     [SerializeField]
     private SpriteRenderer sourceDot;
 
-    private float spin;
+    private void Awake() => spinRange.Evaluate();
 
-    private void Awake() => spin = spinRange.Random();
-
-    private void Update() => transform.eulerAngles += spin * Vector3.forward;
+    private void Update() => transform.eulerAngles += spinRange.value * Vector3.forward;
 
     public void Generate()
     {
-        transform.Clear();
+        transform.Clear(true);
         transform.localScale = asteroidScale.Random() * Vector3.one;
 
         float count = dotCount.Random();
