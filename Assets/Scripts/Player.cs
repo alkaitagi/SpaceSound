@@ -40,7 +40,11 @@ public class Player : MonoBehaviour
 
     private void Awake() => camera = Camera.main;
 
-    private void Start() => UpdateModules();
+    private void Start()
+    {
+        CameraManager.VirtualCamera.Follow = transform;
+        UpdateModules();
+    }
 
     private void Update()
     {

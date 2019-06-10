@@ -24,7 +24,9 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Waypoint>() is Waypoint waypoint && waypoint.Connections.Count > 0)
+        if (other.CompareTag("Player"))
+            other.GetComponent<Health>().Destroy();
+        else if (other.GetComponent<Waypoint>() is Waypoint waypoint && waypoint.Connections.Count > 0)
             target = waypoint.Connections[Random.Range(0, waypoint.Connections.Count)];
     }
 }

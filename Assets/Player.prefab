@@ -424,6 +424,7 @@ GameObject:
   - component: {fileID: 8281234666657878074}
   - component: {fileID: 8281234666657878073}
   - component: {fileID: 8281234666657878075}
+  - component: {fileID: 1914269146763370344}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -507,6 +508,19 @@ MonoBehaviour:
   light: {fileID: 533003440}
   thruster: {fileID: 1050075464}
   cannon: {fileID: 1662010231018262779}
+--- !u!114 &1914269146763370344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8281234666657878068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ea0ce1ae7dc524d97430c7b28d628d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect: {fileID: 5940537188335113416, guid: 605870c30e1bfab43b2cf336e6fd8148, type: 3}
 --- !u!1 &8281234666669713800
 GameObject:
   m_ObjectHideFlags: 0

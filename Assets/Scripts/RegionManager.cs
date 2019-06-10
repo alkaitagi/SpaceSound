@@ -26,7 +26,7 @@ public class RegionManager : MonoBehaviour
 
     private void Update()
     {
-        if (!current && !IsInvoking())
+        if (!current && !IsInvoking("Respawn"))
             Invoke("Respawn", respawnTime);
     }
 
