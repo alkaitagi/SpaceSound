@@ -59,15 +59,15 @@ This is basic shooting. Player needs to breach enemy defences and pick up keys.
 
   Set up GitHub repo, Unity project. Initial prototype with the visuals and player movement.
 
-- [ ] **Wednesday**
+- [x] **Wednesday**
   
   Gameplay design description. Winning condition. Ship modules. Gameplay space constraints.
 
-- [ ] **Thursday**
+- [x] **Thursday**
   
   Implement level transitions, progression system, region spacial constraints.
 
-- [ ] **Friday**.
+- [x] **Friday**.
   
   Player respawn, interrupted transition (UI mock up), region time constraints.
 
