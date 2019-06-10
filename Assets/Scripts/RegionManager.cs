@@ -7,6 +7,8 @@ public class RegionManager : MonoBehaviour
     [SerializeField]
     private float dangerTime;
     [SerializeField]
+    private float respawnTime;
+    [SerializeField]
     private Player player;
 
     private Player current;
@@ -17,11 +19,20 @@ public class RegionManager : MonoBehaviour
         current = FindObjectOfType<Player>();
     }
 
-    private void Update()
+    private void Respawn()
     {
-        if (!current)
-            current = Instantiate(player, transform.position, transform.rotation);
+        current = Instantiate(player, transform.position, transform.rotation);
     }
 
-    private void End() => GetComponent<Gate>().Warp();
+    private void Update()
+    {
+        if (!current && !IsInvoking())
+            Invoke("Respawn", respawnTime);
+    }
+
+    private void End()
+    {
+        Respawn();
+        GetComponent<Gate>().Warp();
+    }
 }

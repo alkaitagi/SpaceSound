@@ -24,7 +24,6 @@ public class Waypoint : MonoBehaviour
             .Where(c => c.GetComponent<Waypoint>())
             .Select(c => c.transform)
             .Where(t => t != transform)
-            .Where(t => !Physics2D.Linecast(transform.position, t.position, LayerMask.GetMask("Environment")))
         );
     }
 }

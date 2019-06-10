@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 428630094017331281}
   - component: {fileID: 8297368127411817789}
   - component: {fileID: 3350857332745424884}
-  - component: {fileID: 5857913318070840401}
   - component: {fileID: 8906074911288064282}
+  - component: {fileID: 5857913318070840401}
   - component: {fileID: 597365843605212206}
   m_Layer: 9
   m_Name: Ghost
@@ -75,7 +75,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_RenderMode: 0
   m_SortMode: 3
   m_MinParticleSize: 0
@@ -136,6 +136,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8906074911288064282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8776142071704472791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e968ebffa4cb2a468ff5bfa577b33d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed:
+    min: 5
+    max: 10
+    value: 0
 --- !u!198 &5857913318070840401
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -144,7 +160,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8776142071704472791}
   serializedVersion: 6
-  lengthInSec: 0.5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -219,7 +235,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -850,7 +866,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.4
+      value: 0.3
       mode: 0
       spread: 0
       speed:
@@ -969,7 +985,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 300
+      scalar: 150
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1584,7 +1600,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: a3e2c4abfbe81dd478565c998b6d1891, type: 3}
+    - sprite: {fileID: 21300000, guid: 28e5fe792fd406d4c808fce6beb10e56, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4785,22 +4801,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &8906074911288064282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8776142071704472791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e968ebffa4cb2a468ff5bfa577b33d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed:
-    min: 5
-    max: 10
-    value: 0
 --- !u!114 &597365843605212206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,7 +4827,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 5
+  m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5

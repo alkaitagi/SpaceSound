@@ -18,7 +18,7 @@ public class Ghost : MonoBehaviour
             (
                 transform.position,
                 target.position,
-                speed.value * Time.deltaTime
+                speed.Random() * Time.deltaTime
             );
     }
 
