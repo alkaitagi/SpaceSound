@@ -32,7 +32,8 @@ public class RegionManager : MonoBehaviour
 
     private void End()
     {
-        Respawn();
+        if (!current)
+            Respawn();
         GetComponent<Gate>().Warp();
     }
 }
