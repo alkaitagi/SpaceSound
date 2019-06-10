@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -206,7 +206,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2118733357}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 466273642}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c42d9eb176607343a908f98da3a89fa, type: 3}
@@ -30258,6 +30258,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
+--- !u!1 &466273642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5159823068543297009, guid: 6b54ebeae18961e42b5924c4a1582525,
+    type: 3}
+  m_PrefabInstance: {fileID: 2118733357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &466273643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466273642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0774175b878ee54469f2fd50f755ba38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  safeTime: 5
+  dangerTime: 1
+  player: {fileID: 8281234666657878075, guid: e02470a205ae8234cacc74f4f9e57361, type: 3}
 --- !u!1 &468681053
 GameObject:
   m_ObjectHideFlags: 0
@@ -45016,7 +45037,7 @@ Transform:
   m_GameObject: {fileID: 1731908392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 40, y: 40, z: 1}
+  m_LocalScale: {x: 40, y: 40, z: 10}
   m_Children: []
   m_Father: {fileID: 1952127023}
   m_RootOrder: 2
@@ -48320,6 +48341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743480544}
+  - component: {fileID: 743480545}
   m_Layer: 0
   m_Name: Center
   m_TagString: Untagged
@@ -48346,6 +48368,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &743480545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743480543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ff7ada6cdd55545bad2783b589d5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &745234129
 GameObject:
   m_ObjectHideFlags: 0
@@ -90403,11 +90437,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onWarpIn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 891821496}
+      objectReference: {fileID: 743480545}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: onWarpIn.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: set_HasLight
       objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
@@ -120065,8 +120099,8 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0.2
+      minMaxState: 0
+      scalar: 0.1
       minScalar: 0.1
       maxCurve:
         serializedVersion: 2
@@ -120118,7 +120152,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -120171,7 +120205,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -120441,7 +120475,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 10
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -124502,7 +124536,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: 10
   m_RenderMode: 0
   m_SortMode: 3
   m_MinParticleSize: 0
@@ -153864,11 +153898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onWarpOut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 891821496}
+      objectReference: {fileID: 743480545}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: onWarpOut.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: set_HasLight
       objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}

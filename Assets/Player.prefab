@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166322097}
   - component: {fileID: 166322099}
+  - component: {fileID: 1662010231018262779}
   m_Layer: 9
   m_Name: Cannon
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 475511317}
   m_Father: {fileID: 806566934}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &166322099
 SpriteRenderer:
@@ -82,6 +83,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1662010231018262779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166322096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f585502ffcde26043ae0806c8b5a1a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  distance: 20
+  speed: 40
+  cooldown: 0.5
+  spawn: {fileID: 475511317}
+  projectile: {fileID: -2948092865557318665, guid: 44a2607b8aba9ec4eb69d85c6eb1deac,
+    type: 3}
 --- !u!1 &475511316
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +111,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475511317}
-  - component: {fileID: 8945317002803169975}
   m_Layer: 9
   m_Name: Spawn
   m_TagString: Untagged
@@ -113,24 +132,6 @@ Transform:
   m_Father: {fileID: 166322097}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8945317002803169975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475511316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f585502ffcde26043ae0806c8b5a1a9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  distance: 20
-  speed: 40
-  cooldown: 0.5
-  projectile: {fileID: -2948092865557318665, guid: 44a2607b8aba9ec4eb69d85c6eb1deac,
-    type: 3}
 --- !u!1 &533003440
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,8 +242,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 533003441}
-  - {fileID: 166322097}
   - {fileID: 1050075463}
+  - {fileID: 166322097}
   m_Father: {fileID: 8281234666657878072}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -276,7 +277,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 806566934}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4768409169018384786
 SpriteRenderer:
@@ -503,8 +504,9 @@ MonoBehaviour:
   rightTorque: {fileID: 8281234667547501003}
   angleRange: 90
   rotationSpeed: 20
+  light: {fileID: 533003440}
   thruster: {fileID: 1050075464}
-  cannon: {fileID: 8945317002803169975}
+  cannon: {fileID: 1662010231018262779}
 --- !u!1 &8281234666669713800
 GameObject:
   m_ObjectHideFlags: 0

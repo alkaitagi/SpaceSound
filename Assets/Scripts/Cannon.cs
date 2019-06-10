@@ -13,6 +13,8 @@ public class Cannon : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
+    private Transform spawn;
+    [SerializeField]
     private Projectile projectile;
 
     private bool isReady = true;

@@ -17,15 +17,30 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float rotationSpeed;
 
+    #region modules
+
     [Header("Modules")]
+    [SerializeField]
+    private new GameObject light;
     [SerializeField]
     private Thruster thruster;
     [SerializeField]
     private Cannon cannon;
 
+    public void UpdateModules()
+    {
+        light.SetActive(ModuleManager.hasLight);
+        thruster.gameObject.SetActive(ModuleManager.hasThruster);
+        cannon.gameObject.SetActive(ModuleManager.hasCannon);
+    }
+
+    #endregion
+
     private new Camera camera;
 
     private void Awake() => camera = Camera.main;
+
+    private void Start() => UpdateModules();
 
     private void Update()
     {
@@ -61,6 +76,7 @@ public class Player : MonoBehaviour
 
     private void OnDisable()
     {
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         mainEngine.IsOn = false;
         leftTorque.IsOn = false;
         rightTorque.IsOn = false;
