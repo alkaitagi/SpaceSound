@@ -23,17 +23,15 @@
 
 ### Plot
 
-Player has to go trough 3 regions. Each of those regions provides player ship with a new module, and provides obstacles that need to be bypassed using the module. On each of the regions there are several keys that need to be collected by player in order to open a gate towards the next area. After collecting those 3 areas and getting full ship functionality player will be teleproted to the last area. In the last area he will fight a small battle agains simple enemies. Two endings are possible: either player defeats all the enemies and open exit gate, or he is defetead by enemies. None of the endings is to be considered a lose, and we need to convey that feeling of accomplishment to player.
+Player has to go trough 3 regions. Each of those regions provides player ship with a new module, and provides obstacles that need to be bypassed using the module. On each of the regions there are several keys that need to be collected by player in order to open a gate towards the next area.
 
 ### Region 0: Star
 
-This is where it starts and ends. Contains 3 gates connected to the 3 regions described below. After restoring the star by completing the regions, a small battle will be held.
+This is where it starts and ends. Contains 3 gates connected to the 3 regions described below. A transit zone where player can take break between missions.
 
 ### Region 1: Nebula
 
-Ship module: **Searchlight**.
-
-In this area player has to naviagate trough some sort of maze convered by nebula. Nothing very challenging, just getting used to controls.
+This is stealth level. Player is given a small **searchlight** that allows him to see in a small area in front of him. The task is to collect all the keys whilst avoiding patroling enemies.
 
 ### Region 2: Wormhole
 
