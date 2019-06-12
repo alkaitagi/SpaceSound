@@ -24,6 +24,12 @@ public class Asteroid : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
+    private Gradient bodyColor;
+    [SerializeField]
+    private Gradient dotColor;
+
+    [Space(10)]
+    [SerializeField]
     private SpriteRenderer sourceDot;
 
     private void Awake() => spinRange.Evaluate();
@@ -42,5 +48,14 @@ public class Asteroid : MonoBehaviour
             dot.transform.localPosition = Random.insideUnitCircle / 2.5f;
             dot.transform.localScale *= dotScale.Random();
         }
+
+        Color();
+    }
+
+    public void Color()
+    {
+        GetComponent<SpriteRenderer>().color = bodyColor.Evaluate(Random.Range(0, 1f));
+        foreach (Transform dot in transform)
+            dot.GetComponent<SpriteRenderer>().color = dotColor.Evaluate(Random.Range(0, 1f));
     }
 }

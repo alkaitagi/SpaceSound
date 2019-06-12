@@ -13,6 +13,10 @@ public class AsteroidEditor : Editor
             foreach (var target in targets)
                 ((Asteroid)target).Generate();
 
+        if (GUILayout.Button("Color"))
+            foreach (var target in targets)
+                ((Asteroid)target).Color();
+
         if (GUILayout.Button("Clear"))
             foreach (var target in targets)
                 ((Asteroid)target).transform.Clear(true);

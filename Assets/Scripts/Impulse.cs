@@ -4,7 +4,7 @@ using UnityEngine;
 public class Impulse : MonoBehaviour
 {
     [SerializeField]
-    private float scale;
+    private Range scale;
     [SerializeField]
     private float errorAngle;
     [SerializeField]
@@ -14,7 +14,7 @@ public class Impulse : MonoBehaviour
         => GetComponent<Rigidbody2D>()
             .AddForce
             (
-                scale *
+                scale.Random() *
                 (
                     Quaternion.Euler(0, 0, Random.Range(-errorAngle, errorAngle))
                     * Vector2.Perpendicular(target.position - transform.position)
