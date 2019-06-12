@@ -3,9 +3,13 @@ using UnityEngine;
 [System.Serializable]
 public struct Range
 {
-    public float min;
-    public float max;
-    public float value;
+    [SerializeField]
+    private float min;
+    [SerializeField]
+    private float max;
+
+    private float value;
+    public float Value => value;
 
     public float Random() => UnityEngine.Random.Range(min, max);
     public void Evaluate() => value = Random();
@@ -34,7 +38,7 @@ public class Asteroid : MonoBehaviour
 
     private void Awake() => spinRange.Evaluate();
 
-    private void Update() => transform.eulerAngles += spinRange.value * Vector3.forward;
+    private void Update() => transform.eulerAngles += spinRange.Value * Vector3.forward;
 
     public void Generate()
     {
