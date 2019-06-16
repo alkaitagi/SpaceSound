@@ -4759,7 +4759,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
+  m_PointLightOuterRadius: 2
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -4797,9 +4797,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e73dbf1575cf7541a582ae014f683b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScale:
-    min: 5
-    max: 10
+  startImpulse:
+    min: 2
+    max: 5
   effect: {fileID: 1505447683572805985, guid: f5a269ca60dc60544a3f30db420275e2, type: 3}
 --- !u!1001 &1452608100107874096
 PrefabInstance:
@@ -4888,26 +4888,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.40347716
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.3529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: bodyColor.key0.r
@@ -4977,6 +4957,26 @@ PrefabInstance:
         type: 3}
       propertyPath: asteroidScale.min
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.40347716
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499563, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a345bb52d5c23af45820a04861c3b19e, type: 3}

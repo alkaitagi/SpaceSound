@@ -71,19 +71,19 @@ This is basic shooting. Player needs to breach enemy defences and pick up keys.
 
 ### Week 2, 10 June - 14 June, music systems
 
-- [ ] **Monday**
+- [x] **Monday**
   Nebula region description, assets.
 
-- [ ] **Tuesday**
+- [x] **Tuesday**
   Nebula region fill, preliminary playtesting.
 
-- [ ] **Wednesday**
+- [x] **Wednesday**
   Wormhole region description, assets.
 
-- [ ] **Thursday**
+- [x] **Thursday**
   Wormhole region fill, preliminary playtesting.
 
-- [ ] **Friday**.
+- [x] **Friday**.
   Assault region description, assets.
 
 ### Week 3, 17 June - 21 June, analytic systems

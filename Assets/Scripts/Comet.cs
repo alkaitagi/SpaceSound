@@ -4,7 +4,7 @@ using UnityEngine;
 public class Comet : MonoBehaviour
 {
     [SerializeField]
-    private Range startScale;
+    private Range startImpulse;
     [SerializeField]
     private GameObject effect;
 
@@ -15,7 +15,7 @@ public class Comet : MonoBehaviour
     private void Start()
          => rigidbody.AddForce
         (
-            startScale.Random() * Random.insideUnitCircle.normalized,
+            startImpulse.Random() * Random.insideUnitCircle.normalized,
             ForceMode2D.Impulse
         );
 
@@ -24,6 +24,7 @@ public class Comet : MonoBehaviour
         if (other.GetComponent<Comet>())
         {
             var normal = (other.transform.position - transform.position).normalized;
+            var scale = 1/*+ Mathf.Abs(Vector2.Dot(normal, rigidbody.velocity.normalized))*/;
 
             Instantiate
             (
@@ -32,7 +33,7 @@ public class Comet : MonoBehaviour
                 Quaternion.FromToRotation(normal, Vector2.up)
             );
 
-            rigidbody.velocity = Vector2.Reflect(rigidbody.velocity, normal);
+            rigidbody.velocity = scale * Vector2.Reflect(rigidbody.velocity, normal);
         }
     }
 }
