@@ -4799,7 +4799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startImpulse:
     min: 2
-    max: 5
+    max: 4
   effect: {fileID: 1505447683572805985, guid: f5a269ca60dc60544a3f30db420275e2, type: 3}
 --- !u!1001 &1452608100107874096
 PrefabInstance:
