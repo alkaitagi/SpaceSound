@@ -8,11 +8,10 @@ public struct Range
     [SerializeField]
     private float max;
 
-    private float value;
-    public float Value => value;
+    public float Value { get; private set; }
 
     public float Random() => UnityEngine.Random.Range(min, max);
-    public void Evaluate() => value = Random();
+    public void Evaluate() => Value = Random();
 }
 
 public class Asteroid : MonoBehaviour

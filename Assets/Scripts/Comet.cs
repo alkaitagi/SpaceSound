@@ -23,18 +23,16 @@ public class Comet : MonoBehaviour
     {
         if (other.GetComponent<Comet>())
         {
-            var hit = (other.transform.position - transform.position).normalized;
+            var normal = (other.transform.position - transform.position).normalized;
 
             Instantiate
             (
                 effect,
                 transform.position,
-                Quaternion.FromToRotation(hit, Vector2.up)
+                Quaternion.FromToRotation(normal, Vector2.up)
             );
 
-            rigidbody.velocity =
-                rigidbody.velocity.magnitude *
-                Vector2.Reflect(hit, rigidbody.velocity);
+            rigidbody.velocity = Vector2.Reflect(rigidbody.velocity, normal);
         }
     }
 }
