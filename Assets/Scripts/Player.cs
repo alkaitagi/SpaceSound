@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,10 +10,6 @@ public class Player : MonoBehaviour
     private Engine leftTorque;
     [SerializeField]
     private Engine rightTorque;
-
-    [Header("Rotation")]
-    [SerializeField]
-    private float angleRange;
     [SerializeField]
     private float rotationSpeed;
 
@@ -35,9 +32,9 @@ public class Player : MonoBehaviour
 
     #endregion
 
-    private new Camera camera;
+    public static Player Main { get; private set; }
 
-    private void Awake() => camera = Camera.main;
+    private void Awake() => Main = this;
 
     private void Start()
     {
@@ -47,6 +44,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown("r"))
+            SceneManager.LoadScene("Main");
+
         mainEngine.IsOn = Input.GetKey("w");
         leftTorque.IsOn = Input.GetKey("a");
         rightTorque.IsOn = Input.GetKey("d");

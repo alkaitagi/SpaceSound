@@ -33,7 +33,7 @@ public class WarpManager : MonoBehaviour
     private IEnumerator Transition(Gate gate)
     {
         effects.SetActive(true);
-        var player = FindObjectOfType<Player>();
+        var player = Player.Main;
         player.enabled = false;
 
         yield return StartCoroutine(Fade());
