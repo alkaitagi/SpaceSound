@@ -6,6 +6,8 @@ public class Comet : MonoBehaviour
     [SerializeField]
     private Range startImpulse;
     [SerializeField]
+    private float pushScale;
+    [SerializeField]
     private GameObject effect;
 
     private new Rigidbody2D rigidbody;
@@ -36,6 +38,6 @@ public class Comet : MonoBehaviour
             rigidbody.velocity = scale * Vector2.Reflect(rigidbody.velocity, normal);
         }
         else if (other.GetComponent<Player>())
-            other.attachedRigidbody.AddForce(5 * rigidbody.velocity, ForceMode2D.Impulse);
+            other.attachedRigidbody.AddForce(pushScale * rigidbody.velocity, ForceMode2D.Impulse);
     }
 }

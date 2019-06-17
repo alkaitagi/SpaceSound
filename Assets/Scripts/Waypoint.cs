@@ -14,6 +14,15 @@ public class Waypoint : MonoBehaviour
 
     private void Awake() => GetComponent<SpriteRenderer>().enabled = false;
 
+    private void OnDrawGizmos()
+    {
+        foreach (var connection in Connections)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(transform.position, connection.position);
+        }
+    }
+
     public void Connect()
     {
         Connections.Clear();
