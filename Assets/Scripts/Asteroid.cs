@@ -1,18 +1,8 @@
 using UnityEngine;
 
-[System.Serializable]
-public struct Range
-{
-    [SerializeField]
-    private float min;
-    [SerializeField]
-    private float max;
-
-    public float Value { get; private set; }
-
-    public float Random() => UnityEngine.Random.Range(min, max);
-    public void Evaluate() => Value = Random();
-}
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class Asteroid : MonoBehaviour
 {
@@ -62,3 +52,29 @@ public class Asteroid : MonoBehaviour
             dot.GetComponent<SpriteRenderer>().color = dotColor.Evaluate(Random.Range(0, 1f));
     }
 }
+
+#if UNITY_EDITOR
+
+[CanEditMultipleObjects]
+[CustomEditor(typeof(Asteroid))]
+public class AsteroidEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+
+        if (GUILayout.Button("Generate"))
+            foreach (var target in targets)
+                ((Asteroid)target).Generate();
+
+        if (GUILayout.Button("Color"))
+            foreach (var target in targets)
+                ((Asteroid)target).Color();
+
+        if (GUILayout.Button("Clear"))
+            foreach (var target in targets)
+                ((Asteroid)target).transform.Clear(true);
+    }
+}
+
+#endif

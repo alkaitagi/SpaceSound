@@ -1,24 +1,33 @@
 using UnityEngine;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class FPSCounter : MonoBehaviour
 {
-    [SerializeField, Range(1, 5)]
-    private int updateRate;
     [SerializeField]
-    private FloatEvent onUpdate;
+    private KeyCode key;
+
+    private Text text;
 
     private int frames;
-    private float deltaTime;
+    private float timer;
+    private const float threshold = .25f;
+
+    private void Awake() => text = GetComponent<Text>();
 
     void Update()
     {
         frames++;
-        deltaTime += Time.unscaledDeltaTime;
-        if (deltaTime > 1f / updateRate)
+        timer += Time.unscaledDeltaTime;
+
+        if (timer > threshold)
         {
-            onUpdate.Invoke(frames / deltaTime);
+            text.text = ((int)(frames / timer)).ToString();
             frames = 0;
-            deltaTime -= 1f / updateRate;
+            timer -= threshold;
         }
+
+        if (Input.GetKeyDown(key))
+            text.enabled = !text.enabled;
     }
 }

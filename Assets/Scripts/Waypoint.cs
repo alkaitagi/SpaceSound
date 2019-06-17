@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 [RequireComponent(typeof(SpriteRenderer))]
 public class Waypoint : MonoBehaviour
 {
@@ -14,7 +18,7 @@ public class Waypoint : MonoBehaviour
 
     private void Awake() => GetComponent<SpriteRenderer>().enabled = false;
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         foreach (var connection in Connections)
         {
@@ -37,3 +41,21 @@ public class Waypoint : MonoBehaviour
         );
     }
 }
+
+#if UNITY_EDITOR
+
+[CanEditMultipleObjects]
+[CustomEditor(typeof(Waypoint))]
+public class WaypointEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+
+        if (GUILayout.Button("Connect"))
+            foreach (var target in targets)
+                ((Waypoint)target).Connect();
+    }
+}
+
+#endif
