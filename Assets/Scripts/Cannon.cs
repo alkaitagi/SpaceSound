@@ -29,4 +29,7 @@ public class Cannon : MonoBehaviour
                 .Launch(distance, speed);
         }
     }
+
+    public bool IsInRange(Vector3 point) =>
+        (transform.position - point).sqrMagnitude <= distance * distance;
 }
