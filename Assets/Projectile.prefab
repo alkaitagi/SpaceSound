@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: 1
-  destroySelf: 0
+  destroySelf: 1
 --- !u!1 &5001131110359786851
 GameObject:
   m_ObjectHideFlags: 0

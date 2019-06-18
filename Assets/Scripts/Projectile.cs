@@ -36,19 +36,17 @@ public class Projectile : MonoBehaviour
         var distance = Time.fixedDeltaTime * speed;
 
         if (rigidbody.Cast(transform.up, hits, distance) > 0)
-        {
             Position += hits[0].fraction * (Vector2)transform.up;
-            Destroy();
-        }
         else
             Position += distance * (Vector2)transform.up;
     }
 
-    private void Destroy()
+    public void Destroy()
     {
         trailEffect.transform.parent = null;
         Destroy(trailEffect, 2);
         Destroy(gameObject);
-        Instantiate(hitEffect, Position, transform.rotation);
+        if (hitEffect)
+            Instantiate(hitEffect, Position, transform.rotation);
     }
 }
