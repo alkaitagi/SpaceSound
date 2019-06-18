@@ -8,7 +8,6 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private GameObject trailEffect;
 
-    private float damage;
     private float speed;
 
     private Vector2 Position
@@ -26,9 +25,8 @@ public class Projectile : MonoBehaviour
 
     private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
 
-    public void Launch(float damage, float distance, float speed)
+    public void Launch(float distance, float speed)
     {
-        this.damage = damage;
         this.speed = speed;
         Invoke("Destroy", distance / speed);
     }
@@ -40,7 +38,6 @@ public class Projectile : MonoBehaviour
         if (rigidbody.Cast(transform.up, hits, distance) > 0)
         {
             Position += hits[0].fraction * (Vector2)transform.up;
-            TryDamage(hits[0].transform.gameObject);
             Destroy();
         }
         else
@@ -53,10 +50,5 @@ public class Projectile : MonoBehaviour
         Destroy(trailEffect, 2);
         Destroy(gameObject);
         Instantiate(hitEffect, Position, transform.rotation);
-    }
-
-    private void TryDamage(GameObject target)
-    {
-
     }
 }

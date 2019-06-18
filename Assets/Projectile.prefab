@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7101355181433129827}
   - component: {fileID: 7475778638903241058}
   - component: {fileID: -2948092865557318665}
+  - component: {fileID: 160132950723721640}
   m_Layer: 10
   m_Name: Projectile
   m_TagString: Untagged
@@ -44,7 +45,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1944880093788172833}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -86,6 +87,20 @@ MonoBehaviour:
   hitEffect: {fileID: 1505447683572805985, guid: f5a269ca60dc60544a3f30db420275e2,
     type: 3}
   trailEffect: {fileID: 5001131110359786851}
+--- !u!114 &160132950723721640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944880093788172833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378ff4815a152524bbf41f1a9b4e5443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 1
+  destroySelf: 0
 --- !u!1 &5001131110359786851
 GameObject:
   m_ObjectHideFlags: 0

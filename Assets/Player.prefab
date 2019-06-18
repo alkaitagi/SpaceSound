@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f585502ffcde26043ae0806c8b5a1a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
   distance: 20
   speed: 40
   cooldown: 0.5
@@ -126,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475511316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 166322097}
@@ -5491,7 +5490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   isOn: 0
-  speed: 10
+  speed: 20
   rigidbody: {fileID: 8281234666657878073}
   effect: {fileID: 8281234667933716658}
 --- !u!1 &8281234666851662301
@@ -5591,7 +5590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   isOn: 0
-  speed: 5
+  speed: 10
   rigidbody: {fileID: 8281234666657878073}
   effect: {fileID: 8281234667672945336}
 --- !u!1 &8281234667547500999
@@ -5691,7 +5690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   isOn: 0
-  speed: 5
+  speed: 10
   rigidbody: {fileID: 8281234666657878073}
   effect: {fileID: 8281234666787836207}
 --- !u!1 &8281234667672945338

@@ -3,8 +3,6 @@ using UnityEngine;
 public class Cannon : MonoBehaviour
 {
     [SerializeField]
-    private float damage;
-    [SerializeField]
     private float distance;
     [SerializeField]
     private float speed;
@@ -27,8 +25,8 @@ public class Cannon : MonoBehaviour
             isReady = false;
             Invoke("Ready", cooldown);
 
-            var projectile = Instantiate(this.projectile, transform.position, transform.rotation);
-            projectile.Launch(damage, distance, speed);
+            Instantiate(this.projectile, spawn.position, spawn.rotation)
+                .Launch(distance, speed);
         }
     }
 }

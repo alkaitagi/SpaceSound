@@ -16,7 +16,8 @@ public class Health : MonoBehaviour
 
     public void Destroy()
     {
-        Instantiate(effect, transform.position, transform.rotation);
+        if (effect)
+            Instantiate(effect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }
