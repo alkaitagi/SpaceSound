@@ -26,6 +26,7 @@ public class Thruster : MonoBehaviour
             Invoke("Ready", cooldown);
 
             rigidbody.AddForce(force * transform.up, ForceMode2D.Impulse);
+            if (effect)
             Instantiate(effect, transform.position, transform.rotation);
         }
     }

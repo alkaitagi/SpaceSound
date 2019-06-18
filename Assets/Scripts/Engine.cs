@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Experimental.Rendering.LWRP;
 
 public class Engine : MonoBehaviour
 {
@@ -16,7 +15,6 @@ public class Engine : MonoBehaviour
         set
         {
             isOn = value;
-
             if (effect)
                 effect.Toggle(IsOn);
         }

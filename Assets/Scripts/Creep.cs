@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Engine))]
 public class Creep : MonoBehaviour
 {
-    [SerializeField]
-    private float moveSpeed;
     [SerializeField]
     private float turnSpeed;
 
     private new Rigidbody2D rigidbody;
+    private Engine engine;
 
-    private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
+    private void Awake()
+    {
+        rigidbody = GetComponent<Rigidbody2D>();
+        engine = GetComponent<Engine>();
+    }
 
     private void Update()
     {
@@ -29,13 +33,8 @@ public class Creep : MonoBehaviour
                     turnSpeed * Time.smoothDeltaTime
                 )
             );
-            rigidbody.MovePosition
-            (
-                rigidbody.position +
-                moveSpeed *
-                Time.smoothDeltaTime *
-                (Vector2)transform.up
-            );
         }
+
+        engine.IsOn = Player.Main;
     }
 }
