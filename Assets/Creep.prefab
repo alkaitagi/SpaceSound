@@ -300,7 +300,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   effect: {fileID: 2245280936357598863, guid: c2d27b8eaabdae14d8a37fc5da07a728, type: 3}
-  loot: {fileID: 0}
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &4252765950221842173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed:
-    min: 20
+    min: 40
     max: 80
   moveSpeed:
     min: 20
