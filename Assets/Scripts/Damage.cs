@@ -12,11 +12,8 @@ public class Damage : MonoBehaviour
         if (other.GetComponent<Health>() is Health health && health.Type == target)
         {
             health.Destroy();
-            if (destroySelf)
-                if (GetComponent<Health>() is Health hlt)
-                    hlt.Destroy();
-                else if (GetComponent<Projectile>() is Projectile prj)
-                    prj.Destroy();
+            if (destroySelf && GetComponent<Health>() is Health self)
+                self.Destroy();
         }
     }
 }

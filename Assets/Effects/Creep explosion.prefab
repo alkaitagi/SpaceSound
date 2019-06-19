@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 147764214548478984}
   - component: {fileID: 5209864255782889647}
   m_Layer: 11
-  m_Name: Creep explosio
+  m_Name: Creep explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1493,7 +1493,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     mode: 1
     timeMode: 0
     fps: 30

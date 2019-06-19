@@ -4,7 +4,7 @@ using UnityEngine;
 public class RadialTransform : MonoBehaviour
 {
     [SerializeField]
-    private float radius;
+    private Range radius;
     [SerializeField]
     private float offset;
     [SerializeField]
@@ -21,7 +21,7 @@ public class RadialTransform : MonoBehaviour
             var child = transform.GetChild(i);
 
             if (updatePosition)
-                child.localPosition = radius * new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+                child.localPosition = radius.Random() * new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
             if (updateRotation)
                 child.localRotation = Quaternion.Euler(0, 0, Mathf.Rad2Deg * angle + 90);
         }
