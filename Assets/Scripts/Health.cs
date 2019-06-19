@@ -16,6 +16,12 @@ public class Health : MonoBehaviour
     [SerializeField]
     private GameObject loot;
 
+    private void Awake()
+    {
+        if (loot)
+            loot.SetActive(false);
+    }
+
     public void Destroy()
     {
         if (effect)
@@ -24,6 +30,8 @@ public class Health : MonoBehaviour
         {
             loot.SetActive(true);
             loot.transform.parent = null;
+            loot.transform.position = transform.position;
+            loot.transform.localScale = Vector3.one;
         }
         Destroy(gameObject);
     }

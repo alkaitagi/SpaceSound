@@ -4,8 +4,7 @@
 [RequireComponent(typeof(Engine))]
 public class Creep : MonoBehaviour
 {
-    [SerializeField]
-    private float detectionRange;
+    
     [SerializeField]
     private Range bodyScale;
     [SerializeField]
@@ -17,7 +16,6 @@ public class Creep : MonoBehaviour
     private Engine engine;
 
     private Vector3 spawn;
-    private Vector3 target;
 
     private void Awake()
     {
@@ -39,19 +37,10 @@ public class Creep : MonoBehaviour
         engine.Speed = moveSpeed.Value;
     }
 
-    public bool IsInRange(Vector3 point) =>
-        (transform.position - point).sqrMagnitude <= detectionRange * detectionRange;
+    private void Update() =>
+        Move(Player.Main ? Player.Main.transform.position : spawn);
 
-    private void Update()
-    {
-        target = Player.Main && IsInRange(Player.Main.transform.position)
-            ? Player.Main.transform.position
-            : spawn;
-
-        Move();
-    }
-
-    private void Move() =>
+    private void Move(Vector3 target) =>
         rigidbody.MoveRotation
         (
             Mathf.MoveTowardsAngle

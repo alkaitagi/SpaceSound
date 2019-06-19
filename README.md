@@ -88,10 +88,10 @@ This is basic shooting. Player needs to breach enemy defences and pick up keys.
 
 ### Week 3, 17 June - 21 June, analytic systems
 
-- [ ] **Monday**
+- [x] **Monday**
   Assault region fill, preliminary playtesting.
 
-- [ ] **Tuesday**
+- [x] **Tuesday**
   Overall playtesting, polishing, gameplay bugfixes.
 
 - [ ] **Wednesday**
