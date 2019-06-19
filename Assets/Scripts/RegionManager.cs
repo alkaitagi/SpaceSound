@@ -23,8 +23,12 @@ public class RegionManager : MonoBehaviour
 
     private void End()
     {
-        if (!Player.Main)
-            Respawn();
-        GetComponent<Gate>().Warp();
+        var gate = GetComponent<Gate>();
+        if (!gate.IsLocked)
+        {
+            if (!Player.Main)
+                Respawn();
+            gate.Warp();
+        }
     }
 }

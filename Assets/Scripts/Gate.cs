@@ -15,6 +15,8 @@ public class Gate : MonoBehaviour
         }
     }
 
+    public bool IsLocked { get; private set; }
+
     [SerializeField]
     private bool isReversed;
     public bool IsReversed => isReversed;
@@ -52,6 +54,7 @@ public class Gate : MonoBehaviour
 
     public void Warp()
     {
+        IsLocked = true;
         WarpManager.Main.Warp(this);
         animator.SetTrigger("Lock");
     }
