@@ -13,11 +13,18 @@ public class Health : MonoBehaviour
     public UnitType Type => type;
     [SerializeField]
     private GameObject effect;
+    [SerializeField]
+    private GameObject loot;
 
     public void Destroy()
     {
         if (effect)
             Instantiate(effect, transform.position, transform.rotation);
+        if (loot)
+        {
+            loot.SetActive(true);
+            loot.transform.parent = null;
+        }
         Destroy(gameObject);
     }
 }
