@@ -4785,6 +4785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: 0
+  destroySelf: 0
 --- !u!114 &8723537684468007835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4883,11 +4884,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5589230920156837682, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}

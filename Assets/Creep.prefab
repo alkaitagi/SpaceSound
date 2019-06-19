@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3177809792965704297}
   - component: {fileID: 4252765950221842172}
+  - component: {fileID: 5369847389288756743}
+  - component: {fileID: 6278866781328536488}
   - component: {fileID: 3596668524616005396}
   - component: {fileID: 7804562591922714077}
-  - component: {fileID: 5369847389288756743}
   - component: {fileID: 1542970209862804524}
   - component: {fileID: 4252765950221842171}
   - component: {fileID: 4252765950221842173}
-  - component: {fileID: 7075266636547352190}
   - component: {fileID: 1970227145610048817}
   m_Layer: 9
   m_Name: Creep
@@ -88,43 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &3596668524616005396
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4252765950221842174}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
---- !u!50 &7804562591922714077
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4252765950221842174}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 2
-  m_AngularDrag: 5
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &5369847389288756743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,48 +130,7 @@ MonoBehaviour:
   - {x: -1.7978706, y: 2.5044537, z: 0}
   - {x: -1.0573692, y: 0.8571968, z: 0}
   - {x: -0.13065338, y: 0.1299057, z: 0}
---- !u!114 &1542970209862804524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4252765950221842174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378ff4815a152524bbf41f1a9b4e5443, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: 0
-  destroySelf: 1
---- !u!114 &4252765950221842171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4252765950221842174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ea0ce1ae7dc524d97430c7b28d628d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
-  effect: {fileID: 2245280936357598863, guid: c2d27b8eaabdae14d8a37fc5da07a728, type: 3}
---- !u!114 &4252765950221842173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4252765950221842174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db0cad3c54b3b71449a3bbb10735071d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnSpeed: 100
---- !u!96 &7075266636547352190
+--- !u!96 &6278866781328536488
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -277,8 +199,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.93725497, g: 0.054901965, b: 0.0627451, a: 1}
-      key1: {r: 0.93725497, g: 0.054901965, b: 0.0627451, a: 0}
+      key0: {r: 0.93725497, g: 0.054901965, b: 0.0627451, a: 0}
+      key1: {r: 0.93725497, g: 0.054901965, b: 0.0627451, a: 0.78431374}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -294,8 +216,8 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
+      atime1: 6554
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -303,7 +225,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 3
     numCapVertices: 3
     alignment: 0
@@ -313,6 +235,89 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!58 &3596668524616005396
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252765950221842174}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
+--- !u!50 &7804562591922714077
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252765950221842174}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 5
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1542970209862804524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252765950221842174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378ff4815a152524bbf41f1a9b4e5443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  destroySelf: 1
+--- !u!114 &4252765950221842171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252765950221842174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ea0ce1ae7dc524d97430c7b28d628d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  effect: {fileID: 2245280936357598863, guid: c2d27b8eaabdae14d8a37fc5da07a728, type: 3}
+--- !u!114 &4252765950221842173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252765950221842174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0cad3c54b3b71449a3bbb10735071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed:
+    min: 0
+    max: 0
+  moveSpeed:
+    min: 0
+    max: 0
 --- !u!114 &1970227145610048817
 MonoBehaviour:
   m_ObjectHideFlags: 0

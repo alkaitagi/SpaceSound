@@ -5,7 +5,9 @@
 public class Creep : MonoBehaviour
 {
     [SerializeField]
-    private float turnSpeed;
+    private Range turnSpeed;
+    [SerializeField]
+    private Range moveSpeed;
 
     private new Rigidbody2D rigidbody;
     private Engine engine;
@@ -14,6 +16,12 @@ public class Creep : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         engine = GetComponent<Engine>();
+    }
+
+    private void Start()
+    {
+        turnSpeed.Evaluate();
+        engine.Speed = moveSpeed.Random();
     }
 
     private void Update()
@@ -30,7 +38,7 @@ public class Creep : MonoBehaviour
                         Vector2.up,
                         (Player.Main.transform.position - transform.position).normalized
                     ),
-                    turnSpeed * Time.smoothDeltaTime
+                    turnSpeed.Value * Time.smoothDeltaTime
                 )
             );
         }

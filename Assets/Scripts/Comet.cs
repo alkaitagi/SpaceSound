@@ -14,30 +14,35 @@ public class Comet : MonoBehaviour
 
     private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
 
-    private void Start()
-         => rigidbody.AddForce
-        (
-            startImpulse.Random() * Random.insideUnitCircle.normalized,
-            ForceMode2D.Impulse
-        );
+    private void Start() => rigidbody.AddForce
+    (
+        startImpulse.Random() * Random.insideUnitCircle.normalized,
+        ForceMode2D.Impulse
+    );
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);
+
+    private void OnCollisionEnter2D(Collision2D other) => Push(other.rigidbody);
+
+    private void Push(Rigidbody2D target)
     {
-        if (other.GetComponent<Comet>())
+        if (target)
         {
-            var normal = (other.transform.position - transform.position).normalized;
-            var scale = 1/*+ Mathf.Abs(Vector2.Dot(normal, rigidbody.velocity.normalized))*/;
+            if (target.GetComponent<Comet>())
+            {
+                var normal = (target.position - rigidbody.position).normalized;
 
-            Instantiate
-            (
-                effect,
-                transform.position,
-                Quaternion.FromToRotation(normal, Vector2.up)
-            );
+                Instantiate
+                (
+                    effect,
+                    transform.position,
+                    Quaternion.FromToRotation(normal, Vector2.up)
+                );
 
-            rigidbody.velocity = scale * Vector2.Reflect(rigidbody.velocity, normal);
+                target.velocity = pushScale * Vector2.Reflect(rigidbody.velocity, normal);
+            }
+            else if (target.GetComponent<Player>())
+                target.AddForce(pushScale * rigidbody.velocity, ForceMode2D.Impulse);
         }
-        else if (other.GetComponent<Player>())
-            other.attachedRigidbody.AddForce(pushScale * rigidbody.velocity, ForceMode2D.Impulse);
     }
 }
