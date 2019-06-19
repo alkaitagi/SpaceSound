@@ -17,9 +17,9 @@ public static class Extensions
             child.parent = null;
 
             if (isImmediate)
-                GameObject.DestroyImmediate(child.gameObject);
+                Object.DestroyImmediate(child.gameObject);
             else
-                GameObject.Destroy(child.gameObject);
+                Object.Destroy(child.gameObject);
         }
     }
 }

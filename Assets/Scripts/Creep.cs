@@ -4,9 +4,6 @@
 [RequireComponent(typeof(Engine))]
 public class Creep : MonoBehaviour
 {
-    
-    [SerializeField]
-    private Range bodyScale;
     [SerializeField]
     private Range turnSpeed;
     [SerializeField]
@@ -31,9 +28,8 @@ public class Creep : MonoBehaviour
 
     private void Randomize()
     {
-        bodyScale.Evaluate();
-        transform.localScale = bodyScale.Value * Vector3.one;
-        turnSpeed.Lerp = moveSpeed.Lerp = 1 - bodyScale.Lerp;
+        turnSpeed.Evaluate();
+        moveSpeed.Evaluate();
         engine.Speed = moveSpeed.Value;
     }
 
@@ -41,17 +37,17 @@ public class Creep : MonoBehaviour
         Move(Player.Main ? Player.Main.transform.position : spawn);
 
     private void Move(Vector3 target) =>
-        rigidbody.MoveRotation
-        (
-            Mathf.MoveTowardsAngle
+            rigidbody.MoveRotation
             (
-                rigidbody.rotation,
-                Vector2.SignedAngle
+                Mathf.MoveTowardsAngle
                 (
-                    Vector2.up,
-                    (target - transform.position).normalized
-                ),
-                turnSpeed.Value * Time.smoothDeltaTime
-            )
-        );
+                    rigidbody.rotation,
+                    Vector2.SignedAngle
+                    (
+                        Vector2.up,
+                        (target - transform.position).normalized
+                    ),
+                    turnSpeed.Value * Time.smoothDeltaTime
+                )
+            );
 }
