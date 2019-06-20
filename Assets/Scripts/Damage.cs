@@ -7,9 +7,15 @@ public class Damage : MonoBehaviour
     [SerializeField]
     private bool destroySelf;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) =>
+        Check(other.GetComponent<Health>());
+
+    private void OnCollisionEnter2D(Collision2D other) =>
+        Check(other.collider.GetComponent<Health>());
+
+    private void Check(Health health)
     {
-        if (other.GetComponent<Health>() is Health health && health.Type == target)
+        if (health && health.Type == target)
         {
             health.Destroy();
             if (destroySelf && GetComponent<Health>() is Health self)

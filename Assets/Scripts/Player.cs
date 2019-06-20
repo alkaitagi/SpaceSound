@@ -21,13 +21,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Thruster thruster;
     [SerializeField]
-    private GameObject spear;
+    private Cannon cannon;
 
     public void UpdateModules()
     {
         light.SetActive(ModuleManager.hasLight);
         thruster.gameObject.SetActive(ModuleManager.hasThruster);
-        spear.gameObject.SetActive(ModuleManager.hasCannon);
+        cannon.gameObject.SetActive(ModuleManager.hasCannon);
     }
 
     #endregion
@@ -69,6 +69,9 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown("space") && thruster.gameObject.activeInHierarchy)
             thruster.Burst();
+
+        if (Input.GetMouseButtonDown(0) && cannon.gameObject.activeInHierarchy)
+            cannon.Shoot();
     }
 
     private void OnDisable()
