@@ -44,7 +44,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -64,6 +64,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -125,19 +126,15 @@ MonoBehaviour:
   asteroidScale:
     min: 1
     max: 3
-    value: 0
   dotCount:
     min: 3
     max: 10
-    value: 0
   dotScale:
     min: 0.05
     max: 0.2
-    value: 0
   spinRange:
     min: -0.5
     max: 0.5
-    value: 0
   bodyColor:
     serializedVersion: 2
     key0: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}

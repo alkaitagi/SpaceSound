@@ -28,6 +28,7 @@ public class Comet : MonoBehaviour
     {
         if (target)
         {
+            var force = pushScale * rigidbody.velocity.normalized;
             if (target.GetComponent<Comet>())
             {
                 var normal = (target.position - rigidbody.position).normalized;
@@ -39,10 +40,10 @@ public class Comet : MonoBehaviour
                     Quaternion.FromToRotation(normal, Vector2.up)
                 );
 
-                target.velocity = pushScale * Vector2.Reflect(rigidbody.velocity, normal);
+                target.velocity = Vector2.Reflect(force, normal);
             }
             else if (target.GetComponent<Player>())
-                target.AddForce(pushScale * rigidbody.velocity, ForceMode2D.Impulse);
+                target.AddForce(force, ForceMode2D.Impulse);
         }
     }
 }
