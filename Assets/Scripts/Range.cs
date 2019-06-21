@@ -5,11 +5,14 @@ public struct Range
 {
     [SerializeField]
     private float min;
+    public float Min => min;
     [SerializeField]
     private float max;
+    public float Max => max;
     [SerializeField]
     private bool randomSign;
 
+    public float Length => max - min;
     public float Value { get; private set; }
     public float Lerp
     {
