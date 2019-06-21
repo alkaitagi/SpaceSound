@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -55,14 +56,15 @@ public class RadialTransform : MonoBehaviour
         if (noIntersections)
         {
             Shuffle(targets);
-            var radiusDelta = radius.Length / targets.Count;
-            print("Radius delta: " + radiusDelta);
-            for (int i = 0; i < targets.Count; i++)
-            {
-                var target = targets[i];
-                var direction = (target.position - transform.position).normalized;
-                target.position = transform.position + direction * (radiusDelta * i + radius.Min);
-            }
+            
+            var radiusDelta = radius.Length / targets.Sum(t => t.lossyScale.x);
+            var currentRadius = radius.Min;
+
+            foreach (var target in targets)
+                target.position =
+                    transform.position
+                    + (currentRadius += target.lossyScale.x * radiusDelta)
+                    * (target.position - transform.position).normalized;
         }
     }
 

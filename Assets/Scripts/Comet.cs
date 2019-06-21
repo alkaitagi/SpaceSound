@@ -14,10 +14,10 @@ public class Comet : MonoBehaviour
 
     private void Start() => speed.Evaluate();
 
-    private void Update() =>
+    private void FixedUpdate() =>
         transform.position =
             (Vector2)transform.position
-            + speed.Value * Time.smoothDeltaTime * GetDirection();
+            + speed.Value * Time.fixedDeltaTime * GetDirection();
 
     private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);
 
