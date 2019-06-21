@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3457598944971359030}
   - component: {fileID: 9161286513805392575}
   - component: {fileID: 982611492071895027}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4741,6 +4741,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

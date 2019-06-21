@@ -1,24 +1,23 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class Comet : MonoBehaviour
 {
     [SerializeField]
-    private Range startImpulse;
+    private Range speed;
     [SerializeField]
     private float pushScale;
     [SerializeField]
-    private GameObject effect;
+    private Transform center;
 
-    private new Rigidbody2D rigidbody;
+    private Vector2 GetDirection() =>
+        Vector2.Perpendicular((transform.position - center.position).normalized);
 
-    private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
+    private void Start() => speed.Evaluate();
 
-    private void Start() => rigidbody.AddForce
-    (
-        startImpulse.Random() * Random.insideUnitCircle.normalized,
-        ForceMode2D.Impulse
-    );
+    private void Update() =>
+        transform.position =
+            (Vector2)transform.position
+            + speed.Value * Time.smoothDeltaTime * GetDirection();
 
     private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);
 
@@ -27,23 +26,10 @@ public class Comet : MonoBehaviour
     private void Push(Rigidbody2D target)
     {
         if (target)
-        {
-            var force = pushScale * rigidbody.velocity.normalized;
-            if (target.GetComponent<Comet>())
-            {
-                var normal = (target.position - rigidbody.position).normalized;
-
-                Instantiate
-                (
-                    effect,
-                    transform.position,
-                    Quaternion.FromToRotation(normal, Vector2.up)
-                );
-
-                target.velocity = Vector2.Reflect(force, normal);
-            }
-            else if (target.GetComponent<Player>())
-                target.AddForce(force, ForceMode2D.Impulse);
-        }
+            target.AddForce
+            (
+                pushScale * speed.Value * GetDirection(),
+                ForceMode2D.Impulse
+            );
     }
 }

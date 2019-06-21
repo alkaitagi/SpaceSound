@@ -12,6 +12,16 @@ public class RadialTransform : MonoBehaviour
     [SerializeField]
     private bool updateRotation;
 
+    [Space(10)]
+    [SerializeField]
+    private bool randomizeOnStart;
+
+    private void Awake()
+    {
+        if (randomizeOnStart)
+            Update();
+    }
+
     private void Update()
     {
         var arc = 360f / transform.childCount;
