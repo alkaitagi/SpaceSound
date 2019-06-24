@@ -270,9 +270,9 @@ Rigidbody2D:
   m_AngularDrag: 5
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1542970209862804524
 MonoBehaviour:
@@ -321,9 +321,11 @@ MonoBehaviour:
   turnSpeed:
     min: 100
     max: 200
+    randomSign: 0
   moveSpeed:
     min: 15
     max: 25
+    randomSign: 0
 --- !u!114 &1970227145610048817
 MonoBehaviour:
   m_ObjectHideFlags: 0
