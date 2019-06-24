@@ -9,15 +9,25 @@ public class Comet : MonoBehaviour
     [SerializeField]
     private Transform center;
 
-    private Vector2 GetDirection() =>
-        Vector2.Perpendicular((transform.position - center.position).normalized);
+    private float radius;
 
-    private void Start() => speed.Evaluate();
+    private void Start()
+    {
+        speed.Evaluate();
+        radius = (transform.position - center.position).magnitude;
+    }
 
-    private void FixedUpdate() =>
-        transform.position =
+    private void FixedUpdate()
+    {
+        Vector3 destination =
             (Vector2)transform.position
-            + speed.Value * Time.fixedDeltaTime * GetDirection();
+            + speed.Value * Time.fixedDeltaTime
+            * Vector2.Perpendicular((transform.position - center.position).normalized);
+
+        transform.position =
+            center.position
+            + radius * (destination - center.position).normalized;
+    }
 
     private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);
 
@@ -28,7 +38,8 @@ public class Comet : MonoBehaviour
         if (target)
             target.AddForce
             (
-                pushScale * speed.Value * GetDirection(),
+                pushScale * speed.Value
+                * (target.position - (Vector2)transform.position),
                 ForceMode2D.Impulse
             );
     }
