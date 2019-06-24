@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown("r"))
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown("r"))
             SceneManager.LoadScene("Main");
 
         mainEngine.IsOn = Input.GetKey("w");
