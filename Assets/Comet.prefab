@@ -4956,6 +4956,21 @@ PrefabInstance:
       propertyPath: asteroidScale.min
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: spinRange.min
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: spinRange.max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: spinRange.randomSign
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a345bb52d5c23af45820a04861c3b19e, type: 3}
 --- !u!1 &6653414830747070293 stripped
