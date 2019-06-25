@@ -17,11 +17,11 @@ public class Comet : MonoBehaviour
         radius = (transform.position - center.position).magnitude;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         Vector3 destination =
             (Vector2)transform.position
-            + speed.Value * Time.fixedDeltaTime
+            + speed.Value * Time.smoothDeltaTime
             * Vector2.Perpendicular((transform.position - center.position).normalized);
 
         transform.position =
