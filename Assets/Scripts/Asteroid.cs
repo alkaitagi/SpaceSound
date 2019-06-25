@@ -27,7 +27,8 @@ public class Asteroid : MonoBehaviour
 
     private void Awake() => spinRange.Evaluate();
 
-    private void Update() => transform.eulerAngles += spinRange.Value * Vector3.forward;
+    private void Update() =>
+        transform.eulerAngles += spinRange.Value * Vector3.forward * Time.smoothDeltaTime;
 
     public void Generate()
     {
