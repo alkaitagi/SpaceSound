@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 3
   cooldown: 1
+  duration: 0.2
   target: 1
   spawn: {fileID: 475511317}
   effect: {fileID: 8550321158681271888}
