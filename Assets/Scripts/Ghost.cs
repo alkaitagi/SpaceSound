@@ -7,7 +7,7 @@ public class Ghost : MonoBehaviour
     private Range speed;
 
     private Transform target;
-    private Rigidbody2D rigidbody;
+    private new Rigidbody2D rigidbody;
 
     private void Awake()
     {
