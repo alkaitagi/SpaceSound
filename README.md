@@ -25,7 +25,7 @@
 
 Player has to go trough 3 regions. Each of those regions provides player ship with a new module, and provides obstacles that need to be bypassed using the module. On each of the regions there are several keys that need to be collected by player in order to open a gate towards the next area.
 
-### Region 0: Star
+### Region 0: Sun
 
 This is where it starts and ends. Contains 3 gates connected to the 3 regions described below. A transit zone where player can take break between missions.
 
@@ -33,13 +33,13 @@ This is where it starts and ends. Contains 3 gates connected to the 3 regions de
 
 This is stealth level. Player is given a small **searchlight** that allows him to see in a small area in front of him. The task is to collect all the keys whilst avoiding patroling enemies.
 
-### Region 2: Wormhole
+### Region 2: Orbits
 
 Ship module: **Thruster**.
 
 The module allows player to perform short distance jumps by applying impulse force. In this area player needs to collect keys while oribiting around wormhole ad resisting its gravitational forces.
 
-### Region 3: Assault
+### Region 3: Invasion
 
 Ship module: **Cannon**.
 
