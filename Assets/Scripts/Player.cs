@@ -68,11 +68,11 @@ public class Player : MonoBehaviour
             )
         );
 
-        if (Input.GetKeyDown("space") && thruster.gameObject.activeInHierarchy)
-            thruster.Burst();
-
-        if (Input.GetMouseButtonDown(0) && cannon.gameObject.activeInHierarchy)
-            cannon.Shoot();
+        if (Input.GetKeyDown("space"))
+            if (thruster.gameObject.activeInHierarchy)
+                thruster.Burst();
+            else if (cannon.gameObject.activeInHierarchy)
+                cannon.Shoot();
     }
 
     private void OnDisable()
