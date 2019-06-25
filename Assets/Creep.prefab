@@ -328,7 +328,7 @@ MonoBehaviour:
     randomSign: 0
   safeArea: {fileID: 0}
   safeAreaRange: 3
-  detectionRange: 20
+  detectionRange: 40
 --- !u!114 &1970227145610048817
 MonoBehaviour:
   m_ObjectHideFlags: 0
