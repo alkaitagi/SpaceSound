@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     #endregion
 
     public static Player Main { get; private set; }
+    public static Vector3 Position => Main.transform.position;
 
     private void Awake() => Main = this;
 

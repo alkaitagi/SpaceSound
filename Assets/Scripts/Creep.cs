@@ -9,6 +9,14 @@ public class Creep : MonoBehaviour
     [SerializeField]
     private Range moveSpeed;
 
+    [Header("Detection")]
+    [SerializeField]
+    private Transform safeArea;
+    [SerializeField]
+    private float safeAreaRange;
+    [SerializeField]
+    private float detectionRange;
+
     private new Rigidbody2D rigidbody;
     private Engine engine;
 
@@ -34,7 +42,14 @@ public class Creep : MonoBehaviour
     }
 
     private void Update() =>
-        Move(Player.Main ? Player.Main.transform.position : spawn);
+        Move
+        (
+            !Player.Main
+            || (spawn - Player.Position).magnitude > detectionRange
+            || safeArea && (safeArea.position - Player.Position).magnitude <= safeAreaRange
+            ? spawn
+            : Player.Position
+        );
 
     private void Move(Vector3 target) =>
             rigidbody.MoveRotation
