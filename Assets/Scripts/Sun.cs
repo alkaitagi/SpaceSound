@@ -30,7 +30,7 @@ public class Sun : MonoBehaviour
     {
         rewards[current].SetActive(true);
         regions[current].SetActive(false);
-        
+
         rewards.RemoveAt(current);
         gates.RemoveAt(current);
         regions.RemoveAt(current);

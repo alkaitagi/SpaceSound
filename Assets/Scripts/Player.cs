@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -45,9 +44,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown("r"))
-            SceneManager.LoadScene("Main");
-
         mainEngine.IsOn = Input.GetKey("w");
         leftTorque.IsOn = Input.GetKey("a");
         rightTorque.IsOn = Input.GetKey("d");
