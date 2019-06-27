@@ -1,22 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FPSCounter : MonoBehaviour
 {
     [SerializeField]
-    private FloatEvent onCount;
+    private Text text;
 
     private int frames;
     private float timer;
     private const float threshold = .25f;
 
-    void Update()
+    private void Update()
     {
         frames++;
         timer += Time.unscaledDeltaTime;
 
         if (timer > threshold)
         {
-            onCount.Invoke((int)(frames / timer));
+            text.text = Mathf.RoundToInt(frames / timer).ToString();
             frames = 0;
             timer -= threshold;
         }

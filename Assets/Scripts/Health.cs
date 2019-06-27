@@ -15,12 +15,13 @@ public class Health : MonoBehaviour
     private GameObject effect;
     [SerializeField]
     private VoidEvent onDestroy;
+    public VoidEvent OnDestroy => onDestroy;
 
     public void Destroy()
     {
         if (effect)
             Instantiate(effect, transform.position, transform.rotation);
-        onDestroy.Invoke();
+        OnDestroy.Invoke();
         Destroy(gameObject);
     }
 }

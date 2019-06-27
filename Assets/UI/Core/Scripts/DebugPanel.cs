@@ -1,5 +1,3 @@
-using System.Linq;
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,12 +23,8 @@ public class DebugPanel : MonoBehaviour
 
     public void Skip()
     {
-        var gate = FindObjectsOfType(typeof(Gate))
-            .Select(g => (Gate)g)
-            .FirstOrDefault(g => g.transform.parent.name != "Center");
-
-        if (gate)
-            gate.Warp();
+        if (RegionManager.Main)
+            RegionManager.Main.End();
     }
 
     public void Restart() => SceneManager.LoadScene("Main");
