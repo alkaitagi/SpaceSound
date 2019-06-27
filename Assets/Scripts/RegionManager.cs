@@ -9,6 +9,7 @@ public class RegionManager : MonoBehaviour
     private Gate gate;
 
     public float TimeElapsed { get; private set; }
+    public float TimeLeft => Duration - TimeElapsed;
 
     public static VoidEvent OnRegionChange { get; private set; } = new VoidEvent();
 
@@ -32,6 +33,7 @@ public class RegionManager : MonoBehaviour
     private void Update()
     {
         TimeElapsed = Mathf.Clamp(TimeElapsed + Time.deltaTime, 0, Duration);
+        TimeElapsed = (int)(TimeElapsed * 100) / 100f;
         if (TimeElapsed == Duration)
         {
             enabled = false;

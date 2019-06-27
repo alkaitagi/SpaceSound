@@ -8,6 +8,9 @@ public class Key : MonoBehaviour
     private Gate gate;
     [SerializeField]
     private GameObject effect;
+    [SerializeField]
+    private VoidEvent onTaken;
+    public VoidEvent OnTaken => onTaken;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +28,8 @@ public class Key : MonoBehaviour
     {
         if (gate)
             gate.Keys--;
+
+        OnTaken.Invoke();
 
         GetComponent<Collider2D>().enabled = false;
         GetComponent<ParticleSystem>().Toggle(false);
