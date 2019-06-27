@@ -15,8 +15,6 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float rotationSpeed;
 
-    #region modules
-
     [Header("Modules")]
     [SerializeField]
     private new GameObject light;
@@ -25,25 +23,19 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Cannon cannon;
 
-    public void UpdateModules()
-    {
-        light.SetActive(ModuleManager.hasLight);
-        thruster.gameObject.SetActive(ModuleManager.hasThruster);
-        cannon.gameObject.SetActive(ModuleManager.hasCannon);
-    }
-
-    #endregion
-
     public static Player Main { get; private set; }
     public static Vector3 Position => Main.transform.position;
 
-    private void Awake() => Main = this;
-
-    private void Start()
+    private void Awake()
     {
-        CameraManager.VirtualCamera.Follow = transform;
-        UpdateModules();
+        Main = this;
+
+        light.SetActive(ModuleManager.Main.HasLight);
+        thruster.gameObject.SetActive(ModuleManager.Main.HasThruster);
+        cannon.gameObject.SetActive(ModuleManager.Main.HasCannon);
     }
+
+    private void Start() => CameraManager.VirtualCamera.Follow = transform;
 
     public void SendRemnant() => Instantiate(remnant, transform.position, Quaternion.identity);
 

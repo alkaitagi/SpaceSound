@@ -15,7 +15,7 @@ public class StatsManager : ScriptableObject
 
     public static StatsManager Main { get; private set; }
 
-    private void Awake()
+    public void Awake()
     {
         Main = this;
         SceneManager.activeSceneChanged += ChangedActiveScene;

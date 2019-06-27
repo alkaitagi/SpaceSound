@@ -2,8 +2,6 @@ using System.Collections;
 
 using UnityEngine;
 
-using Cinemachine;
-
 public class WarpManager : MonoBehaviour
 {
     public static WarpManager Main { get; private set; }
@@ -38,7 +36,6 @@ public class WarpManager : MonoBehaviour
 
         yield return StartCoroutine(Fade());
         gate.OnWarpIn.Invoke();
-        player.UpdateModules();
 
         player.transform.position = transform.position;
         player.transform.eulerAngles = new Vector3(0, 0, gate.IsReversed ? -225 : -45);
@@ -57,7 +54,6 @@ public class WarpManager : MonoBehaviour
 
         yield return StartCoroutine(Fade());
         gate.OnWarpOut.Invoke();
-        player.UpdateModules();
 
         player.enabled = true;
         player.transform.position = gate.Destination.position;

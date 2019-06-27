@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class ModuleManager : MonoBehaviour
+[CreateAssetMenu]
+public class ModuleManager : ScriptableObject
 {
-    public static bool hasLight;
-    public bool HasLight { get => hasLight; set => hasLight = value; }
+    public bool HasLight { get; set; }
+    public bool HasThruster { get; set; }
+    public bool HasCannon { get; set; }
 
-    public static bool hasThruster;
-    public bool HasThruster { get => hasThruster; set => hasThruster = value; }
+    public static ModuleManager Main { get; private set; }
 
-    public static bool hasCannon;
-    public bool HasCannon { get => hasCannon; set => hasCannon = value; }
+    public void Awake() => Main = this;
 
     public void ResetModules()
     {
@@ -17,6 +17,4 @@ public class ModuleManager : MonoBehaviour
         HasThruster = false;
         HasCannon = false;
     }
-
-    private void Awake() => ResetModules();
 }
