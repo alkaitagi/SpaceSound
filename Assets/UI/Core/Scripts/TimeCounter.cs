@@ -8,7 +8,7 @@ public class TimeCounter : MonoBehaviour
 
     private void Update()
     {
-        var value = RegionManager.Main ? RegionManager.Main.Timer : 0;
+        var value = RegionManager.Main ? RegionManager.Main.Duration - RegionManager.Main.TimeElapsed : 0;
         text.text = ((int)(value * 100) / 100f).ToString();
     }
 }

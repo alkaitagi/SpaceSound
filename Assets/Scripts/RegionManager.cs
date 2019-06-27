@@ -4,10 +4,11 @@ public class RegionManager : MonoBehaviour
 {
     [SerializeField]
     private float duration;
+    public float Duration => duration;
     [SerializeField]
     private Gate gate;
 
-    public float Timer { get; private set; }
+    public float TimeElapsed { get; private set; }
 
     public static VoidEvent OnRegionChange { get; private set; } = new VoidEvent();
 
@@ -22,7 +23,7 @@ public class RegionManager : MonoBehaviour
         }
     }
 
-    private void Start() => Timer = duration;
+    private void Start() => TimeElapsed = 0;
 
     private void OnEnable() => Main = this;
 
@@ -30,8 +31,8 @@ public class RegionManager : MonoBehaviour
 
     private void Update()
     {
-        Timer = Mathf.Max(0, Timer - Time.deltaTime);
-        if (Timer == 0)
+        TimeElapsed = Mathf.Clamp(TimeElapsed + Time.deltaTime, 0, Duration);
+        if (TimeElapsed == Duration)
         {
             enabled = false;
             End();
