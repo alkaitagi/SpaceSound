@@ -17,7 +17,7 @@ public class FPSCounter : MonoBehaviour
 
         if (timer > threshold)
         {
-            text.text = Mathf.RoundToInt(frames / timer).ToString();
+            text.text = ((int)(frames / timer)).ToString();
             frames = 0;
             timer -= threshold;
         }

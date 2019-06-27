@@ -1,14 +1,15 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Gate))]
 public class RegionManager : MonoBehaviour
 {
     [SerializeField]
     private float duration;
+    [SerializeField]
+    private Gate gate;
 
     public float Timer { get; private set; }
 
-    public static VoidEvent OnRegionChange { get; private set; }
+    public static VoidEvent OnRegionChange { get; private set; } = new VoidEvent();
 
     private static RegionManager main;
     public static RegionManager Main
@@ -39,7 +40,6 @@ public class RegionManager : MonoBehaviour
 
     public void End()
     {
-        var gate = GetComponent<Gate>();
         if (!gate.IsLocked)
         {
             gate.Open();
