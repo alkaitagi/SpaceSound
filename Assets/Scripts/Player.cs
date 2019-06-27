@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         UpdateModules();
     }
 
-    public void SendRemnant() => Instantiate(remnant, transform.position, transform.rotation);
+    public void SendRemnant() => Instantiate(remnant, transform.position, Quaternion.identity);
 
     private void Update()
     {

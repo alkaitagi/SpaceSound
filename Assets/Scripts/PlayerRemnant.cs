@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerRemnant : MonoBehaviour
 {
-    [Space(10)]
+    [SerializeField]
     private float speed;
     [SerializeField]
     private Player player;
@@ -16,7 +16,7 @@ public class PlayerRemnant : MonoBehaviour
         (
             0,
             0,
-            Vector2.SignedAngle(transform.up, transform.position - Destination)
+            Vector2.SignedAngle(transform.up, Destination - transform.position)
         );
     }
 
@@ -32,9 +32,8 @@ public class PlayerRemnant : MonoBehaviour
             );
             if ((transform.position - RegionManager.Main.transform.position).sqrMagnitude <= .25f)
             {
-                Instantiate(player, transform.position, transform.rotation);
-                Destroy(this);
-                Destroy(gameObject, 5);
+                Instantiate(player, Destination, Quaternion.identity);
+                Destroy(gameObject);
             }
         }
     }
