@@ -4891,7 +4891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533003440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2062756209}
@@ -5105,7 +5105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062756208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 533003441}
@@ -10066,7 +10066,18 @@ MonoBehaviour:
   effect: {fileID: 5940537188335113416, guid: 605870c30e1bfab43b2cf336e6fd8148, type: 3}
   onDestroy:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8281234666657878075}
+        m_MethodName: SendRemnant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &8281234666657878075
 MonoBehaviour:
@@ -10080,6 +10091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b145bf56791434a9d110e923bdc2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  remnant: {fileID: -4243315542207410281, guid: 9cbf28889783a97428094d6df89b5fd7,
+    type: 3}
   mainEngine: {fileID: 8281234666849099839}
   leftTorque: {fileID: 8281234666851662113}
   rightTorque: {fileID: 8281234667547501003}

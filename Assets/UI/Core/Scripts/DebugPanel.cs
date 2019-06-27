@@ -20,9 +20,7 @@ public class DebugPanel : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(key))
-            canvasToggle.IsVisible = true;
-        else if (Input.GetKeyUp(key))
-            canvasToggle.IsVisible = false;
+            canvasToggle.Toggle();
     }
 
     public void Skip()

@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    private PlayerRemnant remnant;
+
     [Header("Movement")]
     [SerializeField]
     private Engine mainEngine;
@@ -41,6 +44,8 @@ public class Player : MonoBehaviour
         CameraManager.VirtualCamera.Follow = transform;
         UpdateModules();
     }
+
+    public void SendRemnant() => Instantiate(remnant, transform.position, transform.rotation);
 
     private void Update()
     {

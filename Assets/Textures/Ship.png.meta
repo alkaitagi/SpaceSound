@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -4567166467494461625
     second: Ship_4
+  - first:
+      213: -6349621633965948980
+    second: Ship_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -127,7 +130,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d059438db0692994db803752a051cd95
+      spriteID: ba4c3a79842acce41a3a9333958164fd
       internalID: -8820715720815460284
       vertices: []
       indices: 
@@ -148,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54ca838250298fe43beb19b5f0342fb1
+      spriteID: 59e683e261f506842a90fcc456044bf7
       internalID: -3876855153373189597
       vertices: []
       indices: 
@@ -169,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e15cee8295a41e4cb3a9530f6e254c0
+      spriteID: 1e04e2a1ea4b42a4fb116b0b833125c4
       internalID: -3638915416353919606
       vertices: []
       indices: 
@@ -190,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b304fe889d8d8c43ac4bbd9b8020dbb
+      spriteID: 0de706b28f99a204f87301fa2abe7f65
       internalID: 2227524988284003772
       vertices: []
       indices: 
@@ -211,8 +214,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f79b90a8fb1d874bb1a521c17d1440c
+      spriteID: fb9c16781997cb6489e59efa550bed59
       internalID: -4567166467494461625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ship_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ca6070bf7591147a268a5f0ef724f7
+      internalID: -6349621633965948980
       vertices: []
       indices: 
       edges: []

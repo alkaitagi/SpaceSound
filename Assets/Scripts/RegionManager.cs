@@ -1,34 +1,31 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Gate))]
 public class RegionManager : MonoBehaviour
 {
     [SerializeField]
     private float safeTime;
     [SerializeField]
     private float dangerTime;
-    [SerializeField]
-    private float respawnTime;
-    [SerializeField]
-    private Player player;
+
+    public Gate Gate { get; set; }
+    public static RegionManager Main { get; private set; }
+
+    private void Awake() => Gate = GetComponent<Gate>();
 
     private void Start() => Invoke("End", safeTime + dangerTime);
 
-    private void Respawn() => Instantiate(player, transform.position, transform.rotation);
+    private void OnEnable() => Main = this;
 
-    private void Update()
-    {
-        if (!Player.Main && !IsInvoking("Respawn"))
-            Invoke("Respawn", respawnTime);
-    }
+    private void OnDisable() => Main = null;
 
     private void End()
     {
-        var gate = GetComponent<Gate>();
-        if (!gate.IsLocked)
+        if (!Gate.IsLocked)
         {
-            if (!Player.Main)
-                Respawn();
-            gate.Warp();
+            Gate.Open();
+            if (Player.Main)
+                Player.Main.GetComponent<Health>().Destroy();
         }
     }
 }
