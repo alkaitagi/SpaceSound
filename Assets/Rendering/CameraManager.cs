@@ -12,9 +12,15 @@ public class CameraManager : MonoBehaviour
 
     private void Awake()
     {
-        Main = this;
-        Camera = GetComponent<Camera>();
-        VirtualCamera = GetComponent<CinemachineVirtualCamera>();
+        if (Main)
+            Destroy(gameObject);
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            Main = this;
+            Camera = GetComponent<Camera>();
+            VirtualCamera = GetComponent<CinemachineVirtualCamera>();
+        }
     }
 
     public static Vector3 MouseWorld()
