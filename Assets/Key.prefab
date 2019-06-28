@@ -4726,6 +4726,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gate: {fileID: 0}
   effect: {fileID: 3983960648899873339, guid: aca1f6c0f0beb884f96ea9dd71704bbc, type: 3}
+  onTaken:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3c6a9e0f15268434991308547f746806, type: 2}
+        m_MethodName: CountKey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!199 &982611492071895027
 ParticleSystemRenderer:
   serializedVersion: 6

@@ -42,13 +42,19 @@ public class DebugPanel : MonoBehaviour
         countdownText.text = (RegionManager.Main ? RegionManager.Main.TimeLeft : 0).ToString();
     }
 
-    public void Skip()
+    public void SkipRegion()
     {
         if (RegionManager.Main)
             RegionManager.Main.End();
     }
 
-    public void Restart() => SceneManager.LoadScene("Main");
+    public void SkipWarp()
+    {
+        if (WarpManager.Main)
+            WarpManager.Main.IsInterrupted = false;
+    }
 
-    public void Quit() => Application.Quit();
+    public void RestartGame() => SceneManager.LoadScene("Main");
+
+    public void QuitGame() => Application.Quit();
 }
