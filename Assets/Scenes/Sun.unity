@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -894,12 +894,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.76778984
+      value: 1.7364826
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3543487
+      value: 9.848078
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -6745,12 +6745,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5357246
+      value: -5.0548935
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2868986
+      value: 1.8398314
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -17125,12 +17125,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3001041
+      value: 1.5164413
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.373253
+      value: -8.600166
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -23228,8 +23228,8 @@ Transform:
   m_Children:
   - {fileID: 1532938660}
   - {fileID: 1281091726}
-  - {fileID: 1805449455}
   - {fileID: 2045291705}
+  - {fileID: 1805449455}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23343,7 +23343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807559856}
   m_LocalRotation: {x: 0, y: 0, z: -0.45399055, w: -0.8910065}
-  m_LocalPosition: {x: 6.957546, y: -5.0549545, z: 0}
+  m_LocalPosition: {x: 5.8249216, y: -4.2320538, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -23358,84 +23358,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 807559856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &807559859
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -28288,7 +28217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816375545}
   m_LocalRotation: {x: 0, y: 0, z: 0.98768836, w: -0.15643445}
-  m_LocalPosition: {x: -1.3596746, y: 4.1846485, z: 0}
+  m_LocalPosition: {x: -1.7922986, y: 5.5161285, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -28303,84 +28232,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 816375545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &816375548
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -33986,7 +33844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006164333}
   m_LocalRotation: {x: 0, y: 0, z: -0.15643437, w: -0.98768836}
-  m_LocalPosition: {x: 3.0901709, y: -9.510564, z: 0}
+  m_LocalPosition: {x: 2.873859, y: -8.844825, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -34001,84 +33859,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1006164333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &1006164336
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -39174,7 +38961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083077641}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -9.3, y: 0, z: 0}
+  m_LocalPosition: {x: -7.8999996, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -39189,84 +38976,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1083077641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &1083077644
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -44425,7 +44141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165052600}
   m_LocalRotation: {x: 0, y: 0, z: 0.4539906, w: -0.8910065}
-  m_LocalPosition: {x: -2.9933631, y: -2.1748047, z: 0}
+  m_LocalPosition: {x: -6.957546, y: -5.0549526, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -44440,84 +44156,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1165052600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &1165052603
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -49532,7 +49177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226415558}
   m_LocalRotation: {x: 0, y: 0, z: 0.98768836, w: 0.15643449}
-  m_LocalPosition: {x: 2.2249222, y: 6.8476067, z: 0}
+  m_LocalPosition: {x: 3.0901692, y: 9.510563, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -49547,84 +49192,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1226415558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &1226415561
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -54696,7 +54270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279174823}
   m_LocalRotation: {x: 0, y: 0, z: 0.8910066, w: -0.4539904}
-  m_LocalPosition: {x: -4.6923, y: 3.409153, z: 0}
+  m_LocalPosition: {x: -5.2586102, y: 3.8206024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -54711,84 +54285,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279174823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &1279174826
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -60045,12 +59548,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.999998
+      value: -4.0344563
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.660255
+      value: -6.9878864
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -60831,12 +60334,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.8289022
+      value: -4.3382463
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8494873
+      value: -1.5789928
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -61068,7 +60571,7 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.1036625
+      value: 3.7723198
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -66677,12 +66180,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.4115381
+      value: -3.5862894
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9089565
+      value: 6.2116346
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -67157,12 +66660,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.0130043
+      value: 4.746708
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3673105
+      value: -3.9829626
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -77187,7 +76690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729456798}
   m_LocalRotation: {x: 0, y: 0, z: 0.15643445, w: -0.98768836}
-  m_LocalPosition: {x: -2.0086112, y: -6.1818676, z: 0}
+  m_LocalPosition: {x: -1.5759871, y: -4.8503876, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -77202,84 +76705,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729456798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &1729456801
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -82917,12 +82349,12 @@ PrefabInstance:
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.4789734
+      value: 7.155712
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.758305
+      value: 6.0043545
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -88663,7 +88095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049738645}
   m_LocalRotation: {x: 0, y: 0, z: 0.8910065, w: 0.45399052}
-  m_LocalPosition: {x: 6.3912344, y: 4.643503, z: 0}
+  m_LocalPosition: {x: 3.559675, y: 2.5862541, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -88678,84 +88110,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2049738645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!198 &2049738648
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -94221,7 +93582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4585103387998437320}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 5.1000004, y: 0, z: 0}
+  m_LocalPosition: {x: 3.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124938898}
@@ -94257,84 +93618,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4585103387998437320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a11225f50a9934d9dd85045f0fa496, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902e8312a8906d4d8c76e0fbb3e59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotCount:
-    min: 0
-    max: 0
-    randomSign: 0
-  dotScale:
-    min: 0
-    max: 0
-    randomSign: 0
-  spinRange:
+  speed:
     min: 10
     max: 20
     randomSign: 1
-  bodyColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  dotColor:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  sourceDot: {fileID: 0}
 --- !u!212 &4585103387998437322
 SpriteRenderer:
   m_ObjectHideFlags: 0
