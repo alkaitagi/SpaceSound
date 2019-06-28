@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -5,47 +6,34 @@ using UnityEngine;
 public class Sun : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> rewards;
-    [SerializeField]
     private List<Gate> gates;
     [SerializeField]
-    private List<GameObject> regions;
+    private List<GameObject> rewards;
 
-    private int current;
+    [Space(10)]
+    [SerializeField]
+    private Gate end;
 
     private void Awake()
     {
         for (int i = 0; i < gates.Count; i++)
+            if (RegionManager.Completed.Contains(gates[i].name))
+            {
+                rewards[i].SetActive(true);
+                gates[i].Lock();
+                Player.Main.transform.position = gates[i].transform.position;
+            }
+            else
+            {
+                gates[i].Keys = 1;
+                rewards[i].SetActive(false);
+            }
+
+        var vacant = gates.Where(g => !g.IsLocked);
+        if (vacant.Any())
         {
-            rewards[i].SetActive(false);
-            regions[i].SetActive(false);
-            gates[i].Keys = 1;
+            end.Keys = 1;
+            vacant.ElementAt(Random.Range(0, vacant.Count())).Keys = 1;
         }
-        NextGate();
-    }
-
-    public void OpenRegion() => regions[current].SetActive(true);
-
-    public void LockRegion()
-    {
-        rewards[current].SetActive(true);
-        regions[current].SetActive(false);
-
-        rewards.RemoveAt(current);
-        gates.RemoveAt(current);
-        regions.RemoveAt(current);
-
-        if (!NextGate()) { }
-    }
-
-    private bool NextGate()
-    {
-        if (gates.Count > 0)
-        {
-            current = Random.Range(0, gates.Count);
-            gates[current].Keys = 0;
-            return true;
-        }
-        return false;
     }
 }

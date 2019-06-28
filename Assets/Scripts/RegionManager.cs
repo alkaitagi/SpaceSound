@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class RegionManager : MonoBehaviour
@@ -24,11 +26,11 @@ public class RegionManager : MonoBehaviour
         }
     }
 
+    public static List<string> Completed { get; private set; } = new List<string>();
+
+    private void Awake() => Main = this;
+
     private void Start() => TimeElapsed = 0;
-
-    private void OnEnable() => Main = this;
-
-    private void OnDisable() => Main = null;
 
     private void Update()
     {
@@ -45,6 +47,7 @@ public class RegionManager : MonoBehaviour
     {
         if (!gate.IsLocked)
         {
+            Completed.Add(StatsManager.Main.RegionName);
             gate.Open();
             if (Player.Main)
                 Player.Main.GetComponent<Health>().Destroy();

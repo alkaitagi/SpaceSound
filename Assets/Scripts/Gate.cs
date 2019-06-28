@@ -56,10 +56,15 @@ public class Gate : MonoBehaviour
     {
         if (!IsLocked)
         {
-            IsLocked = true;
+            Lock();
             WarpManager.Main.Warp(this);
-            animator.SetTrigger("Lock");
         }
+    }
+
+    public void Lock()
+    {
+        IsLocked = true;
+        animator.SetTrigger("Lock");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
