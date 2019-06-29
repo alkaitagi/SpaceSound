@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class WarpManager : MonoBehaviour
 {
+    public static WarpManager Main { get; private set; }
     public static Gate gate;
 
     private bool isWaiting;
@@ -25,6 +26,8 @@ public class WarpManager : MonoBehaviour
     private CanvasToggle canvasInfo;
     [SerializeField]
     private CanvasToggle canvasPoll;
+
+    private void Awake() => Main = this;
 
     private void Start()
     {
