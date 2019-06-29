@@ -2,6 +2,7 @@ using System.Collections;
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class WarpManager : MonoBehaviour
@@ -9,8 +10,10 @@ public class WarpManager : MonoBehaviour
     public static WarpManager Main { get; private set; }
     public static Gate gate;
 
+    private bool isLast;
     private bool isWaiting;
     private bool isReversed;
+    private bool isFirst;
 
     [SerializeField]
     private float duration;
@@ -23,24 +26,40 @@ public class WarpManager : MonoBehaviour
     [SerializeField]
     private Text body;
     [SerializeField]
-    private CanvasToggle canvasInfo;
+    private GameObject finalQuestion;
+
+    [Space(10)]
     [SerializeField]
-    private CanvasToggle canvasPoll;
+    private CanvasToggle finalMessage;
+    [SerializeField]
+    private CanvasToggle regionInfo;
+    [SerializeField]
+    private CanvasToggle regionPoll;
+    [SerializeField]
+    private CanvasToggle initialPoll;
 
     private void Awake() => Main = this;
 
     private void Start()
     {
-        header.text = gate.Destination;
-        body.text = gate.Description;
+        if (gate)
+        {
+            header.text = gate.Destination;
+            body.text = gate.Description;
 
-        var player = Player.Main;
-        isReversed = gate.Destination == "Sun";
+            isReversed = gate.Destination == "Sun";
+            isLast = gate.Destination == "Sungazer";
+        }
+        else
+        {
+            isReversed = true;
+            isFirst = true;
+        }
 
-        player.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
+        Player.Main.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
         effects.transform.eulerAngles = new Vector3(0, 0, isReversed ? 180 : 0);
 
-        StartCoroutine(Wait());
+        StartCoroutine(Wait(gate?.Destination));
     }
 
     public static void Warp(Gate gate)
@@ -51,17 +70,33 @@ public class WarpManager : MonoBehaviour
 
     public void Continue() => isWaiting = false;
 
-    private IEnumerator Wait()
+    private IEnumerator Wait(string destination)
     {
         isWaiting = true;
         yield return new WaitForSeconds(duration / 2);
 
-        (isReversed ? canvasPoll : canvasInfo).IsVisible = true;
+        if (isFirst)
+            initialPoll.IsVisible = true;
+        else if (isLast)
+            finalMessage.IsVisible = true;
+        else if (isReversed)
+        {
+            regionPoll.IsVisible = true;
+            if (RegionManager.Completed.Count < 3)
+                finalQuestion.SetActive(false);
+        }
+        else
+            regionInfo.IsVisible = true;
 
         while (isWaiting)
             yield return new WaitForEndOfFrame();
         yield return new WaitForSeconds(duration / 2);
 
-        LoadingScreen.Main.StartLoading(() => SceneManager.LoadScene(gate.Destination));
+        LoadingScreen.Main.StartLoading
+        (
+            isLast
+            ? (UnityAction)(() => Application.Quit())
+            : () => SceneManager.LoadScene(destination)
+        );
     }
 }

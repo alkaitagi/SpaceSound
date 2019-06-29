@@ -14,6 +14,8 @@ public class DebugPanel : MonoBehaviour
     private Text deathText;
     [SerializeField]
     private Text countdownText;
+    [SerializeField]
+    private InputField logOutput;
 
     [Space(10)]
     [SerializeField]
@@ -40,6 +42,7 @@ public class DebugPanel : MonoBehaviour
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();
         countdownText.text = (RegionManager.Main ? RegionManager.Main.TimeLeft : 0).ToString();
+        logOutput.text = StatsManager.Log;
     }
 
     public void SkipRegion()
@@ -55,6 +58,4 @@ public class DebugPanel : MonoBehaviour
     }
 
     public void RestartGame() => SceneManager.LoadScene("Main");
-
-    public void QuitGame() => Application.Quit();
 }

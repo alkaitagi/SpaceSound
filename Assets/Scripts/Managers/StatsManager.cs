@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu]
 public class StatsManager : ScriptableObject
 {
+    public static string Log { get; set; } = string.Empty;
+
     public long TesterID { get; set; }
     public string RegionName { get; set; }
     public int RegionDuration { get; set; }
