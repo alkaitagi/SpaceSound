@@ -24,6 +24,7 @@ public class CanvasToggle : MonoBehaviour
 
     [SerializeField, Space(10)]
     private float duration = .1f;
+    public float Duration => duration;
     private float timer = 0;
 
     private RectTransform rectTransform;
@@ -59,7 +60,7 @@ public class CanvasToggle : MonoBehaviour
 
     private void Update()
     {
-        var timer = Mathf.Clamp01(this.timer + (IsVisible ? -1 : 1) * Time.unscaledDeltaTime / duration);
+        var timer = Mathf.Clamp01(this.timer + (IsVisible ? -1 : 1) * Time.unscaledDeltaTime / Duration);
         if (timer != this.timer)
         {
             this.timer = timer;

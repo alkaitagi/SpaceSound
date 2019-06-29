@@ -18,27 +18,15 @@ public class Gate : MonoBehaviour
     public bool IsLocked { get; private set; }
 
     [SerializeField]
-    private bool isReversed;
-    public bool IsReversed => isReversed;
-    [SerializeField]
-    private Transform destination;
-    public Transform Destination => destination;
-    [SerializeField]
     private GameObject effect;
 
-    [Header("Events")]
+    [Header("Warp")]
     [SerializeField]
-    private VoidEvent onWarpIn;
-    public VoidEvent OnWarpIn => onWarpIn;
-    [SerializeField]
-    private bool isInterrupted;
-    public bool IsInterrupted => isInterrupted;
-    [SerializeField]
-    private VoidEvent onInterrupt;
-    public VoidEvent OnInterrupt => onInterrupt;
-    [SerializeField]
-    private VoidEvent onWarpOut;
-    public VoidEvent OnWarpOut => onWarpOut;
+    private string destination;
+    public string Destination => destination;
+    [SerializeField, Multiline]
+    private string description;
+    public string Description => description;
 
     private Animator animator;
 
@@ -57,7 +45,7 @@ public class Gate : MonoBehaviour
         if (!IsLocked)
         {
             Lock();
-            WarpManager.Main.Warp(this);
+            WarpManager.Warp(this);
         }
     }
 
@@ -69,7 +57,7 @@ public class Gate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (destination && other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
             Warp();
     }
 }

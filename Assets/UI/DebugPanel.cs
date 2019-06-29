@@ -51,7 +51,7 @@ public class DebugPanel : MonoBehaviour
     public void SkipWarp()
     {
         if (WarpManager.Main)
-            WarpManager.Main.IsInterrupted = false;
+            WarpManager.Main.IsWaiting = false;
     }
 
     public void RestartGame() => SceneManager.LoadScene("Main");

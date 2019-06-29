@@ -1,69 +1,64 @@
 using System.Collections;
 
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WarpManager : MonoBehaviour
 {
-    public static WarpManager Main { get; private set; }
+    public static Gate gate;
 
-    public bool IsInterrupted { get; set; }
+    private bool isWaiting;
+    private bool isReversed;
 
     [SerializeField]
     private float duration;
     [SerializeField]
-    private GameObject effects;
+    private Transform effects;
+
+    [Space(10)]
     [SerializeField]
-    private CanvasToggle canvasToggle;
+    private Text header;
+    [SerializeField]
+    private Text body;
+    [SerializeField]
+    private CanvasToggle canvasInfo;
+    [SerializeField]
+    private CanvasToggle canvasPoll;
 
-    private void Awake()
+    private void Start()
     {
-        Main = this;
-        effects.SetActive(false);
-    }
+        header.text = gate.Destination;
+        body.text = gate.Description;
 
-    public void Warp(Gate gate)
-    {
-        IsInterrupted = gate.IsInterrupted;
-        StopAllCoroutines();
-        StartCoroutine(Transition(gate));
-    }
-
-    private IEnumerator Transition(Gate gate)
-    {
-        effects.SetActive(true);
         var player = Player.Main;
-        player.enabled = false;
+        isReversed = gate.Destination == "Sun";
 
-        yield return StartCoroutine(Fade());
-        gate.OnWarpIn.Invoke();
+        player.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
+        effects.transform.eulerAngles = new Vector3(0, 0, isReversed ? 180 : 0);
 
-        player.transform.position = transform.position;
-        player.transform.eulerAngles = new Vector3(0, 0, gate.IsReversed ? -225 : -45);
-        effects.transform.eulerAngles = new Vector3(0, 0, gate.IsReversed ? 180 : 0);
-
-        yield return new WaitForSeconds(duration / 2);
-
-        if (IsInterrupted)
-        {
-            gate.OnInterrupt.Invoke();
-            while (IsInterrupted)
-                yield return new WaitForEndOfFrame();
-        }
-
-        yield return new WaitForSeconds(duration / 2);
-
-        yield return StartCoroutine(Fade());
-        gate.OnWarpOut.Invoke();
-
-        player.enabled = true;
-        player.transform.position = gate.Destination.position;
-        effects.SetActive(false);
+        StartCoroutine(Wait());
     }
 
-    private IEnumerator Fade()
+    public static void Warp(Gate gate)
     {
-        canvasToggle.IsVisible = true;
-        yield return new WaitForSeconds(1);
-        canvasToggle.IsVisible = false;
+        WarpManager.gate = gate;
+        LoadingScreen.Main.StartLoading(() => SceneManager.LoadScene("Warp"));
+    }
+
+    public void Continue() => isWaiting = false;
+
+    private IEnumerator Wait()
+    {
+        isWaiting = true;
+        yield return new WaitForSeconds(duration / 2);
+
+        (isReversed ? canvasPoll : canvasInfo).IsVisible = true;
+
+        while (isWaiting)
+            yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(duration / 2);
+
+        LoadingScreen.Main.StartLoading(() => SceneManager.LoadScene(gate.Destination));
     }
 }
