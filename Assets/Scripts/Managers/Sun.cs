@@ -33,7 +33,7 @@ public class Sun : MonoBehaviour
         if (vacant.Any())
         {
             end.Keys = 1;
-            vacant.ElementAt(Random.Range(0, vacant.Count())).Keys = 1;
+            vacant.ElementAt(Random.Range(0, vacant.Count())).Keys = 0;
         }
     }
 }

@@ -59,7 +59,7 @@ public class WarpManager : MonoBehaviour
         Player.Main.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
         effects.transform.eulerAngles = new Vector3(0, 0, isReversed ? 180 : 0);
 
-        StartCoroutine(Wait(gate?.Destination));
+        StartCoroutine(Wait(gate ? gate.Destination : "Sun"));
     }
 
     public static void Warp(Gate gate)
