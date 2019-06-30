@@ -31,7 +31,7 @@ public class StatsManager : ScriptableObject
                 Deaths.Clear();
                 Keys.Clear();
             }
-            else
+            else if (current.name != null)
             {
                 RegionDuration = (int)RegionManager.Main.TimeElapsed;
                 RegionName = current.name;

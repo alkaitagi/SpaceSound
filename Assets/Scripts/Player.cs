@@ -33,9 +33,9 @@ public class Player : MonoBehaviour
         light.SetActive(ModuleManager.Main.HasLight);
         thruster.gameObject.SetActive(ModuleManager.Main.HasThruster);
         cannon.gameObject.SetActive(ModuleManager.Main.HasCannon);
-    }
 
-    private void Start() => CameraManager.VirtualCamera.Follow = transform;
+        CameraManager.VirtualCamera.Follow = transform;
+    }
 
     public void SendRemnant() => Instantiate(remnant, transform.position, Quaternion.identity);
 

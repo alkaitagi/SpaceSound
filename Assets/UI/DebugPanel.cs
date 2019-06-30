@@ -29,6 +29,7 @@ public class DebugPanel : MonoBehaviour
             Destroy(gameObject);
         else
         {
+            loaded = true;
             DontDestroyOnLoad(gameObject);
             Application.targetFrameRate = 60;
             onAwake.Invoke();
