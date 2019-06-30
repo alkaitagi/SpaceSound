@@ -18,15 +18,17 @@ public class Gate : MonoBehaviour
     public bool IsLocked { get; private set; }
 
     [SerializeField]
-    private GameObject effect;
-
-    [Header("Warp")]
-    [SerializeField]
     private string destination;
     public string Destination => destination;
     [SerializeField, Multiline]
     private string description;
     public string Description => description;
+
+    [Space(10)]
+    [SerializeField]
+    private GameObject effect;
+    [SerializeField]
+    private VoidEvent onWarp;
 
     private Animator animator;
 
@@ -45,6 +47,7 @@ public class Gate : MonoBehaviour
         if (!IsLocked)
         {
             Lock();
+            onWarp.Invoke();
             WarpManager.Warp(this);
         }
     }

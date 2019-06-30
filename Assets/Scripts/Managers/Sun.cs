@@ -17,6 +17,8 @@ public class Sun : MonoBehaviour
     private void Awake()
     {
         for (int i = 0; i < gates.Count; i++)
+        {
+            gates[i].Keys = 1;
             if (RegionManager.Completed.Contains(gates[i].name))
             {
                 rewards[i].SetActive(true);
@@ -24,10 +26,8 @@ public class Sun : MonoBehaviour
                 Player.Main.transform.position = gates[i].transform.position;
             }
             else
-            {
-                gates[i].Keys = 1;
                 rewards[i].SetActive(false);
-            }
+        }
 
         var vacant = gates.Where(g => !g.IsLocked);
         if (vacant.Any())

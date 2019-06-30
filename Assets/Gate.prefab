@@ -274,7 +274,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -4911,19 +4911,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c42d9eb176607343a908f98da3a89fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isReversed: 0
-  destination: {fileID: 0}
+  destination: 
+  description: 
   effect: {fileID: 6793251323723959499, guid: 9772dddefccbd5b4aa77bb5095ff138c, type: 3}
-  onWarpIn:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  isInterrupted: 0
-  onInterrupt:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  onWarpOut:
+  onWarp:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

@@ -8,7 +8,9 @@ using UnityEngine.SceneManagement;
 public class WarpManager : MonoBehaviour
 {
     public static WarpManager Main { get; private set; }
-    public static Gate gate;
+
+    private static string destination;
+    private static string description;
 
     private bool isLast;
     private bool isWaiting;
@@ -42,29 +44,31 @@ public class WarpManager : MonoBehaviour
 
     private void Start()
     {
-        if (gate)
-        {
-            header.text = gate.Destination;
-            body.text = gate.Description;
-
-            isReversed = gate.Destination == "Sun";
-            isLast = gate.Destination == "Sungazer";
-        }
-        else
+        if (string.IsNullOrEmpty(destination))
         {
             isReversed = true;
             isFirst = true;
+            destination = "Sun";
+        }
+        else
+        {
+            header.text = destination;
+            body.text = description;
+
+            isReversed = destination == "Sun";
+            isLast = destination == "Sungazer";
         }
 
         Player.Main.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
         effects.transform.eulerAngles = new Vector3(0, 0, isReversed ? 180 : 0);
 
-        StartCoroutine(Wait(gate ? gate.Destination : "Sun"));
+        StartCoroutine(Wait(destination));
     }
 
     public static void Warp(Gate gate)
     {
-        WarpManager.gate = gate;
+        destination = gate?.Destination;
+        description = gate?.Description;
         LoadingScreen.Main.StartLoading(() => SceneManager.LoadScene("Warp"));
     }
 

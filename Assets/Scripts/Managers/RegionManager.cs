@@ -35,7 +35,6 @@ public class RegionManager : MonoBehaviour
     private void Update()
     {
         TimeElapsed = Mathf.Clamp(TimeElapsed + Time.deltaTime, 0, Duration);
-        TimeElapsed = (int)(TimeElapsed * 100) / 100f;
         if (TimeElapsed == Duration)
         {
             enabled = false;

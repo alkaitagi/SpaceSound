@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class DebugPanel : MonoBehaviour
 {
@@ -41,7 +40,7 @@ public class DebugPanel : MonoBehaviour
             canvasToggle.Toggle();
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();
-        countdownText.text = (RegionManager.Main ? RegionManager.Main.TimeLeft : 0).ToString();
+        countdownText.text = (RegionManager.Main ? (int)RegionManager.Main.TimeLeft : 0).ToString();
         logOutput.text = StatsManager.Log;
     }
 
@@ -56,6 +55,4 @@ public class DebugPanel : MonoBehaviour
         if (WarpManager.Main)
             WarpManager.Main.Continue();
     }
-
-    public void RestartGame() => SceneManager.LoadScene("Main");
 }

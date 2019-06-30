@@ -26,16 +26,19 @@ public class StatsManager : ScriptableObject
     private void ChangedActiveScene(Scene current, Scene next)
     {
         if (next.name == "Warp")
-            if (current.name == "Sun")
+        {
+            if (RegionName != null)
             {
+                RegionName = null;
                 Deaths.Clear();
                 Keys.Clear();
             }
-            else if (current.name != null)
-            {
-                RegionDuration = (int)RegionManager.Main.TimeElapsed;
-                RegionName = current.name;
-            }
+        }
+        else if (next.name != "Sun")
+        {
+            RegionDuration = (int)RegionManager.Main.TimeElapsed;
+            RegionName = next.name;
+        }
     }
 
     public void CountDeath() => Deaths.Add((int)Time.timeSinceLevelLoad);

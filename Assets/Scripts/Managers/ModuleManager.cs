@@ -9,7 +9,11 @@ public class ModuleManager : ScriptableObject
 
     public static ModuleManager Main { get; private set; }
 
-    public void Awake() => Main = this;
+    public void Awake()
+    {
+        Main = this;
+        ResetModules();
+    }
 
     public void ResetModules()
     {

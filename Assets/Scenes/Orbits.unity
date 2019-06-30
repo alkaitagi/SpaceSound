@@ -702,12 +702,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.086248
+      value: 7.3049536
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.224478
+      value: 6.4716234
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -1527,6 +1527,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5159823068543297009, guid: 6b54ebeae18961e42b5924c4a1582525,
+        type: 3}
+      propertyPath: m_Name
+      value: Gate
+      objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: onJump.m_PersistentCalls.m_Calls.Array.size
@@ -1535,7 +1540,7 @@ PrefabInstance:
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: onWarp.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
@@ -1620,7 +1625,7 @@ PrefabInstance:
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: onWarp.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
@@ -1661,11 +1666,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onWarp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 159b98a8c5511c444b6e3fcafcfa6e51,
+        type: 2}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
       propertyPath: onWarp.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: ResetModules
       objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297019, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
@@ -1761,11 +1767,6 @@ PrefabInstance:
         type: 3}
       propertyPath: isReversed
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159823068543297009, guid: 6b54ebeae18961e42b5924c4a1582525,
-        type: 3}
-      propertyPath: m_Name
-      value: Gate
       objectReference: {fileID: 0}
     - target: {fileID: 5159823068543297015, guid: 6b54ebeae18961e42b5924c4a1582525,
         type: 3}
@@ -2173,15 +2174,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.535963
+      value: -8.815121
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.960347
+      value: -23.243555
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -2242,11 +2248,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0888242
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -2590,15 +2591,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.839789
+      value: -18.46189
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9323343
+      value: 4.550447
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -2659,11 +2665,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.7573513
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -3157,15 +3158,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.36366
+      value: 35.51804
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.0051007
+      value: -8.754407
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -3226,11 +3232,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0183523
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (7)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -3655,15 +3656,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.01109
+      value: -8.284707
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.412743
+      value: 7.3396096
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -3724,11 +3730,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9692024
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -4592,12 +4593,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8251604
+      value: -3.8410094
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.031551
+      value: 31.633566
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -5020,7 +5021,7 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3505306
+      value: 33.216434
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -5278,15 +5279,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.02831
+      value: -11.903305
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.675967
+      value: -2.9339004
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -5347,11 +5353,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.8820922
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -6131,15 +6132,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.075357
+      value: -4.8744946
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.328913
+      value: -4.3184266
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -6200,11 +6206,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6006505
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -6660,15 +6661,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.3517947
+      value: -3.5154343
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -35.840244
+      value: -28.952198
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -6729,11 +6735,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0764449
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -7220,7 +7221,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1701128061}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12106,15 +12108,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.41551
+      value: -20.709486
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.090684
+      value: -10.869178
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -12175,11 +12182,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.67914057
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -12311,15 +12313,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.043438
+      value: 19.999128
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.69167
+      value: -28.973719
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -12380,11 +12387,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.472951
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -14058,12 +14060,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.2438736
+      value: 12.051124
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2770379
+      value: 6.3249183
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -14154,15 +14156,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3766384
+      value: 3.1774137
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -27.809107
+      value: -26.168343
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -14223,11 +14230,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1118253
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -14943,12 +14945,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.167766
+      value: 10.2203865
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.628056
+      value: 14.8067875
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -15120,15 +15122,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.945965
+      value: -17.816206
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.468447
+      value: 9.350662
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -15189,11 +15196,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.81932384
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -15399,6 +15401,131 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1701128060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1083918902}
+    m_Modifications:
+    - target: {fileID: 8393824485257537499, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_Name
+      value: KeyDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b46bcd21a316a54b9d32df7b124fd76, type: 3}
+--- !u!224 &1701128061 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8393824485257537500, guid: 6b46bcd21a316a54b9d32df7b124fd76,
+    type: 3}
+  m_PrefabInstance: {fileID: 1701128060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1724067518
 GameObject:
   m_ObjectHideFlags: 0
@@ -15487,15 +15614,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.791424
+      value: -21.120766
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000012056846
+      value: -0.000001846436
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -15556,11 +15688,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.7403244
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -16024,12 +16151,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.11798
+      value: 1.5427194
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.315706
+      value: 4.0678167
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -16128,12 +16255,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.48598
+      value: 21.818321
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.8028626
+      value: 5.377733
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -16232,12 +16359,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2385714
+      value: -15.741681
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.691881
+      value: 22.805765
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -16336,12 +16463,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3646084
+      value: 3.678222
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.238561
+      value: 30.292881
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -16432,15 +16559,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.401218
+      value: 13.474993
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.788961
+      value: -35.53062
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -16501,11 +16633,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0506897
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -16768,15 +16895,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.443407
+      value: 6.294066
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -25.198668
+      value: -5.5760574
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -16837,11 +16969,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4042839
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -17112,12 +17239,12 @@ PrefabInstance:
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.848317
+      value: -2.0216246
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.420741
+      value: 5.3305845
       objectReference: {fileID: 0}
     - target: {fileID: 9161286513805392572, guid: e025e0564d362bb4fb32b7024ead847a,
         type: 3}
@@ -17532,15 +17659,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540594305}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.683271
+      value: -8.376057
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -28.516157
+      value: -12.134818
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -17601,11 +17733,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.8402813
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet (7)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -18304,6 +18431,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 447706980327145883, guid: cb8b8dd9479aee440906a43e250475d1,
+        type: 3}
+      propertyPath: m_Name
+      value: Border
+      objectReference: {fileID: 0}
     - target: {fileID: 447706980327145863, guid: cb8b8dd9479aee440906a43e250475d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18373,11 +18505,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 447706980327145883, guid: cb8b8dd9479aee440906a43e250475d1,
-        type: 3}
-      propertyPath: m_Name
-      value: Border
       objectReference: {fileID: 0}
     - target: {fileID: 447706980327145882, guid: cb8b8dd9479aee440906a43e250475d1,
         type: 3}
@@ -18949,15 +19076,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1189602562}
     m_Modifications:
+    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
+        type: 3}
+      propertyPath: m_Name
+      value: Asteroid (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.828505
+      value: 14.734925
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.633557
+      value: -7.733485
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070298, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
@@ -19018,11 +19150,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4040087
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653414830747070293, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
-        type: 3}
-      propertyPath: m_Name
-      value: Asteroid (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6653414830747070299, guid: f749e943a9bd6a64e9b78d04f9ceb55a,
         type: 3}
