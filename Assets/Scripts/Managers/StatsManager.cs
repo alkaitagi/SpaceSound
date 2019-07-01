@@ -12,7 +12,7 @@ public class StatsManager : ScriptableObject
     public static JObject Log { get; set; }
 
     public long TesterID { get; set; }
-    public string RegionName { get; set; } = null;
+    public string RegionName { get; set; }
     public int RegionDuration { get; set; }
 
     public List<int> Deaths { get; set; } = new List<int>();
@@ -20,18 +20,23 @@ public class StatsManager : ScriptableObject
 
     public static StatsManager Main { get; private set; }
 
-    private static string lastScene = string.Empty;
+    private string lastScene = string.Empty;
 
     public void Awake()
     {
         Main = this;
+
         Log = new JObject() { { "id", Guid.NewGuid().ToString() } };
+        lastScene = null;
+        RegionName = null;
+        Deaths.Clear();
+        Keys.Clear();
+
         SceneManager.activeSceneChanged += ChangedActiveScene;
     }
 
     private void ChangedActiveScene(Scene current, Scene next)
     {
-        Debug.Log("|" + RegionName + "|");
         var nextScene = next.name;
         if (lastScene == "Sun" && nextScene == "Warp")
         {

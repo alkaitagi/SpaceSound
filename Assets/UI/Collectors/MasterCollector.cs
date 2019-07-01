@@ -23,10 +23,5 @@ public class MasterCollector : MonoBehaviour
             StatsManager.Main.AddPoll(parent);
             onCollected.Invoke();
         }
-        else
-        {
-            StatsManager.Main.AddPoll(parent);
-            onCollected.Invoke();
-        }
     }
 }
