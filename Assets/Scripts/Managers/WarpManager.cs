@@ -56,7 +56,7 @@ public class WarpManager : MonoBehaviour
             body.text = description;
 
             isReversed = destination == "Sun";
-            isLast = destination == "Sungazer";
+            isLast = destination == "End";
         }
 
         Player.Main.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);

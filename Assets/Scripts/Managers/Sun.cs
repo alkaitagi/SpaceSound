@@ -16,6 +16,8 @@ public class Sun : MonoBehaviour
 
     private void Awake()
     {
+        var last = RegionManager.Completed.LastOrDefault();
+
         for (int i = 0; i < gates.Count; i++)
         {
             gates[i].Keys = 1;
@@ -23,7 +25,8 @@ public class Sun : MonoBehaviour
             {
                 rewards[i].SetActive(true);
                 gates[i].Lock();
-                Player.Main.transform.position = gates[i].transform.position;
+                if (last == gates[i].name)
+                    Player.Main.transform.position = gates[i].transform.position;
             }
             else
                 rewards[i].SetActive(false);
