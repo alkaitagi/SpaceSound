@@ -11,13 +11,22 @@ public class MasterCollector : MonoBehaviour
 
     public void Collect()
     {
-        var data = GetComponentsInChildren<BaseCollector>()
+        var parent = new JObject();
+        if
+        (
+            GetComponentsInChildren<BaseCollector>()
             .Where(c => c.gameObject.activeInHierarchy)
-            .Select(c => c.Collect());
-        //if (data.Any(null))
-        //    return null;
-
-        StatsManager.Main.AddPoll(new JObject(data));
-        onCollected.Invoke();
+            .Select(c => c.Collect(parent))
+            .All(b => b)
+        )
+        {
+            StatsManager.Main.AddPoll(parent);
+            onCollected.Invoke();
+        }
+        else
+        {
+            StatsManager.Main.AddPoll(parent);
+            onCollected.Invoke();
+        }
     }
 }

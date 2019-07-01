@@ -56,12 +56,12 @@ public class StatsManager : ScriptableObject
         lastScene = nextScene;
     }
 
-    public void AddPoll(JObject pollData)
+    public void AddPoll(JObject poll)
     {
         if (RegionName == null)
-            Log["initialPoll"] = pollData;
+            Log["initialPoll"] = poll;
         else
-            Log[RegionName] = pollData;
+            Log[RegionName] = poll;
     }
 
     public void CountDeath() => Deaths.Add((int)RegionManager.Main.TimeElapsed);

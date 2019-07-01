@@ -10,12 +10,13 @@ public class TogglesCollector : BaseCollector
 
     private void Awake() => toggles = GetComponentsInChildren<Toggle>();
 
-    public override JObject Collect() =>
-        toggles.Any(t => t.isOn)
-            ? new JObject()
-            {{
-                key,
-                new JArray(toggles.Where(t => t.isOn).Select(t => t.name))
-            }}
-            : null;
+    public override bool Collect(JObject parent)
+    {
+        if (toggles.Any(t => t.isOn))
+        {
+            parent[key] = new JArray(toggles.Where(t => t.isOn).Select(t => t.name));
+            return true;
+        }
+        else return false;
+    }
 }

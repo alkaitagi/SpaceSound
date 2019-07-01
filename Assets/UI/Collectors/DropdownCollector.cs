@@ -10,8 +10,14 @@ public class DropdownCollector : BaseCollector
 
     private void Awake() => dropdown = GetComponent<Dropdown>();
 
-    public override JObject Collect() =>
-        dropdown.captionText.text == "Not selected"
-            ? null
-            : new JObject() { { key, dropdown.captionText.text } };
+    public override bool Collect(JObject parent)
+    {
+        if (dropdown.captionText.text == "Not selected")
+            return false;
+        else
+        {
+            parent[key] = dropdown.captionText.text;
+            return true;
+        }
+    }
 }

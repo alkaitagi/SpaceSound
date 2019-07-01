@@ -7,5 +7,5 @@ public abstract class BaseCollector : MonoBehaviour
     [SerializeField]
     protected string key;
 
-    public abstract JObject Collect();
+    public abstract bool Collect(JObject parent);
 }

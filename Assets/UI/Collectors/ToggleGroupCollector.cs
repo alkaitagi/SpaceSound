@@ -12,18 +12,20 @@ public class ToggleGroupCollector : BaseCollector
 
     private void Awake() => toggleGroup = GetComponent<ToggleGroup>();
 
-    public override JObject Collect() =>
-        toggleGroup.AnyTogglesOn()
-            ? new JObject()
-            {{
-                key,
-                new JArray
-                (
-                    toggleGroup
-                        .ActiveToggles()
-                        .Select(t => t.GetComponentInChildren<Text>())
-                        .Select(t => t.text)
-                )
-            }}
-            : null;
+    public override bool Collect(JObject parent)
+    {
+        if (toggleGroup.AnyTogglesOn())
+        {
+            parent[key] = new JArray
+            (
+                toggleGroup
+                    .ActiveToggles()
+                    .Where(t => t.isOn)
+                    .Select(t => t.GetComponentInChildren<Text>())
+                    .Select(t => t.text)
+            );
+            return true;
+        }
+        else return false;
+    }
 }
