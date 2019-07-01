@@ -10,5 +10,5 @@ public class KeyDisplay : MonoBehaviour
 
     private void Start() => keyCount = FindObjectsOfType(typeof(Key)).Length;
 
-    private void FixedUpdate() => text.text = (keyCount - StatsManager.Main.Keys.Count).ToString();
+    private void Update() => text.text = (keyCount - StatsManager.Main.Keys.Count).ToString();
 }

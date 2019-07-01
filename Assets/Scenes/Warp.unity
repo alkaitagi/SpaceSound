@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -641,7 +641,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000015254527
+      value: -0.000011646927
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -2105,7 +2105,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000027733362
+      value: 0.0000021217452
       objectReference: {fileID: 0}
     - target: {fileID: 114582455993909598, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -2673,7 +2673,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00001029389
+      value: -0.0000019313707
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -3306,7 +3306,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000016255899
+      value: -0.0000097395705
       objectReference: {fileID: 0}
     - target: {fileID: 114582455993909598, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -4656,7 +4656,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000029078858
+      value: -0.000028217015
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -5299,7 +5299,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000020186371
+      value: 0.0000017045128
       objectReference: {fileID: 0}
     - target: {fileID: 114582455993909598, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -5997,7 +5997,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000013161489
+      value: 0.000016963302
       objectReference: {fileID: 0}
     - target: {fileID: 114582455993909598, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -6349,7 +6349,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00003999056
+      value: -0.000016594113
       objectReference: {fileID: 0}
     - target: {fileID: 114582455993909598, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}

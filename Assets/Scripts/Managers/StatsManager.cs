@@ -41,7 +41,7 @@ public class StatsManager : ScriptableObject
         }
     }
 
-    public void CountDeath() => Deaths.Add((int)Time.timeSinceLevelLoad);
+    public void CountDeath() => Deaths.Add((int)RegionManager.Main.TimeElapsed);
 
-    public void CountKey() => Keys.Add((int)Time.timeSinceLevelLoad);
+    public void CountKey() => Keys.Add((int)RegionManager.Main.TimeElapsed);
 }
