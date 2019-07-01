@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &20177957 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
+    type: 3}
+  m_PrefabInstance: {fileID: 371517355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &126047390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -596,7 +608,7 @@ PrefabInstance:
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -606,27 +618,27 @@ PrefabInstance:
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
-      value: I have advanced knowledge about it
+      value: Not selected
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: I feel confident about it
+      value: I have advanced knowledge about it
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: Not sure
+      value: I feel confident about it
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: Almost do not know anything
+      value: Not sure
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
-      value: I do not know
+      value: Almost do not know anything
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -637,6 +649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[5].m_Text
+      value: I do not know
       objectReference: {fileID: 0}
     - target: {fileID: 224831635605770490, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -656,7 +673,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000017166138
+      value: -0.00001335144
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -835,6 +852,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 194568709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &230680972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
+    type: 3}
+  m_PrefabInstance: {fileID: 690552662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &239938385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2148,7 +2177,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000005722046
+      value: 0.000009536743
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -3237,6 +3266,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: experience
+--- !u!114 &751637953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1718876800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &781967745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4745,41 +4786,46 @@ PrefabInstance:
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
-      value: Strongly agree
+      value: Not selected
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: Agree
+      value: Strongly agree
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: Slightly agree
+      value: Agree
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: No opinion
+      value: Slightly agree
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
-      value: Somewhat disagree
+      value: No opinion
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[5].m_Text
-      value: Disagree
+      value: Somewhat disagree
       objectReference: {fileID: 0}
     - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[6].m_Text
+      value: Disagree
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105428120321934, guid: 40fa7e4603ec31341ab9fc058af93207,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[7].m_Text
       value: Strongly disagree
       objectReference: {fileID: 0}
     - target: {fileID: 224831635605770490, guid: 40fa7e4603ec31341ab9fc058af93207,
@@ -4849,6 +4895,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: adapted
+--- !u!114 &972247650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972247648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbae2d7bd5b6dfe408babededd74c28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valid: 010000000200000003000000
+  onValid:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 333619779}
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1001 &974462848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6232,7 +6306,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000009536743
+      value: -0.000020980835
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -6603,7 +6677,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000011444092
+      value: -0.000019073486
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -6661,6 +6735,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: playTime
+--- !u!114 &1141449291 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114109609210863380, guid: 3a6adf7432b3d644b8fbc6adeabd69fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2021785727}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1156099668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19434,6 +19520,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: citizenship
+--- !u!114 &1939664688 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1568912116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1956292620
 GameObject:
   m_ObjectHideFlags: 0
@@ -19661,6 +19759,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977590828}
   m_CullTransparentMesh: 0
+--- !u!114 &1982865939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1232936093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994721463
 GameObject:
   m_ObjectHideFlags: 0
@@ -19785,6 +19895,18 @@ MonoBehaviour:
   regionInfo: {fileID: 974462851}
   regionPoll: {fileID: 1043969007}
   initialPoll: {fileID: 1971710385}
+--- !u!114 &2019811944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1760881303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2021785727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20482,6 +20604,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: emotions
+  toggles:
+  - {fileID: 1982865939}
+  - {fileID: 230680972}
+  - {fileID: 20177957}
+  - {fileID: 1939664688}
+  - {fileID: 751637953}
+  - {fileID: 2019811944}
+  other: {fileID: 1141449291}
 --- !u!114 &8858809160393487385
 MonoBehaviour:
   m_ObjectHideFlags: 0

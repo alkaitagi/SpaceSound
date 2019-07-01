@@ -12,7 +12,7 @@ public class StatsManager : ScriptableObject
     public static JObject Log { get; set; }
 
     public long TesterID { get; set; }
-    public string RegionName { get; set; }
+    public string RegionName { get; set; } = null;
     public int RegionDuration { get; set; }
 
     public List<int> Deaths { get; set; } = new List<int>();
@@ -31,37 +31,40 @@ public class StatsManager : ScriptableObject
 
     private void ChangedActiveScene(Scene current, Scene next)
     {
+        Debug.Log("|" + RegionName + "|");
         var nextScene = next.name;
-        if (nextScene == "Warp" && lastScene == "Sun")
+        if (lastScene == "Sun" && nextScene == "Warp")
         {
             RegionName = null;
             Deaths.Clear();
             Keys.Clear();
         }
-        else if (lastScene == "Warp")
-            if (nextScene == "Sun")
+        else if (lastScene != "Sun" && nextScene == "Warp")
+        {
+            if (!string.IsNullOrEmpty(RegionName))
                 Log[RegionName] = new JObject()
-                {
-                    {"duration", RegionDuration},
-                    {"deathCount", Deaths.Count},
-                    {"deaths", new JArray(Deaths)},
-                    {"keyCount", Keys.Count},
-                    {"keys", new JArray(Keys)}
-                };
-            else
-            {
-                RegionDuration = (int)RegionManager.Main.TimeElapsed;
-                RegionName = nextScene;
-            }
+                    {
+                        {"duration", RegionDuration},
+                        {"deathCount", Deaths.Count},
+                        {"deaths", new JArray(Deaths)},
+                        {"keyCount", Keys.Count},
+                        {"keys", new JArray(Keys)}
+                    };
+        }
+        else if (lastScene == "Warp" && nextScene != "Sun")
+        {
+            RegionDuration = (int)RegionManager.Main.TimeElapsed;
+            RegionName = nextScene;
+        }
         lastScene = nextScene;
     }
 
     public void AddPoll(JObject poll)
     {
-        if (RegionName == null)
+        if (string.IsNullOrEmpty(RegionName))
             Log["initialPoll"] = poll;
         else
-            Log[RegionName] = poll;
+            Log[RegionName]["poll"] = poll;
     }
 
     public void CountDeath() => Deaths.Add((int)RegionManager.Main.TimeElapsed);
