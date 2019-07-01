@@ -30,7 +30,11 @@ public class RegionManager : MonoBehaviour
 
     private void Awake() => Main = this;
 
-    private void Start() => TimeElapsed = 0;
+    private void Start()
+    {
+        TimeElapsed = 0;
+        Completed.Add(StatsManager.Main.RegionName);
+    }
 
     private void Update()
     {
@@ -46,7 +50,6 @@ public class RegionManager : MonoBehaviour
     {
         if (!gate.IsLocked)
         {
-            Completed.Add(StatsManager.Main.RegionName);
             gate.Open();
             if (Player.Main)
                 Player.Main.GetComponent<Health>().Destroy();
