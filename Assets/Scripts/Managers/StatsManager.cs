@@ -1,12 +1,15 @@
+using System;
 using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using Newtonsoft.Json.Linq;
+
 [CreateAssetMenu]
 public class StatsManager : ScriptableObject
 {
-    public static string Log { get; set; } = string.Empty;
+    public static JObject Log { get; set; }
 
     public long TesterID { get; set; }
     public string RegionName { get; set; }
@@ -17,28 +20,48 @@ public class StatsManager : ScriptableObject
 
     public static StatsManager Main { get; private set; }
 
+    private static string lastScene = string.Empty;
+
     public void Awake()
     {
         Main = this;
+        Log = new JObject() { { "id", Guid.NewGuid().ToString() } };
         SceneManager.activeSceneChanged += ChangedActiveScene;
     }
 
     private void ChangedActiveScene(Scene current, Scene next)
     {
-        if (next.name == "Warp")
+        var nextScene = next.name;
+        if (nextScene == "Warp" && lastScene == "Sun")
         {
-            if (RegionName != null)
+            RegionName = null;
+            Deaths.Clear();
+            Keys.Clear();
+        }
+        else if (lastScene == "Warp")
+            if (nextScene == "Sun")
+                Log[RegionName] = new JObject()
+                {
+                    {"duration", RegionDuration},
+                    {"deathCount", Deaths.Count},
+                    {"deaths", new JArray(Deaths)},
+                    {"keyCount", Keys.Count},
+                    {"keys", new JArray(Keys)}
+                };
+            else
             {
-                RegionName = null;
-                Deaths.Clear();
-                Keys.Clear();
+                RegionDuration = (int)RegionManager.Main.TimeElapsed;
+                RegionName = nextScene;
             }
-        }
-        else if (next.name != "Sun")
-        {
-            RegionDuration = (int)RegionManager.Main.TimeElapsed;
-            RegionName = next.name;
-        }
+        lastScene = nextScene;
+    }
+
+    public void AddPoll(JObject pollData)
+    {
+        if (RegionName == null)
+            Log["initialPoll"] = pollData;
+        else
+            Log[RegionName] = pollData;
     }
 
     public void CountDeath() => Deaths.Add((int)RegionManager.Main.TimeElapsed);

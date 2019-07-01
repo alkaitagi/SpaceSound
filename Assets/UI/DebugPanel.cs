@@ -41,7 +41,7 @@ public class DebugPanel : MonoBehaviour
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();
         countdownText.text = (RegionManager.Main ? (int)RegionManager.Main.TimeLeft : 0).ToString();
-        logOutput.text = StatsManager.Log;
+        logOutput.text = StatsManager.Log.ToString();
     }
 
     public void SkipRegion()
