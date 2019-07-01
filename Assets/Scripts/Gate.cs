@@ -26,8 +26,6 @@ public class Gate : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
-    private GameObject effect;
-    [SerializeField]
     private VoidEvent onWarp;
 
     private Animator animator;
@@ -36,11 +34,7 @@ public class Gate : MonoBehaviour
 
     private void Start() => Keys = Keys;
 
-    public void Open()
-    {
-        animator.SetTrigger("Open");
-        Instantiate(effect, transform.position, transform.rotation);
-    }
+    public void Open() => animator.SetTrigger("Open");
 
     public void Warp()
     {
