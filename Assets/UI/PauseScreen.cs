@@ -7,7 +7,7 @@ public class PauseScreen : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.LeftAlt))
         {
             canvas.IsVisible = !canvas.IsVisible;
             Time.timeScale = canvas.IsVisible ? 0 : 1;
