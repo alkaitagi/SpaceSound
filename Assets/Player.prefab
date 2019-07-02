@@ -10248,6 +10248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  startInvulnerability: 3
   effect: {fileID: 5940537188335113416, guid: 605870c30e1bfab43b2cf336e6fd8148, type: 3}
   onDestroy:
     m_PersistentCalls:
