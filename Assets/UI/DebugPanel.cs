@@ -34,7 +34,7 @@ public class DebugPanel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.BackQuote))
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.LeftAlt))
             canvasToggle.Toggle();
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();
