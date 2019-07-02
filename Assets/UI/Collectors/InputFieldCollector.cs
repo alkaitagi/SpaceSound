@@ -10,14 +10,7 @@ public class InputFieldCollector : BaseCollector
 
     private void Awake() => inputField = GetComponent<InputField>();
 
-    public override bool Collect(JObject parent)
-    {
-        if (string.IsNullOrEmpty(inputField.text))
-            return false;
-        else
-        {
-            parent[key] = inputField.text;
-            return true;
-        }
-    }
+    protected override bool Validate() => !string.IsNullOrEmpty(inputField.text);
+
+    protected override JToken Read() => new JValue(inputField.text);
 }

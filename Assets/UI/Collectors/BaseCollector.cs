@@ -1,11 +1,27 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 using Newtonsoft.Json.Linq;
 
 public abstract class BaseCollector : MonoBehaviour
 {
     [SerializeField]
-    protected string key;
+    private string key;
+    [SerializeField]
+    private Graphic indicator;
 
-    public abstract bool Collect(JObject parent);
+    public bool Collect(JObject parent)
+    {
+        var isValid = Validate();
+
+        if (indicator)
+            indicator.color = isValid ? Color.white : Color.red;
+        if (isValid)
+            parent[key] = Read();
+
+        return isValid;
+    }
+
+    protected abstract bool Validate();
+    protected abstract JToken Read();
 }
