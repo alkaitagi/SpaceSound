@@ -16,13 +16,22 @@ public class Health : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
+    private ParticleSystem shield;
+    [SerializeField]
     private GameObject effect;
     [SerializeField]
     private VoidEvent onDestroy;
     public VoidEvent OnDestroy => onDestroy;
 
-    private void Update() =>
+    private void Update()
+    {
         startInvulnerability = Mathf.Max(0, startInvulnerability - Time.deltaTime);
+        if (shield)
+        {
+            var emission = shield.emission;
+            emission.enabled = startInvulnerability > 0;
+        }
+    }
 
     public void Destroy()
     {
