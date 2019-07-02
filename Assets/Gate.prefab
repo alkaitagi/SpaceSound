@@ -4914,7 +4914,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: 
   description: 
-  effect: {fileID: 6793251323723959499, guid: 9772dddefccbd5b4aa77bb5095ff138c, type: 3}
   onWarp:
     m_PersistentCalls:
       m_Calls: []
@@ -5273,7 +5272,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
