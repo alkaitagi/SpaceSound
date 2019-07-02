@@ -11,16 +11,16 @@ public class MasterCollector : MonoBehaviour
 
     public void Collect()
     {
-        var parent = new JObject();
-        if
-        (
-            GetComponentsInChildren<BaseCollector>()
-            .Where(c => c.gameObject.activeInHierarchy)
-            .Select(c => c.Collect(parent))
-            .All(b => b)
-        )
+        var data = new JObject();
+        var collectors = GetComponentsInChildren<BaseCollector>().Where(c => c.gameObject.activeInHierarchy);
+
+        var isValid = true;
+        foreach (var collector in collectors)
+            isValid &= collector.Collect(data);
+
+        if (isValid)
         {
-            StatsManager.Main.AddPoll(parent);
+            StatsManager.Main.AddPoll(data);
             onCollected.Invoke();
         }
     }
