@@ -8,7 +8,7 @@
     <script src="%UNITY_WEBGL_LOADER_URL%"></script>
     <script>
         if (!document.createElement('canvas').getContext('webgl2'))
-            alert("This browser does not support WebGL2!");
+            alert("This browser does not support WebGL2! Please, use the latest Mozilla Firefox or Google Chrome.");
         else if (
             navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)
@@ -18,7 +18,7 @@
             || navigator.userAgent.match(/BlackBerry/i)
             || navigator.userAgent.match(/Windows Phone/i)
         )
-            alert("Mobile devices are not supported!");
+            alert("Mobile devices are not supported! Please, run on desktop.");
         else
             UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%");
     </script>
