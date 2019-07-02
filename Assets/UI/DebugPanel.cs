@@ -4,8 +4,6 @@ using UnityEngine.UI;
 public class DebugPanel : MonoBehaviour
 {
     [SerializeField]
-    private KeyCode key;
-    [SerializeField]
     private CanvasToggle canvasToggle;
 
     [Space(10)]
@@ -36,7 +34,7 @@ public class DebugPanel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(key))
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.BackQuote))
             canvasToggle.Toggle();
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();
