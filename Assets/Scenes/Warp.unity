@@ -555,7 +555,7 @@ PrefabInstance:
     - target: {fileID: 224240912105295468, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224240912105295468, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -695,7 +695,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000017166138
+      value: 0.0000038146973
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -747,6 +747,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 333619780}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 4. Which game action/moment affected the soundtrack? What was changed
+        in the soundtrack and how?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Description
@@ -855,17 +866,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 4. Which game action/moment affected the soundtrack? What was changed
-        in the soundtrack and how?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -1052,6 +1052,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 958686355}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 2. Did the music improve your playing experience?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Description
@@ -1160,16 +1170,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 2. Did the music improve your playing experience?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -1477,6 +1477,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 3. What is your gender?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Gender
@@ -1586,16 +1596,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 3. What is your gender?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
 --- !u!1001 &359238204
@@ -1605,6 +1605,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 5. What is your citizenship?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Citiz
@@ -1713,16 +1723,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 5. What is your citizenship?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -2240,7 +2240,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000009536743
+      value: 0.000017166138
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -2306,6 +2306,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 953883827}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 3. Was the music adapting to your gameplay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Description
@@ -2415,16 +2425,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 3. Was the music adapting to your gameplay?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
 --- !u!224 &476275406 stripped
@@ -2452,6 +2452,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: '8. How much do you agree with this statement: "I enjoy Adventure Games?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Enjoy advent
@@ -2560,16 +2570,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: '8. How much do you agree with this statement: "I enjoy Adventure Games?"'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -2865,7 +2865,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000076293945
+      value: -0.00002861023
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -2922,6 +2922,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 224114805396188817}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Created by <b>Magomed Magomedov</b> @alkaitagi
+
+        Under supervision
+        of <b>Munir Makhmutov</b>
+
+        At <b>Innopolis</b> AIGD Lab
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Text
@@ -3030,33 +3057,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Created by <b>Magomed Magomedov</b> @alkaitagi
-
-        Under supervision
-        of <b>Munir Makhmutov</b>
-
-        At <b>Innopolis</b> AIGD Lab
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -3572,7 +3572,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -3769,6 +3769,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 10. How many hours per week do you play Adventure games?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: How many
@@ -3877,16 +3887,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 10. How many hours per week do you play Adventure games?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -4014,7 +4014,7 @@ PrefabInstance:
     - target: {fileID: 114040149198233880, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_Text
-      value: Please answer these question
+      value: Please answer these questions
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c09a71c049725a47ab1f10792bebf58, type: 3}
@@ -4037,6 +4037,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 974462849}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: Description
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Text
@@ -4146,16 +4156,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: Description
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
 --- !u!114 &883415789 stripped
@@ -4177,6 +4177,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 6. What is your current status?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Status
@@ -4285,16 +4295,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 6. What is your current status?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -4809,7 +4809,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00001335144
+      value: 0.000011444092
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -5515,7 +5515,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000011444092
+      value: 0.0000038146973
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -5957,6 +5957,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 2. What is your surname?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Surname
@@ -6066,16 +6076,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 2. What is your surname?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
 --- !u!1 &1109551052
@@ -6170,6 +6170,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2918065243473481137}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 1. Which emotions did you feel while playing?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Description
@@ -6278,16 +6288,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 1. Which emotions did you feel while playing?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -6461,7 +6461,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00002861023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -6527,6 +6527,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1555582398}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: Do you know what is music theory?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Description
@@ -6569,7 +6579,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -6635,16 +6645,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: '*. Do you know what is music theory?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -6838,7 +6838,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000024795532
+      value: -0.0000019073486
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
@@ -7505,6 +7505,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 9. Do you have experience of playing Adventure games (e.g. examples)?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Exper
@@ -7613,16 +7623,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 9. Do you have experience of playing Adventure games (e.g. examples)?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -8315,6 +8315,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: '7. How much do you agree with this statement: "I enjoy Indie Games?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Enjoy
@@ -8423,16 +8433,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: '7. How much do you agree with this statement: "I enjoy Indie Games?"'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -18080,6 +18080,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 4. What is your age?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Age
@@ -18189,16 +18199,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 4. What is your age?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
 --- !u!1 &1555582397
@@ -18230,6 +18230,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1720954951}
   - {fileID: 1120709634}
   - {fileID: 186098431}
   m_Father: {fileID: 438437315}
@@ -18238,7 +18239,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 200}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1555582399
 MonoBehaviour:
@@ -18270,7 +18271,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 6
   m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
@@ -19058,7 +19059,7 @@ PrefabInstance:
     - target: {fileID: 114040149198233880, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_Text
-      value: Please answer these question
+      value: Please answer these questions
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c09a71c049725a47ab1f10792bebf58, type: 3}
@@ -19383,6 +19384,140 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1718876800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1720954950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1555582398}
+    m_Modifications:
+    - target: {fileID: 1460043013717516, guid: 8c09a71c049725a47ab1f10792bebf58, type: 3}
+      propertyPath: m_Name
+      value: Header
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040149198233880, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_Text
+      value: The final question
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040149198233880, guid: 8c09a71c049725a47ab1f10792bebf58,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c09a71c049725a47ab1f10792bebf58, type: 3}
+--- !u!224 &1720954951 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
+    type: 3}
+  m_PrefabInstance: {fileID: 1720954950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1727167717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19390,6 +19525,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1349421928}
     m_Modifications:
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_Text
+      value: 1. What is your name?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1261388886898946, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
       propertyPath: m_Name
       value: Name
@@ -19498,16 +19643,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_Text
-      value: 1. What is your name?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
-        type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef906c825b4d2f47b7d3f276356fccf, type: 3}
@@ -20534,7 +20669,7 @@ PrefabInstance:
     - target: {fileID: 224505283711477866, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000011444092
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 224393501016118530, guid: 40fa7e4603ec31341ab9fc058af93207,
         type: 3}
