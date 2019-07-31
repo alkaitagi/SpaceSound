@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.LWRP;
 
-[RequireComponent(typeof(Light2D))]
+[RequireComponent(typeof(UnityEngine.Experimental.Rendering.Universal.Light2D))]
 public class Explosion : MonoBehaviour
 {
     [SerializeField]
     private float fadeSpeed;
 
-    private new Light2D light;
+    private new UnityEngine.Experimental.Rendering.Universal.Light2D light;
 
-    private void Awake() => light = GetComponent<Light2D>();
+    private void Awake() => light = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
 
     private void Update()
     {
