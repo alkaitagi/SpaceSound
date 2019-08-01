@@ -1,7 +1,7 @@
+using System.Linq;
 using System.Collections;
 
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +10,6 @@ public class WarpManager : MonoBehaviour
     public static WarpManager Main { get; private set; }
 
     private static string destination;
-    private static string description;
 
     private bool isLast;
     private bool isWaiting;
@@ -24,21 +23,21 @@ public class WarpManager : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
-    private Text header;
+    private CanvasToggle initialPoll;
     [SerializeField]
-    private Text body;
-    [SerializeField]
-    private GameObject finalQuestion;
+    private CanvasToggle regionPoll;
 
     [Space(10)]
     [SerializeField]
+    private CanvasToggle tutorialCanvas;
+    [SerializeField]
+    private GameObject[] tutorials;
+
+    [Space(10)]
+    [SerializeField]
+    private GameObject finalQuestion;
+    [SerializeField]
     private CanvasToggle finalMessage;
-    [SerializeField]
-    private CanvasToggle regionInfo;
-    [SerializeField]
-    private CanvasToggle regionPoll;
-    [SerializeField]
-    private CanvasToggle initialPoll;
 
     private void Awake() => Main = this;
 
@@ -52,9 +51,6 @@ public class WarpManager : MonoBehaviour
         }
         else
         {
-            header.text = destination;
-            body.text = description;
-
             isReversed = destination == "Sun";
             isLast = destination == "End";
         }
@@ -65,10 +61,9 @@ public class WarpManager : MonoBehaviour
         StartCoroutine(Wait(destination));
     }
 
-    public static void Warp(Gate gate)
+    public static void Warp(string destination)
     {
-        destination = gate?.Destination;
-        description = gate?.Description;
+        WarpManager.destination = destination;
         LoadingScreen.Main.StartLoading(() => SceneManager.LoadScene("Warp"));
     }
 
@@ -89,8 +84,13 @@ public class WarpManager : MonoBehaviour
             if (RegionManager.Completed.Count < 3)
                 finalQuestion.SetActive(false);
         }
+        else if (tutorials.FirstOrDefault(t => t.name == destination) is GameObject tutorial)
+        {
+            tutorial.SetActive(true);
+            tutorialCanvas.IsVisible = true;
+        }
         else
-            regionInfo.IsVisible = true;
+            isWaiting = false;
 
         while (isWaiting)
             yield return new WaitForEndOfFrame();
