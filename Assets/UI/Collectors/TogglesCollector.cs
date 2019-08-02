@@ -16,8 +16,6 @@ public class TogglesCollector : BaseCollector
     [SerializeField]
     private InputFieldCollector otherCollector;
 
-    private void Awake() => toggles = GetComponentsInChildren<Toggle>();
-
     protected override bool Validate() =>
         toggles.Any(t => t.isOn)
         || (otherToggle && otherToggle.isOn && otherCollector.IsValid);
