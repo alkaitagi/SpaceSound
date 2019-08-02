@@ -9307,7 +9307,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2021785727}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2021785729}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
@@ -23711,7 +23711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9116c09093c841149b485d74745578a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  isVisible: 0
   scale: 1
   offset: {x: -50, y: 0, z: 0}
   duration: 0.1
@@ -23723,7 +23723,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971710383}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -24279,6 +24279,16 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114109609210863380, guid: 3a6adf7432b3d644b8fbc6adeabd69fd,
+        type: 3}
+      propertyPath: m_ContentType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109609210863380, guid: 3a6adf7432b3d644b8fbc6adeabd69fd,
+        type: 3}
+      propertyPath: m_KeyboardType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a6adf7432b3d644b8fbc6adeabd69fd, type: 3}
 --- !u!224 &2021785728 stripped
@@ -24287,6 +24297,27 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2021785727}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2021785729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1564571076173238, guid: 3a6adf7432b3d644b8fbc6adeabd69fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2021785727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2021785730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021785729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ab69505dce778459a489c74649d12a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letter: 1
+  digit: 0
+  symbol: 1
 --- !u!1001 &2041746964
 PrefabInstance:
   m_ObjectHideFlags: 0
