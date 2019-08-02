@@ -12,7 +12,7 @@ public abstract class BaseCollector : MonoBehaviour
 
     public bool Collect(JObject parent)
     {
-        var isValid = Validate();
+        var isValid = IsValid;
 
         if (indicator)
             indicator.color = isValid ? Color.white : Color.red;
@@ -21,6 +21,8 @@ public abstract class BaseCollector : MonoBehaviour
 
         return isValid;
     }
+
+    public bool IsValid => Validate();
 
     protected abstract bool Validate();
     protected abstract JToken Read();
