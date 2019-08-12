@@ -16,6 +16,8 @@ public class Cannon : MonoBehaviour
     private Transform spawn;
     [SerializeField]
     private ParticleSystem effect;
+    [SerializeField]
+    private new AudioSource audio;
 
     private bool isReady = true;
     private void Ready() => isReady = true;
@@ -36,6 +38,7 @@ public class Cannon : MonoBehaviour
             Invoke("Stop", duration);
 
             effect.Emit(Mathf.RoundToInt(20 * distance));
+            audio.Play();
         }
     }
 
