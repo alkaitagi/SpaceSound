@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Cannon : MonoBehaviour
 {
     [SerializeField]
@@ -16,7 +17,7 @@ public class Cannon : MonoBehaviour
     private Transform spawn;
     [SerializeField]
     private ParticleSystem effect;
-    [SerializeField]
+
     private new AudioSource audio;
 
     private bool isReady = true;
@@ -24,6 +25,8 @@ public class Cannon : MonoBehaviour
 
     private bool isShooting = false;
     private void Stop() => isShooting = false;
+
+    private void Awake() => audio = GetComponent<AudioSource>();
 
     private void Start() => effect.transform.localScale = new Vector3(1, distance, 1);
 

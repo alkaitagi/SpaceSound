@@ -142,7 +142,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -200,7 +200,6 @@ MonoBehaviour:
   target: 1
   spawn: {fileID: 475511317}
   effect: {fileID: 8550321158681271888}
-  audio: {fileID: 7276079782417745089}
 --- !u!1 &475511316
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Comet : MonoBehaviour
 {
     [SerializeField]
@@ -10,6 +11,10 @@ public class Comet : MonoBehaviour
     private Transform center;
 
     private float radius;
+
+    private new AudioSource audio;
+
+    private void Awake() => audio = GetComponent<AudioSource>();
 
     private void Start()
     {
@@ -36,11 +41,14 @@ public class Comet : MonoBehaviour
     private void Push(Rigidbody2D target)
     {
         if (target)
+        {
             target.AddForce
             (
                 pushScale * speed.Value
                 * (target.position - (Vector2)transform.position),
                 ForceMode2D.Impulse
             );
+            audio.Play();
+        }
     }
 }
