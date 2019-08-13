@@ -11,7 +11,7 @@ public class LoadingScreen : MonoBehaviour
     private CanvasToggle canvasToggle;
 
     [SerializeField]
-    private float delay;
+    private float timeout;
 
     private void Awake()
     {
@@ -31,8 +31,24 @@ public class LoadingScreen : MonoBehaviour
     private IEnumerator Loading(UnityAction action)
     {
         canvasToggle.IsVisible = true;
-        yield return new WaitForSecondsRealtime(canvasToggle.Duration + delay);
+        yield return new WaitForSecondsRealtime(canvasToggle.Duration);
+
+        var timeout = this.timeout;
+        while (timeout > 0)
+        {
+            timeout -= Time.unscaledDeltaTime;
+            AudioListener.volume = Mathf.InverseLerp(this.timeout, 0, timeout);
+            yield return new WaitForEndOfFrame();
+        }
+
         action.Invoke();
+        while (timeout < this.timeout)
+        {
+            timeout += Time.unscaledDeltaTime;
+            AudioListener.volume = Mathf.InverseLerp(0, this.timeout, timeout);
+            yield return new WaitForEndOfFrame();
+        }
+
         canvasToggle.IsVisible = false;
     }
 }
