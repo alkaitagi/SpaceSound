@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Engine : MonoBehaviour
 {
     public enum EngineType { Straight, Torque }
@@ -29,9 +30,22 @@ public class Engine : MonoBehaviour
     [SerializeField]
     private ParticleSystem effect;
 
-    private void Awake() => IsOn = IsOn;
+    private new AudioSource audio;
+    private float audioVolume;
 
-    public void FixedUpdate()
+    private void Awake()
+    {
+        audio = GetComponent<AudioSource>();
+        IsOn = IsOn;
+
+        audioVolume = audio.volume;
+        if (!IsOn)
+            audio.volume = 0;
+    }
+
+    private void Update() => audio.volume = Mathf.Lerp(audio.volume, IsOn ? audioVolume : 0, Time.smoothDeltaTime);
+
+    private void FixedUpdate()
     {
         if (IsOn)
             switch (type)
