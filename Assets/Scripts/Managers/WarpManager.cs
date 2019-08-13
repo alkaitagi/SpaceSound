@@ -39,6 +39,12 @@ public class WarpManager : MonoBehaviour
     [SerializeField]
     private CanvasToggle finalMessage;
 
+    [Space(10)]
+    [SerializeField]
+    private AudioSource themeWarp;
+    [SerializeField]
+    private AudioSource themeFinal;
+
     private void Awake() => Main = this;
 
     private void Start()
@@ -54,6 +60,8 @@ public class WarpManager : MonoBehaviour
             isReversed = destination == "Sun";
             isLast = destination == "End";
         }
+
+        (isLast ? themeFinal : themeWarp).Play();
 
         Player.Main.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
         effects.transform.eulerAngles = new Vector3(0, 0, isReversed ? 180 : 0);
