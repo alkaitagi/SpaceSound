@@ -10,6 +10,9 @@ public class LoadingScreen : MonoBehaviour
 
     private CanvasToggle canvasToggle;
 
+    [SerializeField]
+    private float delay;
+
     private void Awake()
     {
         if (!Main)
@@ -28,7 +31,7 @@ public class LoadingScreen : MonoBehaviour
     private IEnumerator Loading(UnityAction action)
     {
         canvasToggle.IsVisible = true;
-        yield return new WaitForSecondsRealtime(canvasToggle.Duration);
+        yield return new WaitForSecondsRealtime(canvasToggle.Duration + delay);
         action.Invoke();
         canvasToggle.IsVisible = false;
     }
