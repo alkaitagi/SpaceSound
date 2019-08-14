@@ -12,35 +12,42 @@ public class Health : MonoBehaviour
     private UnitType type;
     public UnitType Type => type;
     [SerializeField]
-    private float startInvulnerability;
+    private float invulnerability;
 
     [Space(10)]
     [SerializeField]
-    private ParticleSystem shield;
+    private ParticleSystem shieldEffect;
     [SerializeField]
-    private GameObject effect;
+    private new AudioSource audio;
+    [SerializeField]
+    private GameObject deathEffect;
     [SerializeField]
     private VoidEvent onDestroy;
     public VoidEvent OnDestroy => onDestroy;
 
     private void Update()
     {
-        startInvulnerability = Mathf.Max(0, startInvulnerability - Time.deltaTime);
-        if (shield)
+        invulnerability = Mathf.Max(0, invulnerability - Time.deltaTime);
+        if (shieldEffect)
         {
-            var emission = shield.emission;
-            emission.enabled = startInvulnerability > 0;
+            var emission = shieldEffect.emission;
+            emission.enabled = invulnerability > 0;
+
+            if (!emission.enabled && audio)
+                audio.Stop();
         }
     }
 
     public void Destroy()
     {
-        if (startInvulnerability == 0)
+        if (invulnerability == 0)
         {
-            if (effect)
-                Instantiate(effect, transform.position, transform.rotation);
+            if (deathEffect)
+                Instantiate(deathEffect, transform.position, transform.rotation);
             OnDestroy.Invoke();
             Destroy(gameObject);
         }
+        else if (audio)
+            audio.Play();
     }
 }

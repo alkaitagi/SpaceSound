@@ -303,8 +303,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   startInvulnerability: 0
-  shield: {fileID: 0}
-  effect: {fileID: 2245280936357598863, guid: c2d27b8eaabdae14d8a37fc5da07a728, type: 3}
+  shieldEffect: {fileID: 0}
+  audio: {fileID: 0}
+  deathEffect: {fileID: 2245280936357598863, guid: c2d27b8eaabdae14d8a37fc5da07a728,
+    type: 3}
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
