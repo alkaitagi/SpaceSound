@@ -11,6 +11,13 @@ public class PauseScreen : MonoBehaviour
         {
             canvas.IsVisible = !canvas.IsVisible;
             Time.timeScale = canvas.IsVisible ? 0 : 1;
+            MuteAudio(Time.timeScale == 0);
         }
+    }
+
+    private void MuteAudio(bool value)
+    {
+        foreach (var source in FindObjectsOfType(typeof(AudioSource)))
+            ((AudioSource)source).mute = value;
     }
 }

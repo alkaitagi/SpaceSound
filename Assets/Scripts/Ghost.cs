@@ -1,7 +1,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(AudioEchoFilter))]
 public class Ghost : MonoBehaviour
 {
@@ -9,8 +8,6 @@ public class Ghost : MonoBehaviour
     private Range speed;
 
     [Space(10)]
-    [SerializeField]
-    private Range audioPitch;
     [SerializeField]
     private Range echoDelay;
 
@@ -21,8 +18,6 @@ public class Ghost : MonoBehaviour
     {
         speed.Evaluate();
         rigidbody = GetComponent<Rigidbody2D>();
-
-        GetComponent<AudioSource>().pitch = audioPitch.Random();
         GetComponent<AudioEchoFilter>().delay = echoDelay.Random();
     }
 
