@@ -83,7 +83,10 @@ public class WarpManager : MonoBehaviour
         yield return new WaitForSeconds(duration / 2);
 
         if (isFirst)
+        {
+            ShowTutorial(false);
             initialPoll.IsVisible = true;
+        }
         else if (isLast)
             finalMessage.IsVisible = true;
         else if (isReversed)
@@ -92,12 +95,7 @@ public class WarpManager : MonoBehaviour
             if (RegionManager.Completed.Count < 3)
                 finalQuestion.SetActive(false);
         }
-        else if (tutorials.FirstOrDefault(t => t.name == destination) is GameObject tutorial)
-        {
-            tutorial.SetActive(true);
-            tutorialCanvas.IsVisible = true;
-        }
-        else
+        else if (!ShowTutorial())
             isWaiting = false;
 
         while (isWaiting)
@@ -110,5 +108,18 @@ public class WarpManager : MonoBehaviour
             ? (UnityAction)(() => Application.Quit())
             : () => SceneManager.LoadScene(destination)
         );
+    }
+
+    private bool ShowTutorial(bool showCanvas = true)
+    {
+        if (tutorials.FirstOrDefault(t => t.name == destination) is GameObject tutorial)
+        {
+            tutorial.SetActive(true);
+            if (showCanvas)
+                tutorialCanvas.IsVisible = true;
+            return true;
+        }
+        else
+            return false;
     }
 }

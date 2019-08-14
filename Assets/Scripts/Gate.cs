@@ -25,7 +25,7 @@ public class Gate : MonoBehaviour
 
     [Space(10)]
     [SerializeField]
-    private AudioSource audioOpen;
+    private AudioSource audioPulse;
     [SerializeField]
     private AudioSource audioClose;
 
@@ -38,7 +38,7 @@ public class Gate : MonoBehaviour
     public void Open()
     {
         animator.SetTrigger("Open");
-        audioOpen.Play();
+        audioPulse.Play();
     }
 
     public void Warp()
@@ -55,6 +55,7 @@ public class Gate : MonoBehaviour
     {
         IsLocked = true;
         animator.SetTrigger("Lock");
+        audioPulse.Stop();
         audioClose.Play();
     }
 
