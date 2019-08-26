@@ -27,7 +27,7 @@ public class DebugPanel : MonoBehaviour
         else
         {
             loaded = true;
-            Application.targetFrameRate = 60;
+            Application.targetFrameRate = 120;
             onAwake.Invoke();
         }
     }
