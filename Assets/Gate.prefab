@@ -153,7 +153,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5013,7 +5013,6 @@ MonoBehaviour:
   onWarp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: VoidEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   audioPulse: {fileID: 4442989264341434160}
   audioClose: {fileID: 8553722985861235468}
 --- !u!1 &5159823068731079170
@@ -10276,7 +10275,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0

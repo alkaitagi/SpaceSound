@@ -4784,7 +4784,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4983,7 +4983,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5035,91 +5035,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Comet
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: bodyColor.key0.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: bodyColor.key0.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: bodyColor.key0.b
-      value: 0.39215687
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: bodyColor.key1.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: bodyColor.key1.g
-      value: 0.39215687
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: bodyColor.key1.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: dotColor.key0.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: dotColor.key0.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: dotColor.key0.b
-      value: 0.39215687
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: dotColor.key1.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: dotColor.key1.g
-      value: 0.39215687
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: dotColor.key1.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: asteroidScale.max
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: asteroidScale.min
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: spinRange.min
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: spinRange.max
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: spinRange.randomSign
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -5210,6 +5125,91 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: bodyColor.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: bodyColor.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: bodyColor.key0.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: bodyColor.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: bodyColor.key1.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: bodyColor.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: dotColor.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: dotColor.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: dotColor.key0.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: dotColor.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: dotColor.key1.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: dotColor.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: asteroidScale.max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: asteroidScale.min
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: spinRange.min
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: spinRange.max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: spinRange.randomSign
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a345bb52d5c23af45820a04861c3b19e, type: 3}
