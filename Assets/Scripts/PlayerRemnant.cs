@@ -20,7 +20,7 @@ public class PlayerRemnant : MonoBehaviour
         );
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (RegionManager.Main && !Player.Main)
         {
@@ -28,7 +28,7 @@ public class PlayerRemnant : MonoBehaviour
             (
                 transform.position,
                 RegionManager.Main.transform.position,
-                speed * Time.smoothDeltaTime
+                speed * Time.fixedDeltaTime
             );
             if ((transform.position - RegionManager.Main.transform.position).sqrMagnitude <= .25f)
             {

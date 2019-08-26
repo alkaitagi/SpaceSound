@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8088cee6425ae6b4f9d2f655cb447886, type: 3}
   m_Color: {r: 0.05724919, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 5159823068543297012}
   - component: {fileID: 5159823068543297013}
   - component: {fileID: 5159823068543297019}
+  - component: {fileID: 6185272501618668597}
   m_Layer: 11
   m_Name: Gate
   m_TagString: Untagged
@@ -5015,6 +5016,17 @@ MonoBehaviour:
       m_Calls: []
   audioPulse: {fileID: 4442989264341434160}
   audioClose: {fileID: 8553722985861235468}
+--- !u!210 &6185272501618668597
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159823068543297009}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
 --- !u!1 &5159823068731079170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,7 +5097,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8088cee6425ae6b4f9d2f655cb447886, type: 3}
   m_Color: {r: 0.05724919, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -5262,7 +5274,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8088cee6425ae6b4f9d2f655cb447886, type: 3}
   m_Color: {r: 0.05724919, g: 1, b: 0, a: 1}
   m_FlipX: 1
@@ -5343,7 +5355,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8088cee6425ae6b4f9d2f655cb447886, type: 3}
   m_Color: {r: 0.05724919, g: 1, b: 0, a: 1}
   m_FlipX: 1
