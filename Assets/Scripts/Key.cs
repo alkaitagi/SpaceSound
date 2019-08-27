@@ -32,10 +32,10 @@ public class Key : MonoBehaviour
         OnTaken.Invoke();
 
         GetComponent<Collider2D>().enabled = false;
-        GetComponent<ParticleSystem>().Toggle(false);
+        foreach (var effect in GetComponentsInChildren<ParticleSystem>())
+            effect.Toggle(false);
 
         Instantiate(effect, transform.position, transform.rotation);
         Destroy(this);
-        Destroy(gameObject, 1);
     }
 }
