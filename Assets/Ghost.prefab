@@ -4960,9 +4960,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f35bb58086f2744ac20e207e774450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  looping: 1
   interval:
-    min: 6
-    max: 3
+    min: 1
+    max: 5
     randomSign: 0
   onTime:
     m_PersistentCalls:

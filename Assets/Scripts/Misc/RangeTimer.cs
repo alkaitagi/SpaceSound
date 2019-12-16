@@ -3,6 +3,8 @@ using UnityEngine;
 public class RangeTimer : MonoBehaviour
 {
     [SerializeField]
+    private bool looping;
+    [SerializeField]
     private Range interval;
     [SerializeField]
     private VoidEvent onTime;
@@ -14,7 +16,8 @@ public class RangeTimer : MonoBehaviour
     private void Time()
     {
         onTime.Invoke();
-        Next();
+        if (looping)
+            Next();
     }
 
     public void Istantiate(GameObject source) =>
