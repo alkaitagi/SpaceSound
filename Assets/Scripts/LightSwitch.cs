@@ -5,21 +5,51 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class LightSwitch : MonoBehaviour
 {
     [SerializeField]
-    private bool isOn;
-    public bool IsOn { get => isOn; set => isOn = value; }
+    private bool active;
+    public bool Active
+    {
+        get => active;
+        set
+        {
+            if (!Locked || !value)
+                active = value;
+        }
+    }
     [SerializeField]
     private float fadeSpeed;
+
+    [SerializeField]
+    private bool locked;
+    public bool Locked
+    {
+        get => locked;
+        set
+        {
+            if (value)
+                Active = false;
+            locked = value;
+            if (lockEffect)
+                lockEffect.Emission(Locked);
+        }
+    }
+    [SerializeField]
+    private ParticleSystem lockEffect;
 
     private new Light2D light;
 
     private void Awake() => light = GetComponent<Light2D>();
 
-    private void Start() => light.intensity = IsOn ? 1 : 0;
+    private void Start()
+    {
+        Locked = Locked;
+        light.intensity = Active ? 1 : 0;
+    }
 
     private void Update() => light.intensity = Mathf.Clamp01(light.intensity
-                                                             + (IsOn ? 1 : -1)
+                                                             + (Active ? 1 : -1)
                                                              * fadeSpeed
                                                              * Time.deltaTime);
 
-    public void Switch() => IsOn = !IsOn;
+    public void ToggleActive() => Active = !Active;
+    public void ToggleLocked() => Locked = !Locked;
 }

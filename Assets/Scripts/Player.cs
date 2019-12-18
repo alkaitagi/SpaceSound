@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     [Header("Modules")]
     [SerializeField]
-    private new GameObject light;
+    private LightSwitch[] lights;
     [SerializeField]
     private Thruster thruster;
     [SerializeField]
@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
     {
         Main = this;
 
-        light.SetActive(ModuleManager.Main.HasLight);
+        foreach (var light in lights)
+            light.gameObject.SetActive(ModuleManager.Main.HasLight);
         thruster.gameObject.SetActive(ModuleManager.Main.HasThruster);
         cannon.gameObject.SetActive(ModuleManager.Main.HasCannon);
 
@@ -66,6 +67,10 @@ public class Player : MonoBehaviour
                 thruster.Burst();
             else if (cannon.gameObject.activeInHierarchy)
                 cannon.Shoot();
+            else
+                foreach (var light in lights)
+                    if (light.gameObject.activeInHierarchy)
+                        light.ToggleActive();
     }
 
     private void OnDisable()

@@ -54,7 +54,7 @@ public class Ghost : MonoBehaviour
     public IEnumerator Trigger(Vector3 position)
     {
         reactionEffect.Emission(true);
-        reactionLight.IsOn = true;
+        reactionLight.Active = true;
 
         var waypoint = this.waypoint;
         this.waypoint = null;
@@ -67,7 +67,7 @@ public class Ghost : MonoBehaviour
         this.waypoint = waypoint;
 
         reactionEffect.Emission(false);
-        reactionLight.IsOn = false;
+        reactionLight.Active = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -5837,7 +5837,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
       cycleCount: 1
-      repeatInterval: 0.01
+      repeatInterval: 0.25
       probability: 1
   SizeModule:
     enabled: 1
@@ -9606,8 +9606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558224940e469a3459dc4ebb9d20ac6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOn: 0
+  active: 0
   fadeSpeed: 5
+  locked: 0
+  lockEffect: {fileID: 0}
 --- !u!1 &8776142071704472791
 GameObject:
   m_ObjectHideFlags: 0
