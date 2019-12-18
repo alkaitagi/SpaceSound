@@ -19,7 +19,4 @@ public class RangeTimer : MonoBehaviour
         if (looping)
             Next();
     }
-
-    public void Istantiate(GameObject source) =>
-        Instantiate(source, transform.position, transform.rotation);
 }

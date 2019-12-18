@@ -14,6 +14,8 @@ public class LightSwitch : MonoBehaviour
 
     private void Awake() => light = GetComponent<Light2D>();
 
+    private void Start() => light.intensity = IsOn ? 1 : 0;
+
     private void Update() => light.intensity = Mathf.Clamp01(light.intensity
                                                              + (IsOn ? 1 : -1)
                                                              * fadeSpeed
