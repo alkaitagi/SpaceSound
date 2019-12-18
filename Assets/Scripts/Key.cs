@@ -33,7 +33,7 @@ public class Key : MonoBehaviour
 
         GetComponent<Collider2D>().enabled = false;
         foreach (var effect in GetComponentsInChildren<ParticleSystem>())
-            effect.Toggle(false);
+            effect.Emission(false).Loop(false);
 
         Instantiate(effect, transform.position, transform.rotation);
         Destroy(this);

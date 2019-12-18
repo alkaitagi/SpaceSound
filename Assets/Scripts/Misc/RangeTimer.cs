@@ -19,4 +19,7 @@ public class RangeTimer : MonoBehaviour
         if (looping)
             Next();
     }
+
+    public void Instantiate(GameObject gameObject) =>
+        Instantiate(gameObject, transform.position, transform.rotation);
 }

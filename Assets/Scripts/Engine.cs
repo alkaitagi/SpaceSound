@@ -17,7 +17,7 @@ public class Engine : MonoBehaviour
         {
             isOn = value;
             if (effect)
-                effect.Toggle(IsOn);
+                effect.Emission(IsOn);
         }
     }
     [SerializeField]

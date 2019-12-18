@@ -2,10 +2,18 @@ using UnityEngine;
 
 public static class Extensions
 {
-    public static void Toggle(this ParticleSystem particleSystem, bool isOn)
+    public static ParticleSystem Emission(this ParticleSystem particleSystem, bool value)
     {
         var emission = particleSystem.emission;
-        emission.enabled = isOn;
+        emission.enabled = value;
+        return particleSystem;
+    }
+
+    public static ParticleSystem Loop(this ParticleSystem particleSystem, bool value)
+    {
+        var main = particleSystem.main;
+        main.loop = value;
+        return particleSystem;
     }
 
     public static void Clear(this Transform transform, bool isImmediate = false)

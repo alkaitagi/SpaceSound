@@ -23,7 +23,7 @@ public class Ghost : MonoBehaviour
     private Range pitch;
 
     private Transform waypoint;
-    private Vector3? target;
+    private Vector3? target = null;
 
     private new Rigidbody2D rigidbody;
 
@@ -53,7 +53,7 @@ public class Ghost : MonoBehaviour
 
     public IEnumerator Trigger(Vector3 position)
     {
-        reactionEffect.Toggle(true);
+        reactionEffect.Emission(true);
         reactionLight.IsOn = true;
 
         var waypoint = this.waypoint;
@@ -66,7 +66,7 @@ public class Ghost : MonoBehaviour
         target = null;
         this.waypoint = waypoint;
 
-        reactionEffect.Toggle(false);
+        reactionEffect.Emission(false);
         reactionLight.IsOn = false;
     }
 

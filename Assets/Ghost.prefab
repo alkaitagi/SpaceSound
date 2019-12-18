@@ -5671,7 +5671,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -9701,9 +9701,9 @@ MonoBehaviour:
     max: 10
     randomSign: 0
   reactionDelay:
-    min: 2
-    max: 6
-    randomSign: 1
+    min: 1
+    max: 3
+    randomSign: 0
   reactionEffect: {fileID: 5489889128098483031}
   reactionLight: {fileID: 2393508454065929729}
   echoDelay:
@@ -9857,7 +9857,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2223227493076096131}
-        m_MethodName: Istantiate
+        m_MethodName: Instantiate
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 9208782994429722841, guid: 2d5f752f205b11c42bdeff0e7b8dcedb,
