@@ -4963,7 +4963,7 @@ MonoBehaviour:
   looping: 1
   interval:
     min: 1
-    max: 5
+    max: 2
     randomSign: 0
   onTime:
     m_PersistentCalls:
