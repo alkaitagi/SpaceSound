@@ -11,13 +11,18 @@ public class LightSwitch : MonoBehaviour
         get => active;
         set
         {
-            if (!Locked || !value)
-                active = value;
+            if (Locked && value)
+                return;
+            active = value;
+            onActiveChange.Invoke(Active);
         }
     }
     [SerializeField]
-    private float fadeSpeed;
+    private BoolEvent onActiveChange;
 
+    [Space(10)]
+    [SerializeField]
+    private float fadeSpeed;
     [SerializeField]
     private bool locked;
     public bool Locked

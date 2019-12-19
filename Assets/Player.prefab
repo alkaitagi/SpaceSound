@@ -14812,9 +14812,10 @@ GameObject:
   - component: {fileID: 6532765304227977952}
   - component: {fileID: 1090534855708090533}
   - component: {fileID: 34830378447231569}
-  m_Layer: 9
+  - component: {fileID: 7311883067722220301}
+  m_Layer: 8
   m_Name: Light
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14887,6 +14888,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  onActiveChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7311883067722220301}
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   fadeSpeed: 5
   locked: 0
   lockEffect: {fileID: 1090534855708090533}
@@ -19672,6 +19687,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &7311883067722220301
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4510868880061132202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5283992, y: 2.7104523}
+      - {x: -0.51188064, y: 4.714852}
+      - {x: -1.5523946, y: 2.6695344}
+      - {x: -1.0267447, y: 0.14925891}
+      - {x: 0.010633826, y: 0.09194484}
 --- !u!1 &5195734972602626549
 GameObject:
   m_ObjectHideFlags: 0
@@ -19762,6 +19807,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  onActiveChange:
+    m_PersistentCalls:
+      m_Calls: []
   fadeSpeed: 5
   locked: 0
   lockEffect: {fileID: 8892637912049960016}
