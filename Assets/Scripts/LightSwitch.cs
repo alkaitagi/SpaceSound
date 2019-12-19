@@ -5,14 +5,19 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class LightSwitch : MonoBehaviour
 {
     [SerializeField]
+    private float activeIntensity;
+    [SerializeField]
+    private float clapmedIntensity;
+    [SerializeField]
+    private float inactiveIntensity;
+
+    [SerializeField]
     private bool active;
     public bool Active
     {
         get => active;
         set
         {
-            if (Locked && value)
-                return;
             active = value;
             onActiveChange.Invoke(Active);
         }
@@ -24,21 +29,19 @@ public class LightSwitch : MonoBehaviour
     [SerializeField]
     private float fadeSpeed;
     [SerializeField]
-    private bool locked;
-    public bool Locked
+    private bool clamped;
+    public bool Clamped
     {
-        get => locked;
+        get => clamped;
         set
         {
-            if (value)
-                Active = false;
-            locked = value;
-            if (lockEffect)
-                lockEffect.Emission(Locked);
+            clamped = value;
+            if (clampEffect)
+                clampEffect.Emission(Clamped);
         }
     }
     [SerializeField]
-    private ParticleSystem lockEffect;
+    private ParticleSystem clampEffect;
 
     private new Light2D light;
 
@@ -46,15 +49,19 @@ public class LightSwitch : MonoBehaviour
 
     private void Start()
     {
-        Locked = Locked;
-        light.intensity = Active ? 1 : 0;
+        Clamped = Clamped;
+        light.intensity = TargetIntensity;
     }
 
-    private void Update() => light.intensity = Mathf.Clamp01(light.intensity
-                                                             + (Active ? 1 : -1)
-                                                             * fadeSpeed
-                                                             * Time.deltaTime);
+    private void Update() => light.intensity = Mathf.MoveTowards(light.intensity,
+                                                                 TargetIntensity,
+                                                                 fadeSpeed * Time.deltaTime);
 
     public void ToggleActive() => Active = !Active;
-    public void ToggleLocked() => Locked = !Locked;
+    public void ToggleClamped() => Clamped = !Clamped;
+
+    private float TargetIntensity =>
+        Active
+            ? (Clamped ? clapmedIntensity : activeIntensity)
+            : 0;
 }

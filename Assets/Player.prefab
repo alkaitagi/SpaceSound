@@ -14887,6 +14887,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558224940e469a3459dc4ebb9d20ac6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeIntensity: 1
+  clapmedIntensity: 0.2
+  inactiveIntensity: 0
   active: 1
   onActiveChange:
     m_PersistentCalls:
@@ -14903,8 +14906,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   fadeSpeed: 5
-  locked: 0
-  lockEffect: {fileID: 1090534855708090533}
+  clamped: 0
+  clampEffect: {fileID: 1090534855708090533}
 --- !u!199 &6532765304227977952
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -19806,13 +19809,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558224940e469a3459dc4ebb9d20ac6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeIntensity: 1
+  clapmedIntensity: 0.2
+  inactiveIntensity: 0
   active: 1
   onActiveChange:
     m_PersistentCalls:
       m_Calls: []
   fadeSpeed: 5
-  locked: 0
-  lockEffect: {fileID: 8892637912049960016}
+  clamped: 0
+  clampEffect: {fileID: 8892637912049960016}
 --- !u!199 &8307212244690282326
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -24616,7 +24622,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5571648158281491725}
-        m_MethodName: ToggleLocked
+        m_MethodName: ToggleClamped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24627,7 +24633,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 7564139068617213456}
-        m_MethodName: ToggleLocked
+        m_MethodName: ToggleClamped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

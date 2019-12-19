@@ -92,6 +92,6 @@ public class Ghost : MonoBehaviour
             this.waypoint = waypoint.Connections[Random.Range(0, waypoint.Connections.Count)];
 
         if (other.CompareTag("Light"))
-            Charge(other.transform.position);
+            Trigger(other.transform.position);
     }
 }
