@@ -5,13 +5,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class LightSwitch : MonoBehaviour
 {
     [SerializeField]
-    private float activeIntensity;
-    [SerializeField]
-    private float clapmedIntensity;
-    [SerializeField]
-    private float inactiveIntensity;
-
-    [SerializeField]
     private bool active;
     public bool Active
     {
@@ -24,6 +17,14 @@ public class LightSwitch : MonoBehaviour
     }
     [SerializeField]
     private BoolEvent onActiveChange;
+
+    [Space(10)]
+    [SerializeField]
+    private float activeIntensity;
+    [SerializeField]
+    private float clapmedIntensity;
+    [SerializeField]
+    private float inactiveIntensity;
 
     [Space(10)]
     [SerializeField]
