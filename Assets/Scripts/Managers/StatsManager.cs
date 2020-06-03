@@ -24,6 +24,7 @@ public class StatsManager : ScriptableObject
 
     public void Awake()
     {
+        Application.targetFrameRate = 60;
         Main = this;
 
         Log = new JObject() { { "id", Guid.NewGuid().ToString() } };
