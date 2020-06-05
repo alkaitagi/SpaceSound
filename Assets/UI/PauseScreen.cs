@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PauseScreen : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class PauseScreen : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.LeftAlt))
+        if (Keyboard.current.leftCtrlKey.isPressed
+            && Keyboard.current.leftAltKey.wasPressedThisFrame)
         {
             canvas.IsVisible = !canvas.IsVisible;
             AudioListener.pause = canvas.IsVisible;

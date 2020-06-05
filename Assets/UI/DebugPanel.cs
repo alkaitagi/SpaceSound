@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DebugPanel : MonoBehaviour
@@ -34,7 +35,8 @@ public class DebugPanel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.BackQuote))
+        if(Keyboard.current.leftCtrlKey.isPressed
+           && Keyboard.current.backquoteKey.wasPressedThisFrame)
             canvasToggle.Toggle();
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();

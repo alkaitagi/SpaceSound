@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -42,9 +43,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        mainEngine.IsOn = Input.GetKey("w");
-        leftTorque.IsOn = Input.GetKey("a");
-        rightTorque.IsOn = Input.GetKey("d");
+        mainEngine.IsOn = Keyboard.current.wKey.isPressed;
+        leftTorque.IsOn = Keyboard.current.aKey.isPressed;
+        rightTorque.IsOn = Keyboard.current.dKey.isPressed;
 
         transform.rotation = Quaternion.Euler
         (
@@ -55,14 +56,14 @@ public class Player : MonoBehaviour
                 transform.eulerAngles.z,
                 -Vector2.SignedAngle
                 (
-                    CameraManager.MouseWorld() - transform.position,
+                    CameraManager.MouseWorld - (Vector2)transform.position,
                     Vector3.up
                 ),
                 rotationSpeed * Time.deltaTime
             )
         );
 
-        if (Input.GetKeyDown("space"))
+        if (Keyboard.current.aKey.wasPressedThisFrame)
             if (thruster.gameObject.activeInHierarchy)
                 thruster.Burst();
             else if (cannon.gameObject.activeInHierarchy)

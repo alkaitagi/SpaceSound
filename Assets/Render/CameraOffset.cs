@@ -27,7 +27,7 @@ public class CameraOffset : MonoBehaviour
         var screen = new Vector2(Screen.width, Screen.height);
         var radius = limit * Mathf.Min(screen.x, screen.y);
 
-        var position = (Vector2)Input.mousePosition - screen / 2;
+        var position = CameraManager.MouseScreen - screen / 2;
         if (position.magnitude > radius)
             position = radius * position.normalized;
 
