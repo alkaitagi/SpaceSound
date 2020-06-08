@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
             )
         );
 
-        if (Keyboard.current.aKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
             if (thruster.gameObject.activeInHierarchy)
                 thruster.Burst();
             else if (cannon.gameObject.activeInHierarchy)
