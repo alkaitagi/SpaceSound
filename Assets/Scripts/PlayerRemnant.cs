@@ -7,7 +7,8 @@ public class PlayerRemnant : MonoBehaviour
     [SerializeField]
     private Player player;
 
-    private Vector3 Destination => RegionManager.Main.transform.position;
+    private Vector3 Destination =>
+        RegionManager.Main.transform.position;
 
     private void Start()
     {

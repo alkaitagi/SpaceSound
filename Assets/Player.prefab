@@ -4972,9 +4972,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533003441}
+  - component: {fileID: 5683260003877014348}
+  - component: {fileID: 1237163485117699819}
+  - component: {fileID: 3609478256681042044}
   m_Layer: 9
   m_Name: Lights
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4995,6 +4998,102 @@ Transform:
   m_Father: {fileID: 806566934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &5683260003877014348
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533003440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5283992, y: 2.7104523}
+      - {x: -0.51188064, y: 4.714852}
+      - {x: -1.5523946, y: 2.6695344}
+      - {x: -1.0267447, y: 0.14925891}
+      - {x: 0.010633826, y: 0.09194484}
+--- !u!114 &1237163485117699819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533003440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558224940e469a3459dc4ebb9d20ac6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  onActiveChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5683260003877014348}
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  activeIntensity: 1
+  clapmedIntensity: 0.2
+  inactiveIntensity: 0
+  fadeSpeed: 5
+  clamped: 0
+  lights:
+  - {fileID: 6674169705392892291}
+  - {fileID: 2458960642712917881}
+--- !u!114 &3609478256681042044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533003440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f35bb58086f2744ac20e207e774450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  looping: 1
+  interval:
+    min: 3
+    max: 6
+    randomSign: 1
+  onTime:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1237163485117699819}
+        m_MethodName: ToggleClamped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &806566933
 GameObject:
   m_ObjectHideFlags: 0
@@ -14808,11 +14907,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2121131344970703291}
   - component: {fileID: 2458960642712917881}
-  - component: {fileID: 5571648158281491725}
   - component: {fileID: 6532765304227977952}
   - component: {fileID: 1090534855708090533}
   - component: {fileID: 34830378447231569}
-  - component: {fileID: 7311883067722220301}
   m_Layer: 8
   m_Name: Light
   m_TagString: Light
@@ -14875,39 +14972,6 @@ MonoBehaviour:
   - {x: -0.24572372, y: 4.5889654, z: 0}
   - {x: -0.55306053, y: 4.1127367, z: 0}
   - {x: -0.1081028, y: 0.89268017, z: 0}
---- !u!114 &5571648158281491725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4510868880061132202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558224940e469a3459dc4ebb9d20ac6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeIntensity: 1
-  clapmedIntensity: 0.2
-  inactiveIntensity: 0
-  active: 1
-  onActiveChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7311883067722220301}
-        m_MethodName: set_enabled
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  fadeSpeed: 5
-  clamped: 0
-  clampEffect: {fileID: 1090534855708090533}
 --- !u!199 &6532765304227977952
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -19690,36 +19754,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &7311883067722220301
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4510868880061132202}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.5283992, y: 2.7104523}
-      - {x: -0.51188064, y: 4.714852}
-      - {x: -1.5523946, y: 2.6695344}
-      - {x: -1.0267447, y: 0.14925891}
-      - {x: 0.010633826, y: 0.09194484}
 --- !u!1 &5195734972602626549
 GameObject:
   m_ObjectHideFlags: 0
@@ -19730,11 +19764,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7395863354758221178}
   - component: {fileID: 6674169705392892291}
-  - component: {fileID: 7564139068617213456}
   - component: {fileID: 8307212244690282326}
   - component: {fileID: 8892637912049960016}
   - component: {fileID: 2717922177167650935}
-  - component: {fileID: 6966957903305465731}
   m_Layer: 9
   m_Name: Light
   m_TagString: Untagged
@@ -19797,28 +19829,6 @@ MonoBehaviour:
   - {x: -0.24572372, y: 4.5889654, z: 0}
   - {x: -0.55306053, y: 4.1127367, z: 0}
   - {x: -0.1081028, y: 0.89268017, z: 0}
---- !u!114 &7564139068617213456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5195734972602626549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558224940e469a3459dc4ebb9d20ac6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeIntensity: 1
-  clapmedIntensity: 0.2
-  inactiveIntensity: 0
-  active: 1
-  onActiveChange:
-    m_PersistentCalls:
-      m_Calls: []
-  fadeSpeed: 5
-  clamped: 0
-  clampEffect: {fileID: 8892637912049960016}
 --- !u!199 &8307212244690282326
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -24601,48 +24611,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6966957903305465731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5195734972602626549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f35bb58086f2744ac20e207e774450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  looping: 1
-  interval:
-    min: 3
-    max: 6
-    randomSign: 1
-  onTime:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5571648158281491725}
-        m_MethodName: ToggleClamped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 7564139068617213456}
-        m_MethodName: ToggleClamped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &8281234666657878068
 GameObject:
   m_ObjectHideFlags: 0
@@ -24793,9 +24761,7 @@ MonoBehaviour:
   leftTorque: {fileID: 8281234666851662113}
   rightTorque: {fileID: 8281234667547501003}
   rotationSpeed: 20
-  lights:
-  - {fileID: 5571648158281491725}
-  - {fileID: 7564139068617213456}
+  lights: {fileID: 1237163485117699819}
   thruster: {fileID: 1050075464}
   cannon: {fileID: 8959160043534581853}
 --- !u!1 &8281234666669713800

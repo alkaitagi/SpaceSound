@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Sungazer.ShipModules;
 
 public class Player : MonoBehaviour
 {
@@ -18,11 +19,11 @@ public class Player : MonoBehaviour
 
     [Header("Modules")]
     [SerializeField]
-    private LightSwitch[] lights;
+    private LightShipModule lights;
     [SerializeField]
-    private Thruster thruster;
+    private ThrustShipModule thruster;
     [SerializeField]
-    private Cannon cannon;
+    private SpearShipModule cannon;
 
     public static Player Main { get; private set; }
     public static Vector3 Position => Main.transform.position;
@@ -31,8 +32,7 @@ public class Player : MonoBehaviour
     {
         Main = this;
 
-        foreach (var light in lights)
-            light.gameObject.SetActive(ModuleManager.Main.HasLight);
+        lights.gameObject.SetActive(ModuleManager.Main.HasLight);
         thruster.gameObject.SetActive(ModuleManager.Main.HasThruster);
         cannon.gameObject.SetActive(ModuleManager.Main.HasCannon);
 
@@ -68,10 +68,8 @@ public class Player : MonoBehaviour
                 thruster.Burst();
             else if (cannon.gameObject.activeInHierarchy)
                 cannon.Shoot();
-            else
-                foreach (var light in lights)
-                    if (light.gameObject.activeInHierarchy)
-                        light.ToggleActive();
+            else if (lights.gameObject.activeInHierarchy)
+                lights.ToggleActive();
     }
 
     private void OnDisable()

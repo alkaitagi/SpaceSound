@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Sungazer.ShipModules;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(AudioEchoFilter))]
@@ -14,7 +15,7 @@ public class Ghost : MonoBehaviour
     [SerializeField]
     private ParticleSystem reactionEffect;
     [SerializeField]
-    private LightSwitch reactionLight;
+    private LightShipModule reactionLight;
 
     [Space(10)]
     [SerializeField]
