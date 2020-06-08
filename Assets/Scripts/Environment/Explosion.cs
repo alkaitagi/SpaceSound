@@ -9,7 +9,8 @@ public class Explosion : MonoBehaviour
 
     private new Light2D light;
 
-    private void Awake() => light = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
+    private void Awake() =>
+        light = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
 
     private void Update()
     {

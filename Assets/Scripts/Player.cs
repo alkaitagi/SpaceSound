@@ -5,7 +5,9 @@ using Sungazer.ShipModules;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private PlayerRemnant remnant;
+    private PlayerRemnant remnantReference;
+    [SerializeField]
+    private ObjectVariable moduleReference;
 
     [Header("Movement")]
     [SerializeField]
@@ -17,29 +19,22 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float rotationSpeed;
 
-    [Header("Modules")]
-    [SerializeField]
-    private LightShipModule lights;
-    [SerializeField]
-    private ThrustShipModule thruster;
-    [SerializeField]
-    private SpearShipModule cannon;
-
     public static Player Main { get; private set; }
+    private BaseShipModule shipModule;
     public static Vector3 Position => Main.transform.position;
 
     private void Awake()
     {
         Main = this;
-
-        lights.gameObject.SetActive(ModuleManager.Main.HasLight);
-        thruster.gameObject.SetActive(ModuleManager.Main.HasThruster);
-        cannon.gameObject.SetActive(ModuleManager.Main.HasCannon);
-
         CameraManager.VirtualCamera.Follow = transform;
+        
+        if (moduleReference.Value)
+            shipModule = Instantiate(moduleReference.Value, transform)
+                ?.GetComponent<BaseShipModule>();
     }
 
-    public void SendRemnant() => Instantiate(remnant, transform.position, Quaternion.identity);
+    public void SendRemnant() =>
+        Instantiate(remnantReference, transform.position, Quaternion.identity);
 
     private void Update()
     {
@@ -64,12 +59,7 @@ public class Player : MonoBehaviour
         );
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
-            if (thruster.gameObject.activeInHierarchy)
-                thruster.Burst();
-            else if (cannon.gameObject.activeInHierarchy)
-                cannon.Shoot();
-            else if (lights.gameObject.activeInHierarchy)
-                lights.ToggleActive();
+            shipModule?.Use();
     }
 
     private void OnDisable()

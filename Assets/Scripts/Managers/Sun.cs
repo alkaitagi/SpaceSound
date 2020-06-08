@@ -9,8 +9,6 @@ public class Sun : MonoBehaviour
     private List<Gate> gates;
     [SerializeField]
     private List<GameObject> rewards;
-
-    [Space(10)]
     [SerializeField]
     private Gate end;
 

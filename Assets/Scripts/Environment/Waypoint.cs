@@ -16,7 +16,8 @@ public class Waypoint : MonoBehaviour
     private List<Transform> connections;
     public List<Transform> Connections => connections;
 
-    private void Awake() => GetComponent<SpriteRenderer>().enabled = false;
+    private void Awake() =>
+        GetComponent<SpriteRenderer>().enabled = false;
 
     private void OnDrawGizmosSelected()
     {

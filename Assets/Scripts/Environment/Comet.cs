@@ -14,7 +14,8 @@ public class Comet : MonoBehaviour
 
     private new AudioSource audio;
 
-    private void Awake() => audio = GetComponent<AudioSource>();
+    private void Awake() =>
+        audio = GetComponent<AudioSource>();
 
     private void Start()
     {
