@@ -38,6 +38,8 @@ public class WarpManager : MonoBehaviour
     private GameObject finalQuestion;
     [SerializeField]
     private CanvasToggle finalMessage;
+    [SerializeField]
+    private GameObject finalEffect;
 
     [Space(10)]
     [SerializeField]
@@ -45,7 +47,8 @@ public class WarpManager : MonoBehaviour
     [SerializeField]
     private AudioSource themeFinal;
 
-    private void Awake() => Main = this;
+    private void Awake() =>
+        Main = this;
 
     private void Start()
     {
@@ -62,7 +65,8 @@ public class WarpManager : MonoBehaviour
         }
 
         (isLast ? themeFinal : themeWarp).Play();
-
+        finalEffect.SetActive(isLast);
+        
         Player.Main.transform.eulerAngles = new Vector3(0, 0, isReversed ? -225 : -45);
         effects.transform.eulerAngles = new Vector3(0, 0, isReversed ? 180 : 0);
 
