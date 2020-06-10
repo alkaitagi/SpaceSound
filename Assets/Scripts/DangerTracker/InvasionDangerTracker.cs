@@ -13,7 +13,7 @@ namespace Sungazer.DangerTracker
         private void Start() =>
             creeps = FindObjectsOfType<Creep>();
 
-        private void Update() =>
+        private void FixedUpdate() =>
             Danger =
                 creeps
                 .Select(c => c.transform.position)

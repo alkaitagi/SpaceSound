@@ -1,5 +1,5 @@
-using System.Linq;
 using UnityEngine;
+using Sungazer.DangerTracker;
 
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
@@ -7,9 +7,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private float[] data;
 
-    private AudioSource source;
+    private AudioSource audioSource;
 
-    private void Awake() => source = GetComponent<AudioSource>();
+    private void Awake() =>
+        audioSource = GetComponent<AudioSource>();
 
-    private void Update() => source.clip.SetData(data, 0);
+    private void Update() =>
+        Debug.Log(BaseDangerTracker.Danger);
 }
