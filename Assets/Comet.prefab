@@ -4832,6 +4832,8 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4880,6 +4882,27 @@ MonoBehaviour:
     randomSign: 0
   pushScale: 5
   center: {fileID: 0}
+--- !u!50 &254395322858757478
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6653414830747070293}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3038923303858982397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,11 +5054,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5223365053284499557, guid: a345bb52d5c23af45820a04861c3b19e,
-        type: 3}
-      propertyPath: m_Name
-      value: Comet
-      objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499556, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
       propertyPath: bodyColor.key0.r
@@ -5120,6 +5138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: spinRange.randomSign
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223365053284499557, guid: a345bb52d5c23af45820a04861c3b19e,
+        type: 3}
+      propertyPath: m_Name
+      value: Comet
       objectReference: {fileID: 0}
     - target: {fileID: 5223365053284499562, guid: a345bb52d5c23af45820a04861c3b19e,
         type: 3}
@@ -5211,7 +5234,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8040125336859284065, guid: a345bb52d5c23af45820a04861c3b19e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a345bb52d5c23af45820a04861c3b19e, type: 3}
 --- !u!1 &6653414830747070293 stripped
 GameObject:

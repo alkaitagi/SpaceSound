@@ -43,23 +43,22 @@ public class Engine : MonoBehaviour
             audio.volume = 0;
     }
 
-    private void Update() => audio.volume = Mathf.Lerp(audio.volume, IsOn ? audioVolume : 0, Time.smoothDeltaTime);
+    private void Update() =>
+        audio.volume = Mathf.Lerp
+        (
+            audio.volume,
+            IsOn ? audioVolume : 0,
+            Time.smoothDeltaTime
+        );
 
     private void FixedUpdate()
     {
-        if (IsOn)
-            switch (type)
-            {
-                case EngineType.Straight:
-                    {
-                        rigidbody.AddForce(speed * transform.up);
-                        break;
-                    }
-                case EngineType.Torque:
-                    {
-                        rigidbody.AddTorque(speed);
-                        break;
-                    }
-            }
+        if (!IsOn)
+            return;
+
+        if (type == EngineType.Straight)
+            rigidbody.AddForce(speed * transform.up);
+        else
+            rigidbody.AddTorque(speed);
     }
 }

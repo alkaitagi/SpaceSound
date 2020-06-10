@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class Comet : MonoBehaviour
 {
     [SerializeField]
@@ -13,9 +14,13 @@ public class Comet : MonoBehaviour
     private float radius;
 
     private new AudioSource audio;
+    private new Rigidbody2D rigidbody;
 
-    private void Awake() =>
+    private void Awake()
+    {
         audio = GetComponent<AudioSource>();
+        rigidbody = GetComponent<Rigidbody2D>();
+    }
 
     private void Start()
     {
@@ -30,12 +35,11 @@ public class Comet : MonoBehaviour
             + speed.Value * Time.fixedDeltaTime
             * Vector2.Perpendicular((transform.position - center.position).normalized);
 
-        var position = transform.position;
-        transform.position =
-            center.position
-            + radius * (destination - center.position).normalized;
+        var position = rigidbody.position;
+        var direction = (destination - center.position).normalized;
 
-        transform.up = transform.position - position;
+        rigidbody.MovePosition(center.position + radius * direction);
+        transform.up = rigidbody.position - position;
     }
 
     private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);
@@ -44,16 +48,16 @@ public class Comet : MonoBehaviour
 
     private void Push(Rigidbody2D target)
     {
-        if (target)
-        {
-            target.AddForce
-            (
-                pushScale * speed.Value
-                * (target.position - (Vector2)transform.position),
-                ForceMode2D.Impulse
-            );
-            if (pushScale > 0 && audio)
-                audio.Play();
-        }
+        if (!target)
+            return;
+
+        target.AddForce
+        (
+            pushScale * speed.Value
+            * (target.position - (Vector2)transform.position),
+            ForceMode2D.Impulse
+        );
+        if (pushScale > 0 && audio)
+            audio.Play();
     }
 }

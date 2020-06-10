@@ -52,17 +52,17 @@ public class Creep : MonoBehaviour
         );
 
     private void Move(Vector3 target) =>
-            rigidbody.MoveRotation
+        rigidbody.MoveRotation
+        (
+            Mathf.MoveTowardsAngle
             (
-                Mathf.MoveTowardsAngle
+                rigidbody.rotation,
+                Vector2.SignedAngle
                 (
-                    rigidbody.rotation,
-                    Vector2.SignedAngle
-                    (
-                        Vector2.up,
-                        (target - transform.position).normalized
-                    ),
-                    turnSpeed.Value * Time.smoothDeltaTime
-                )
-            );
+                    Vector2.up,
+                    (target - transform.position).normalized
+                ),
+                turnSpeed.Value * Time.smoothDeltaTime
+            )
+        );
 }
