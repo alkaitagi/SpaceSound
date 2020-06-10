@@ -30,9 +30,12 @@ public class Comet : MonoBehaviour
             + speed.Value * Time.fixedDeltaTime
             * Vector2.Perpendicular((transform.position - center.position).normalized);
 
+        var position = transform.position;
         transform.position =
             center.position
             + radius * (destination - center.position).normalized;
+
+        transform.up = transform.position - position;
     }
 
     private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);

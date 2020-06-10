@@ -21,13 +21,14 @@ public class Player : MonoBehaviour
 
     public static Player Main { get; private set; }
     private BaseShipModule shipModule;
-    public static Vector3 Position => Main.transform.position;
+    public static Vector3 Position =>
+        Main ? Main.transform.position : Vector3.zero;
 
     private void Awake()
     {
         Main = this;
         CameraManager.VirtualCamera.Follow = transform;
-        
+
         if (moduleReference.Value)
             shipModule = Instantiate(moduleReference.Value, transform)
                 ?.GetComponent<BaseShipModule>();

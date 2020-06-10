@@ -23,7 +23,8 @@ public class Ghost : MonoBehaviour
 
     private Transform waypoint;
     private Vector3? target = null;
-    private bool charging;
+
+    public bool IsCharging { get; private set; }
 
     private new Rigidbody2D rigidbody;
 
@@ -51,7 +52,7 @@ public class Ghost : MonoBehaviour
 
     public void Trigger(Vector3 position)
     {
-        if (charging)
+        if (IsCharging)
             return;
 
         StopAllCoroutines();
@@ -60,7 +61,7 @@ public class Ghost : MonoBehaviour
 
     private IEnumerator Charge(Vector3 position)
     {
-        charging = true;
+        IsCharging = true;
 
         reactionEffect.Emission(true);
         reactionLight.Active = true;
@@ -78,7 +79,7 @@ public class Ghost : MonoBehaviour
         reactionEffect.Emission(false);
         reactionLight.Active = false;
 
-        charging = false;
+        IsCharging = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
