@@ -25,7 +25,8 @@ namespace Sungazer.DangerTracker
                 var offset = comet.position - Player.Position;
                 var distance = offset.magnitude;
                 var direction = offset.normalized;
-                var dot = Vector2.Dot(comet.transform.up, direction);
+                // var dot = Vector2.Dot(comet.transform.up, direction);
+                var dot = 1;
 
                 if (distance <= this.distance && dot > 0)
                     danger += delta * dot * distance / this.distance;

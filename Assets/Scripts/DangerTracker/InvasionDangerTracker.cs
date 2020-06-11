@@ -23,7 +23,8 @@ namespace Sungazer.DangerTracker
                 var offset = creep.transform.position - Player.Position;
                 var distance = offset.magnitude;
                 var direction = offset.normalized;
-                var dot = Vector2.Dot(creep.transform.up, direction);
+                // var dot = Vector2.Dot(creep.transform.up, direction);
+                var dot = 1;
 
                 if (distance <= this.distance && dot > 0)
                     danger += delta * dot * distance / this.distance;
