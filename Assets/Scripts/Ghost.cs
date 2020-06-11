@@ -25,6 +25,7 @@ public class Ghost : MonoBehaviour
     private Vector3? target = null;
 
     public bool IsCharging { get; private set; }
+    public float ChargeLevel { get; private set; }
 
     private new Rigidbody2D rigidbody;
 
@@ -71,10 +72,17 @@ public class Ghost : MonoBehaviour
         var waypoint = this.waypoint;
         this.waypoint = null;
 
-        yield return new WaitForSeconds(reactionDelay.Value);
+        while (ChargeLevel < 1)
+        {
+            yield return new WaitForEndOfFrame();
+            ChargeLevel += Time.deltaTime / reactionDelay.Value;
+        }
+        ChargeLevel = 1;
         target = position;
 
-        yield return new WaitForSeconds((transform.position - position).magnitude / speed.Value);
+        var distance = (transform.position - position).magnitude;
+        yield return new WaitForSeconds(distance / speed.Value);
+
         target = null;
         this.waypoint = waypoint;
 
@@ -82,6 +90,7 @@ public class Ghost : MonoBehaviour
         reactionLight.Active = false;
 
         IsCharging = false;
+        ChargeLevel = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

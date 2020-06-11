@@ -25,7 +25,7 @@ namespace Sungazer.DangerTracker
                 var dot = Vector2.Dot(ghost.transform.up, direction);
 
                 if (distance <= this.distance && dot > 0)
-                    danger += delta * dot * distance / this.distance;
+                    danger += delta * dot * ghost.ChargeLevel * distance / this.distance;
             }
 
             Danger = danger;
