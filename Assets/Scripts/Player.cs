@@ -20,9 +20,9 @@ public class Player : MonoBehaviour
     private float rotationSpeed;
 
     public static Player Main { get; private set; }
+    public static Vector3 Position { get; set; }
+
     private BaseShipModule shipModule;
-    public static Vector3 Position =>
-        Main ? Main.transform.position : Vector3.zero;
 
     private void Awake()
     {
@@ -62,6 +62,9 @@ public class Player : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
             shipModule?.Use();
     }
+
+    private void FixedUpdate() =>
+        Position = transform.position;
 
     private void OnDisable()
     {

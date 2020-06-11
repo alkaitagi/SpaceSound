@@ -1,11 +1,17 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerRemnant : MonoBehaviour
 {
     [SerializeField]
     private float speed;
     [SerializeField]
     private Player player;
+
+    private new Rigidbody2D rigidbody;
+
+    private void Awake() =>
+        rigidbody = GetComponent<Rigidbody2D>();
 
     private Vector3 Destination =>
         RegionManager.Main.transform.position;
@@ -23,19 +29,23 @@ public class PlayerRemnant : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (RegionManager.Main && !Player.Main)
+        if (!RegionManager.Main || Player.Main)
+            return;
+
+        var next = Vector2.MoveTowards
+        (
+            rigidbody.position,
+            RegionManager.Main.transform.position,
+            speed * Time.fixedDeltaTime
+        );
+        rigidbody.MovePosition(next);
+        Player.Position = next;
+
+        if (next == (Vector2)RegionManager.Main.transform.position)
         {
-            transform.position = Vector2.MoveTowards
-            (
-                transform.position,
-                RegionManager.Main.transform.position,
-                speed * Time.fixedDeltaTime
-            );
-            if ((transform.position - RegionManager.Main.transform.position).sqrMagnitude <= .25f)
-            {
-                Instantiate(player, Destination, Quaternion.identity);
-                Destroy(gameObject);
-            }
+            Instantiate(player, Destination, Quaternion.identity);
+            Destroy(gameObject);
         }
+
     }
 }
