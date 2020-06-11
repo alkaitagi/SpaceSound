@@ -13,5 +13,5 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
     private void Update() =>
-        Debug.Log(BaseDangerTracker.Danger);
+        print("Danger: " + BaseDangerTracker.Danger);
 }

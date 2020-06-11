@@ -72,6 +72,11 @@ public class Ghost : MonoBehaviour
         var waypoint = this.waypoint;
         this.waypoint = null;
 
+        var offset = position - transform.position;
+        var direction = offset.normalized;
+        var distance = offset.magnitude;
+
+        transform.up = direction;
         while (ChargeLevel < 1)
         {
             yield return new WaitForEndOfFrame();
@@ -80,7 +85,6 @@ public class Ghost : MonoBehaviour
         ChargeLevel = 1;
         target = position;
 
-        var distance = (transform.position - position).magnitude;
         yield return new WaitForSeconds(distance / speed.Value);
 
         target = null;

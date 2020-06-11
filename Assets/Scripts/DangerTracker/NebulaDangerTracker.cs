@@ -22,10 +22,9 @@ namespace Sungazer.DangerTracker
                 var offset = ghost.transform.position - Player.Position;
                 var distance = offset.magnitude;
                 var direction = offset.normalized;
-                var dot = Vector2.Dot(ghost.transform.up, direction);
 
-                if (distance <= this.distance && dot > 0)
-                    danger += delta * dot * ghost.ChargeLevel * distance / this.distance;
+                if (ghost.IsCharging && distance <= this.distance)
+                    danger += delta * ghost.ChargeLevel * distance / this.distance;
             }
 
             Danger = danger;
