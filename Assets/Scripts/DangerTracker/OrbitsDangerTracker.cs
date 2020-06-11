@@ -14,19 +14,21 @@ namespace Sungazer.DangerTracker
 
         private void FixedUpdate()
         {
-            var count = 0;
+            var danger = 0f;
+            var delta = 1 / comets.Length;
 
             foreach (var comet in comets)
             {
                 var offset = comet.transform.position - Player.Position;
+                var distance = offset.magnitude;
                 var direction = offset.normalized;
-                var distance = direction.magnitude;
                 var dot = Vector2.Dot(comet.transform.up, direction);
-                if (distance <= this.distance && dot >= .5f)
-                    count++;
+
+                if (distance <= this.distance && dot > 0)
+                    danger += delta * dot * distance / this.distance;
             }
 
-            Danger = count / comets.Length;
+            Danger = danger;
         }
     }
 }

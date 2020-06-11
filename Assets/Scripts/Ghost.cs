@@ -37,18 +37,20 @@ public class Ghost : MonoBehaviour
         GetComponent<AudioEchoFilter>().delay = echoDelay.Random();
     }
 
-    private void FixedUpdate() =>
-        rigidbody.MovePosition
+    private void FixedUpdate()
+    {
+        var next = Vector3.MoveTowards
         (
-            Vector2.MoveTowards
-            (
-                transform.position,
-                target.HasValue
-                    ? target.Value
-                    : (waypoint ?? transform).position,
-                speed.Random() * Time.fixedDeltaTime
-            )
+            transform.position,
+            target.HasValue
+                ? target.Value
+                : (waypoint ?? transform).position,
+            speed.Value * Time.fixedDeltaTime
         );
+
+        transform.up = (next - transform.position).normalized;
+        rigidbody.MovePosition(next);
+    }
 
     public void Trigger(Vector3 position)
     {
