@@ -16,7 +16,7 @@ namespace Sungazer.DangerTracker
         private void FixedUpdate()
         {
             var danger = 0f;
-            var delta = 1f / creeps.Length;
+            var delta = 1f / creeps.Where(c => c).Count();
 
             foreach (var creep in creeps.Where(c => c))
             {
