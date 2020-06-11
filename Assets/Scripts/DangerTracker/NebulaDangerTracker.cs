@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Sungazer.DangerTracker
@@ -15,15 +16,15 @@ namespace Sungazer.DangerTracker
         private void FixedUpdate()
         {
             var danger = 0f;
-            var delta = 1 / ghosts.Length;
+            var delta = 1f / ghosts.Length;
 
-            foreach (var ghost in ghosts)
+            foreach (var ghost in ghosts.Where(g => g.IsCharging))
             {
                 var offset = ghost.transform.position - Player.Position;
                 var distance = offset.magnitude;
                 var direction = offset.normalized;
 
-                if (ghost.IsCharging && distance <= this.distance)
+                if (distance <= this.distance)
                     danger += delta * ghost.ChargeLevel * distance / this.distance;
             }
 

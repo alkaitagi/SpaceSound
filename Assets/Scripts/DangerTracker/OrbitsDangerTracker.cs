@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Sungazer.DangerTracker
@@ -7,19 +8,21 @@ namespace Sungazer.DangerTracker
         [SerializeField]
         private float distance;
 
-        private Comet[] comets;
+        private Transform[] comets;
 
         private void Start() =>
-            comets = FindObjectsOfType<Comet>();
+            comets = FindObjectsOfType<Damage>()
+                .Select(d => d.transform)
+                .ToArray();
 
         private void FixedUpdate()
         {
             var danger = 0f;
-            var delta = 1 / comets.Length;
+            var delta = 1f / comets.Length;
 
             foreach (var comet in comets)
             {
-                var offset = comet.transform.position - Player.Position;
+                var offset = comet.position - Player.Position;
                 var distance = offset.magnitude;
                 var direction = offset.normalized;
                 var dot = Vector2.Dot(comet.transform.up, direction);

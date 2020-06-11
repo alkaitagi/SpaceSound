@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Sungazer.DangerTracker
@@ -15,9 +16,9 @@ namespace Sungazer.DangerTracker
         private void FixedUpdate()
         {
             var danger = 0f;
-            var delta = 1 / creeps.Length;
+            var delta = 1f / creeps.Length;
 
-            foreach (var creep in creeps)
+            foreach (var creep in creeps.Where(c => c))
             {
                 var offset = creep.transform.position - Player.Position;
                 var distance = offset.magnitude;
