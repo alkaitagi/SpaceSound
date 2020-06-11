@@ -75,8 +75,8 @@ public class Ghost : MonoBehaviour
         var offset = position - transform.position;
         var direction = offset.normalized;
         var distance = offset.magnitude;
-
         transform.up = direction;
+
         while (ChargeLevel < 1)
         {
             yield return new WaitForEndOfFrame();
@@ -92,9 +92,15 @@ public class Ghost : MonoBehaviour
 
         reactionEffect.Emission(false);
         reactionLight.Active = false;
-
         IsCharging = false;
+
+        while (ChargeLevel > 1)
+        {
+            yield return new WaitForEndOfFrame();
+            ChargeLevel -= Time.deltaTime / reactionDelay.Value;
+        }
         ChargeLevel = 0;
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

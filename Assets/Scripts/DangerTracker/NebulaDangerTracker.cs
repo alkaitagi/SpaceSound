@@ -18,7 +18,7 @@ namespace Sungazer.DangerTracker
             var danger = 0f;
             var delta = 1f / ghosts.Length;
 
-            foreach (var ghost in ghosts.Where(g => g.IsCharging))
+            foreach (var ghost in ghosts)
             {
                 var offset = ghost.transform.position - Player.Position;
                 var distance = offset.magnitude;
