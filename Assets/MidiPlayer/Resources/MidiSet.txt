@@ -12,6 +12,7 @@
   <IndexSelectedSF>0</IndexSelectedSF>
   <MidiFiles>
     <string>@ All Rights Reserved for these Midi Files</string>
+    <string>19444</string>
     <string>Albinoni - Adagio</string>
     <string>All Night Long</string>
     <string>Animal Crossing</string>
@@ -39,6 +40,7 @@
     <string>Dark Cloud 2 - Peace</string>
     <string>Dark Cloud 2 - Shop Theme</string>
     <string>DarkCloud2</string>
+    <string>Darker than Black, Kuro no Keiyakusha  - Yin no Piano _Yin's Piano_</string>
     <string>Debussy - Clair De Lune</string>
     <string>Debussy - Clair De Lune V2</string>
     <string>Donkey Kong - Country</string>
