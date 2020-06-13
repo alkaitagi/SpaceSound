@@ -8,10 +8,12 @@ namespace Sungazer.DangerTracker
         [SerializeField]
         private float distance;
 
-        private Creep[] creeps;
+        private Transform[] creeps;
 
         private void Start() =>
-            creeps = FindObjectsOfType<Creep>();
+            creeps = FindObjectsOfType<Creep>()
+                .Select(c => c.transform)
+                .ToArray();
 
         private void FixedUpdate()
         {
@@ -20,11 +22,11 @@ namespace Sungazer.DangerTracker
 
             foreach (var creep in creeps.Where(c => c))
             {
-                var offset = creep.transform.position - Player.Position;
+                var offset = creep.position - Player.Position;
                 var distance = offset.magnitude;
                 var direction = offset.normalized;
-                var dot = Vector2.Dot(creep.transform.up, direction);
-                // var dot = 1;
+                // var dot = Vector2.Dot(creep.up, direction);
+                var dot = 1;
 
                 if (distance <= this.distance && dot > 0)
                     danger += delta * dot * distance / this.distance;

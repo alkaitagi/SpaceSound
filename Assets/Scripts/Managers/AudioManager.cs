@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
         if (!isDiscreteDanger || targetTranspose != 0)
         {
             midiPlayer.transpose = targetTranspose;
-            outEasingTimer = 1;
+            outEasingTimer = 0;
             return;
         }
 
