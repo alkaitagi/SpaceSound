@@ -12,7 +12,7 @@ public class RegionManager : MonoBehaviour
     public float TimeElapsed { get; private set; }
     public float TimeLeft => Duration - TimeElapsed;
 
-    public static VoidEvent OnRegionChange { get; private set; } = new VoidEvent();
+    public static BoolEvent OnRegionChange { get; private set; } = new BoolEvent();
 
     private static RegionManager main;
     public static RegionManager Main
@@ -21,7 +21,7 @@ public class RegionManager : MonoBehaviour
         private set
         {
             main = value;
-            OnRegionChange.Invoke();
+            OnRegionChange.Invoke(Main);
         }
     }
 

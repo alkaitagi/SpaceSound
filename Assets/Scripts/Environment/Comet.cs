@@ -1,7 +1,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-[RequireComponent(typeof(Rigidbody2D))]
 public class Comet : MonoBehaviour
 {
     [SerializeField]
@@ -35,11 +34,16 @@ public class Comet : MonoBehaviour
             + speed.Value * Time.fixedDeltaTime
             * Vector2.Perpendicular((transform.position - center.position).normalized);
 
-        var position = rigidbody.position;
+        var position = rigidbody ? rigidbody.position : (Vector2)transform.position;
         var direction = (destination - center.position).normalized;
+        Vector2 end = center.position + radius * direction;
 
-        rigidbody.MovePosition(center.position + radius * direction);
-        transform.up = rigidbody.position - position;
+        if (rigidbody)
+            rigidbody.MovePosition(end);
+        else
+            transform.position = end;
+
+        transform.up = end - position;
     }
 
     private void OnTriggerEnter2D(Collider2D other) => Push(other.attachedRigidbody);
