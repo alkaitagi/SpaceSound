@@ -33,15 +33,9 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         var targetTranspose = GetTranspose();
-        if (!isDiscreteDanger)
+        if (!isDiscreteDanger || targetTranspose != 0)
         {
-            midiPlayer.transpose = (int)(transposeScale * targetTranspose);
-            return;
-        }
-
-        if (targetTranspose > 0)
-        {
-            midiPlayer.transpose = (int)targetTranspose;
+            midiPlayer.transpose = targetTranspose;
             outEasingTimer = 1;
             return;
         }
@@ -54,7 +48,7 @@ public class AudioManager : MonoBehaviour
         print("D: " + BaseDangerTracker.Danger + " T: " + midiPlayer.transpose);
     }
 
-    private float GetTranspose()
+    private int GetTranspose()
     {
         var transpose = 0f;
         var danger = BaseDangerTracker.Danger;
@@ -64,6 +58,6 @@ public class AudioManager : MonoBehaviour
         else
             transpose = transposeScale * BaseDangerTracker.Danger;
 
-        return transpose;
+        return (int)transpose;
     }
 }
