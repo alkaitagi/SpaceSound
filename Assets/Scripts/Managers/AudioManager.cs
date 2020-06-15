@@ -4,23 +4,42 @@ using MidiPlayerTK;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Main { get; private set; }
+
     [SerializeField]
     private MidiFilePlayer midiPlayer;
-    [SerializeField]
-    private float transposeScale;
 
-    [Header("Discrete settings")]
+    [Header("Music")]
     [SerializeField]
-    private bool isDiscreteDanger;
+    private int transposeScale;
+    [SerializeField]
+    private float speedScale;
+
+    [Header("Easing")]
     [SerializeField]
     private AnimationCurve outEasingCurve;
     [SerializeField]
     private float outEasingDuration;
 
-    private float outEasingTimer;
+    private float easingTimer;
 
-    private void Start() =>
+    public int Transpose
+    {
+        get => midiPlayer.transpose;
+        private set => midiPlayer.transpose = value;
+    }
+
+    public float Speed
+    {
+        get => midiPlayer.MPTK_Speed;
+        private set => midiPlayer.MPTK_Speed = value;
+    }
+
+    private void Start()
+    {
+        Main = this;
         RegionManager.OnRegionChange.AddListener(RestartMusic);
+    }
 
     private void RestartMusic(bool isRegion)
     {
@@ -32,32 +51,20 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        var targetTranspose = GetTranspose();
-        if (!isDiscreteDanger || targetTranspose != 0)
+        var isDanger = BaseDangerTracker.Danger > 0;
+        if (isDanger)
         {
-            midiPlayer.transpose = targetTranspose;
-            outEasingTimer = 0;
+            Transpose = transposeScale;
+            Speed = speedScale;
+            easingTimer = 0;
             return;
         }
 
         var deltaTime = Time.deltaTime / outEasingDuration;
-        outEasingTimer = Mathf.Clamp01(outEasingTimer + deltaTime);
-        var easingValue = outEasingCurve.Evaluate(outEasingTimer);
-        midiPlayer.transpose = (int)(targetTranspose * easingValue);
+        easingTimer = Mathf.Clamp01(easingTimer + deltaTime);
+        var easingValue = outEasingCurve.Evaluate(easingTimer);
 
-        print("D: " + BaseDangerTracker.Danger + " T: " + midiPlayer.transpose);
-    }
-
-    private int GetTranspose()
-    {
-        var transpose = 0f;
-        var danger = BaseDangerTracker.Danger;
-
-        if (isDiscreteDanger)
-            transpose = danger > 0 ? transposeScale : 0;
-        else
-            transpose = transposeScale * BaseDangerTracker.Danger;
-
-        return (int)transpose;
+        Transpose = (int)(transposeScale * easingValue);
+        Speed = Mathf.Max(1, speedScale * easingValue);
     }
 }
