@@ -17,11 +17,13 @@ public class AudioManager : MonoBehaviour
 
     [Header("Easing")]
     [SerializeField]
-    private AnimationCurve outEasingCurve;
+    private AnimationCurve easingCurve;
     [SerializeField]
-    private float outEasingDuration;
+    private float inDuration;
+    [SerializeField]
+    private float outDuration;
 
-    private float easingTimer;
+    private float easingTime;
 
     public int Transpose
     {
@@ -52,17 +54,9 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         var isDanger = BaseDangerTracker.Danger > 0;
-        if (isDanger)
-        {
-            Transpose = transposeScale;
-            Speed = speedScale;
-            easingTimer = 0;
-            return;
-        }
-
-        var deltaTime = Time.deltaTime / outEasingDuration;
-        easingTimer = Mathf.Clamp01(easingTimer + deltaTime);
-        var easingValue = outEasingCurve.Evaluate(easingTimer);
+        var deltaTime = Time.deltaTime / (isDanger ? inDuration : outDuration);
+        easingTime = Mathf.Clamp01(easingTime + deltaTime);
+        var easingValue = easingCurve.Evaluate(easingTime);
 
         Transpose = (int)(transposeScale * easingValue);
         Speed = Mathf.Max(1, speedScale * easingValue);
