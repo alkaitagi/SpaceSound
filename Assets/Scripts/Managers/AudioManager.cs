@@ -54,7 +54,7 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         var isDanger = BaseDangerTracker.Danger > 0;
-        var deltaTime = Time.deltaTime / (isDanger ? inDuration : outDuration);
+        var deltaTime = Time.deltaTime / (isDanger ? inDuration : -outDuration);
         easingTime = Mathf.Clamp01(easingTime + deltaTime);
         var easingValue = easingCurve.Evaluate(easingTime);
 
