@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class TabSelect : MonoBehaviour
 {
+    [SerializeField]
+    private CanvasToggle boundCanvas;
+
     private Selectable current;
 
     private void Start()
@@ -15,8 +18,9 @@ public class TabSelect : MonoBehaviour
 
     private void Update()
     {
-        print(this.current);
         if (!Keyboard.current.tabKey.wasPressedThisFrame)
+            return;
+        if (boundCanvas && !boundCanvas.IsVisible)
             return;
 
         var current = EventSystem.current.currentSelectedGameObject?.GetComponent<Selectable>();
