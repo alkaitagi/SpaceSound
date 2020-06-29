@@ -57,7 +57,7 @@ public class RegionManager : MonoBehaviour
             }
 
             MessageScreen.Main.ShowMessage(@"Our time is over here,
-we must return to base.");
+we must return to the Sun.");
         }
     }
 }
