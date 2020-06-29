@@ -42,8 +42,7 @@ public class DebugPanel : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.leftCtrlKey.isPressed
-           && Keyboard.current.backquoteKey.wasPressedThisFrame)
+        if (Keyboard.current.backquoteKey.wasPressedThisFrame)
             canvasToggle.Toggle();
 
         deathText.text = StatsManager.Main.Deaths.Count.ToString();
