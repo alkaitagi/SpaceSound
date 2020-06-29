@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 204794508423590289}
   - component: {fileID: 789899117851251351}
   - component: {fileID: 6064459536188057264}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +4870,7 @@ GameObject:
   - component: {fileID: 3114165948827995175}
   - component: {fileID: 9132435470371419746}
   - component: {fileID: 8206974742490418326}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Light
   m_TagString: Light
   m_Icon: {fileID: 0}
@@ -9726,7 +9726,7 @@ GameObject:
   - component: {fileID: 4557722932918721931}
   - component: {fileID: 6968757071210971180}
   - component: {fileID: 4866640057718249147}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Lights
   m_TagString: Light
   m_Icon: {fileID: 0}
