@@ -52,16 +52,19 @@ public class Comet : MonoBehaviour
 
     private void Push(Rigidbody2D target)
     {
-        if (!target)
+        if (!target || !target.CompareTag("Player"))
             return;
 
+        var direction = ((Vector2)transform.position - target.position).normalized;
+        var dot = Mathf.Max(0, Vector2.Dot(-direction, transform.up));
+        print(dot);
         target.AddForce
         (
-            pushScale * speed.Value
+            dot * pushScale * speed.Value
             * (target.position - (Vector2)transform.position),
             ForceMode2D.Impulse
         );
-        if (pushScale > 0 && audio && target.CompareTag("Player"))
+        if (pushScale > 0 && audio)
             audio.Play();
     }
 }
