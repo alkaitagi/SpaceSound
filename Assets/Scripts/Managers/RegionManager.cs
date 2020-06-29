@@ -51,7 +51,7 @@ public class RegionManager : MonoBehaviour
         {
             gate.Open();
             if (Player.Main)
-                Player.Main.GetComponent<Health>().Destroy();
+                Player.Main.GetComponent<Health>().Destroy(true);
         }
     }
 }

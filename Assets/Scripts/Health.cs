@@ -38,9 +38,12 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void Destroy()
+    public void Destroy(bool invulnerability = false)
     {
-        if (invulnerability == 0)
+        if (invulnerability)
+            this.invulnerability = 0;
+
+        if (this.invulnerability == 0)
         {
             if (deathEffect)
                 Instantiate(deathEffect, transform.position, transform.rotation);
