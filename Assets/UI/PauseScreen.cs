@@ -8,8 +8,7 @@ public class PauseScreen : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.leftCtrlKey.isPressed
-            && Keyboard.current.leftAltKey.wasPressedThisFrame)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             canvas.IsVisible = !canvas.IsVisible;
             AudioListener.pause = canvas.IsVisible;
