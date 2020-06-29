@@ -50,8 +50,12 @@ public class RegionManager : MonoBehaviour
         if (!gate.IsLocked)
         {
             gate.Open();
-            if (Player.Main)
-                Player.Main.GetComponent<Health>().Destroy(true);
+            if (Player.Main?.GetComponent<Health>() is Health player)
+            {
+                player.Invulnerability = 0;
+                player.Destroy();
+            }
+
             MessageScreen.Main.ShowMessage(@"Our time is over here,
 we must return to base.");
         }

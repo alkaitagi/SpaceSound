@@ -13,6 +13,11 @@ public class Health : MonoBehaviour
     public UnitType Type => type;
     [SerializeField]
     private float invulnerability;
+    public float Invulnerability
+    {
+        get => invulnerability;
+        set => invulnerability = value;
+    }
 
     [Space(10)]
     [SerializeField]
@@ -27,23 +32,20 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        invulnerability = Mathf.Max(0, invulnerability - Time.deltaTime);
+        Invulnerability = Mathf.Max(0, Invulnerability - Time.deltaTime);
         if (shieldEffect)
         {
             var emission = shieldEffect.emission;
-            emission.enabled = invulnerability > 0;
+            emission.enabled = Invulnerability > 0;
 
             if (!emission.enabled && audio)
                 audio.Stop();
         }
     }
 
-    public void Destroy(bool invulnerability = false)
+    public void Destroy()
     {
-        if (invulnerability)
-            this.invulnerability = 0;
-
-        if (this.invulnerability == 0)
+        if (Invulnerability == 0)
         {
             if (deathEffect)
                 Instantiate(deathEffect, transform.position, transform.rotation);
