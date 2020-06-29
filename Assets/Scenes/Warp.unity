@@ -1709,12 +1709,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1929989565694750, guid: a12ac9087339c2743a08406adba01ee5, type: 3}
       propertyPath: m_Name
-      value: Employer
+      value: Employee
       objectReference: {fileID: 0}
     - target: {fileID: 114563996933183546, guid: a12ac9087339c2743a08406adba01ee5,
         type: 3}
       propertyPath: m_Text
-      value: Employer
+      value: Employee
       objectReference: {fileID: 0}
     - target: {fileID: 114893613133751914, guid: a12ac9087339c2743a08406adba01ee5,
         type: 3}
@@ -31940,7 +31940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9116c09093c841149b485d74745578a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 0
+  isVisible: 1
   scale: 1
   offset: {x: -50, y: 0, z: 0}
   duration: 0.1
@@ -31952,7 +31952,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971710383}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
