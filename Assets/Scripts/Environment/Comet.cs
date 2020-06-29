@@ -61,7 +61,7 @@ public class Comet : MonoBehaviour
             * (target.position - (Vector2)transform.position),
             ForceMode2D.Impulse
         );
-        if (pushScale > 0 && audio)
+        if (pushScale > 0 && audio && target.CompareTag("Player"))
             audio.Play();
     }
 }
