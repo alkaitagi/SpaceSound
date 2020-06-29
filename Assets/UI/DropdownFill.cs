@@ -33,17 +33,15 @@ public class DropdownFill : MonoBehaviour
 
     private void Update()
     {
-        if (!Keyboard.current.anyKey.wasPressedThisFrame)
-            return;
-
-        print("query: " + query);
-
         var selected = EventSystem.current?.currentSelectedGameObject?.transform;
-        if (!(selected && selected != gameObject && selected.IsChildOf(transform)))
+        if (!selected || selected == transform || !selected.IsChildOf(transform))
         {
             query = string.Empty;
             return;
         }
+
+        if (!Keyboard.current.anyKey.wasPressedThisFrame)
+            return;
 
         if (query.Length > 0 && Keyboard.current.backspaceKey.wasPressedThisFrame)
         {
