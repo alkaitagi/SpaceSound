@@ -1,3 +1,5 @@
+using System.Linq;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -8,22 +10,26 @@ public class TabSelect : MonoBehaviour
     [SerializeField]
     private CanvasToggle boundCanvas;
 
+    private bool IsBlocked => boundCanvas && !boundCanvas.IsVisible;
     private Selectable current;
+    private Selectable[] children;
 
     private void Start()
     {
-        current = GetComponentInChildren<Selectable>();
-        current?.Select();
+        children = GetComponentsInChildren<Selectable>();
+        current = children.FirstOrDefault();
+        if (!IsBlocked)
+            current?.Select();
     }
 
     private void Update()
     {
         if (!Keyboard.current.tabKey.wasPressedThisFrame)
             return;
-        if (boundCanvas && !boundCanvas.IsVisible)
+        if (IsBlocked)
             return;
 
-        var current = EventSystem.current.currentSelectedGameObject?.GetComponent<Selectable>();
+        var current = EventSystem.current?.currentSelectedGameObject?.GetComponent<Selectable>();
         if (!current)
             if (this.current)
                 current = this.current;
@@ -34,10 +40,12 @@ public class TabSelect : MonoBehaviour
             ? current.FindSelectableOnUp()
             : current.FindSelectableOnDown();
 
-        if (next)
+        if (next && children.Contains(next))
         {
             next.Select();
             this.current = next;
         }
+        else
+            current.Select();
     }
 }
