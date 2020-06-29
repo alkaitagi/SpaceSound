@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -14,6 +13,8 @@ public class TabSelect : MonoBehaviour
     private Selectable current;
     private Selectable[] children;
 
+    private bool canvasVisible;
+
     private void Start()
     {
         children = GetComponentsInChildren<Selectable>();
@@ -24,18 +25,27 @@ public class TabSelect : MonoBehaviour
 
     private void Update()
     {
-        if (!Keyboard.current.tabKey.wasPressedThisFrame)
-            return;
         if (IsBlocked)
             return;
 
-        var current = EventSystem.current?.currentSelectedGameObject?.GetComponent<Selectable>();
-        if (!current)
-            if (this.current)
-                current = this.current;
-            else
-                return;
+        try
+        {
+            current =
+                EventSystem.current?.currentSelectedGameObject?.GetComponent<Selectable>()
+                ?? this.current
+                ?? children.FirstOrDefault();
+        }
+        catch
+        {
+            current = null;
+        }
 
+        if (!current)
+            return;
+        current.Select();
+
+        if (!Keyboard.current.tabKey.wasPressedThisFrame)
+            return;
         var next = Keyboard.current.leftShiftKey.isPressed
             ? current.FindSelectableOnUp()
             : current.FindSelectableOnDown();
@@ -43,7 +53,7 @@ public class TabSelect : MonoBehaviour
         if (next && children.Contains(next))
         {
             next.Select();
-            this.current = next;
+            current = next;
         }
         else
             current.Select();
