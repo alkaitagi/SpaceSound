@@ -14,7 +14,7 @@ public class InputFilter : MonoBehaviour
     private void Awake() =>
         GetComponent<InputField>().onValidateInput += delegate (string text, int index, char last)
         {
-            return (!letter && char.IsLetter(last)
+            return (!((last >= 'a' && last <= 'z') || (last >= 'A' && last <= 'Z'))
                     || !digit && char.IsDigit(last)
                     || !symbol && char.IsSymbol(last))
                 ? '\0'
