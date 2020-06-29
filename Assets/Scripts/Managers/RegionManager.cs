@@ -52,6 +52,8 @@ public class RegionManager : MonoBehaviour
             gate.Open();
             if (Player.Main)
                 Player.Main.GetComponent<Health>().Destroy(true);
+            MessageScreen.Main.ShowMessage(@"Our time is over here,
+we must return to base.");
         }
     }
 }
