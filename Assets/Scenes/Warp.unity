@@ -1135,7 +1135,11 @@ PrefabInstance:
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_Text
-      value: Your powerful weapon emitting devastating short beams
+      value: 'Your powerful weapon emitting devastating short beams.
+
+
+        Press
+        [Space] to shoot with the Cannon.'
       objectReference: {fileID: 0}
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -1215,7 +1219,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -1279,10 +1283,10 @@ RectTransform:
   m_Father: {fileID: 815242604}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -125}
-  m_SizeDelta: {x: 260, y: 40}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &186098430
 PrefabInstance:
@@ -3037,17 +3041,15 @@ PrefabInstance:
         open.
 
 
+        Rotate your ship with mouse cursor.
 
-        -----[ Tactical info ]-----
+        Hold [W] to
+        activate the main engine.
 
-        Rotate your ship with
-        mouse cursor.
+        Hold [A], [D] to activate the secondary
+        engines.
 
-        Hold [W] to activate the main engine.
-
-        Hold
-        [A], [D] to activate the secondary engines.
-
+        Press [ESC] to pause the game.
 
 
         Further information
@@ -3119,17 +3121,17 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -145
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -3144,7 +3146,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -3154,7 +3156,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -3584,17 +3586,17 @@ PrefabInstance:
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
@@ -4645,7 +4647,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 495
+      value: 535
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -4655,7 +4657,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -4665,7 +4667,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -4858,7 +4860,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 455
+      value: 495
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -4868,7 +4870,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -4878,7 +4880,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -6147,7 +6149,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Eliminate all 10 invaders and take back their keys as you dodge their
-        chasing trajectories
+        chasing trajectories.
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -6362,10 +6364,10 @@ RectTransform:
   m_Father: {fileID: 815242604}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -205}
-  m_SizeDelta: {x: 260, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737325760
 MonoBehaviour:
@@ -7324,17 +7326,17 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 475
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -7344,7 +7346,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -7354,7 +7356,7 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -7374,7 +7376,7 @@ PrefabInstance:
     - target: {fileID: 3127497374520155691, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8858809160695629135, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -8409,7 +8411,11 @@ PrefabInstance:
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_Text
-      value: Your auxiliary engine allowing ship to jump forward a short range
+      value: 'Your auxiliary engine allowing ship to jump forward a short range.
+
+
+        Press
+        [Space] to activate the Thruster.'
       objectReference: {fileID: 0}
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -8489,7 +8495,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -9822,7 +9828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Find all 10 keys in this dark place inhabited by ghosts floating between
-        the rocks
+        the rocks.
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -9882,17 +9888,17 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -9907,7 +9913,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -9917,7 +9923,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -10195,17 +10201,17 @@ PrefabInstance:
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
@@ -12116,7 +12122,7 @@ PrefabInstance:
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_Text
-      value: The wandering one with uncertain movement and fatal touch
+      value: The wandering one with uncertain movement and fatal touch.
       objectReference: {fileID: 0}
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -12181,17 +12187,17 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -235
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -12206,7 +12212,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -12216,7 +12222,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -12244,11 +12250,11 @@ PrefabInstance:
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_Text
-      value: 'The fast orbiting rock dealing heavy damage to the ship on a collision
+      value: 'The fast orbiting rock dealing heavy damage to the ship on a collision.
 
 
-        ----
-        Note: Asteroids push you as well ----'
+        Asteroids
+        push you as well.'
       objectReference: {fileID: 0}
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -13497,17 +13503,17 @@ PrefabInstance:
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 2918065243708013799, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
@@ -13547,7 +13553,7 @@ PrefabInstance:
     - target: {fileID: 3127497374520155691, guid: fab9877f0ca401e41bb12bafe3cf1259,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2223008928990462160, guid: fab9877f0ca401e41bb12bafe3cf1259, type: 3}
@@ -13586,7 +13592,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Catch all 10 keys in this system trapped in gravitational anomaly with
-        rocks pushing you away
+        rocks pushing you away.
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -13922,7 +13928,11 @@ PrefabInstance:
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_Text
-      value: Your Ship's passive module revealing envinronment in small proximity
+      value: 'Your Ship''s passive module revealing envinronment in small proximity.
+
+
+        Press
+        [Space] to toggle the Lights.'
       objectReference: {fileID: 0}
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -13987,22 +13997,22 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -430
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -14012,7 +14022,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -14022,7 +14032,7 @@ PrefabInstance:
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224306592927288882, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -14125,17 +14135,17 @@ PrefabInstance:
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
@@ -24372,10 +24382,10 @@ RectTransform:
   m_Father: {fileID: 815242604}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -400}
-  m_SizeDelta: {x: 260, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1565045931
 PrefabInstance:
@@ -24456,17 +24466,17 @@ PrefabInstance:
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -345
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224334157842149228, guid: 8c09a71c049725a47ab1f10792bebf58,
         type: 3}
@@ -25863,10 +25873,10 @@ RectTransform:
   m_Father: {fileID: 1358856672}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -90}
+  m_SizeDelta: {x: 260, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678312133
 MonoBehaviour:
@@ -26767,8 +26777,8 @@ PrefabInstance:
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
       propertyPath: m_Text
-      value: The fast enemy scout ship that works in squads and try to corner the
-        prey
+      value: The fast enemy scout ship that works in squads and try to corner its
+        target.
       objectReference: {fileID: 0}
     - target: {fileID: 114396774280001588, guid: aef906c825b4d2f47b7d3f276356fccf,
         type: 3}
@@ -32489,10 +32499,10 @@ RectTransform:
   m_Father: {fileID: 815242604}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -320}
-  m_SizeDelta: {x: 260, y: 40}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2041746964
 PrefabInstance:
