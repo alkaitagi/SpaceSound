@@ -14,8 +14,8 @@ public class InputFilter : MonoBehaviour
     private bool IsLetter(char c) =>
         !letter || (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z');
 
-    private bool IsDigit(char c) =>
-        !digit || char.IsDigit(c);
+    private bool IsDigit(char c, int i) =>
+        !digit || char.IsDigit(c) && (c != '0' || i > 0);
 
     private bool isSymbol(char c) =>
        !symbol || char.IsSymbol(c);
@@ -23,6 +23,6 @@ public class InputFilter : MonoBehaviour
     private void Awake() =>
         GetComponent<InputField>().onValidateInput +=
             (string text, int index, char last) =>
-                IsLetter(last) && IsDigit(last) && isSymbol(last)
+                IsLetter(last) && IsDigit(last, index) && isSymbol(last)
                     ? last : '\0';
 }
